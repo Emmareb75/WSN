@@ -37,22 +37,41 @@
         startColorstr='#ba0300', endColorstr='#840000',GradientType=0 );
      }
 
-      .navbar .nav .active > a, .navbar .nav .active > a:hover {
-        background: #ba0300;
-      }
+       .navbar .nav .active > a, .navbar .nav .active > a:hover {
+         background: #ba0300;
+       }
 
       .navbar .nav > li > a {
-         color: #840000;
+         color: white;
        }
 
        .navbar .nav > li > a:hover {
-           color:white;
+           color: #840000;
        }
 
        .navbar .nav .active > a, .navbar .nav .active > a:hover {
+
            color:white;
        }
 
+       .nav-list .active > a, .nav-list .active > a:hover {
+         background: #ba0300;
+       }
+
+       .nav-list > li > a:hover{
+         color: #840000;
+       }
+
+       .nav-list > li >a{
+         color: #CE7171;
+       }
+
+       .nav-list > .active > a:hover,
+       .nav-list > .active > a:focus {
+           color: white;
+             text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+               background-color: #840000;
+             }
       .sidebar-nav {
         padding: 9px 0;
       }
@@ -92,13 +111,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand">Security in Wireless Sensor networks</a>
+          <a class="brand" href="#">Security in Wireless Sensor networks</a>
           <div class="nav-collapse collapse">
 
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
+              <li><a href="#about"><i class=""></i>Quiz</a></li>
+              <li><a href="#contact">References</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -110,7 +129,7 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
+              <li class="nav-header">Introduction</li>
               <li class="active"><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
