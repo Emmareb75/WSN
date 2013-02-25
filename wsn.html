@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+
+      .navbar-inner, .navbar .btn-navbar {
+        background: #ba0300;
+
+        background: -moz-linear-gradient(top,  #ba0300 0%, #840000 100%);
+
+        background: -webkit-gradient(linear, left top, left bottom,
+        color-stop(0%,#ba0300), color-stop(100%,#840000));
+
+        background: -webkit-linear-gradient(top,  #ba0300 0%,#840000 100%);
+
+        background: -o-linear-gradient(top,  #ba0300 0%,#840000 100%);
+
+        background: -ms-linear-gradient(top,  #ba0300 0%,#840000 100%);
+
+        background: linear-gradient(to bottom,  #ba0300 0%,#840000 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#ba0300', endColorstr='#840000',GradientType=0 );
+     }
+
+       .navbar .nav .active > a, .navbar .nav .active > a:hover {
+         background: #ba0300;
+       }
+
+      .navbar .nav > li > a {
+         color: white;
+       }
+
+       .navbar .nav > li > a:hover {
+           color: #840000;
+       }
+
+       .navbar .nav .active > a, .navbar .nav .active > a:hover {
+
+           color:white;
+       }
+
+       .nav-list .active > a, .nav-list .active > a:hover {
+         background: #ba0300;
+       }
+
+       .nav-list > li > a:hover{
+         color: #840000;
+       }
+
+       .nav-list > li >a{
+         color: #CE7171;
+       }
+
+       .nav-list > .active > a:hover,
+       .nav-list > .active > a:focus {
+           color: white;
+             text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+               background-color: #840000;
+             }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+  </head>
+
+  <body>
+    <style>
+
+    </style>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+
+            <ul class="nav">
+              <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+              <li><a href="#about"><i class="icon-tasks"></i>Quiz</a></li>
+              <li><a href="#contact"><i class="icon-book"></i>References</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Introduction</li>
+              <li class="active"><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1>Wireless sensor networks</h1><br>
+            <p>Wireless Sensor Network, often abbreviated as “WSN”, is an emerging and fast-growing technology. One network of this type consists of a large number of sensor nodes, also called “motes”, spatially distributed. The nodes sense environmental changes and report them to the other nodes through a flexible network architecture. In this architecture, sensor nodes communicate using ad hoc networking: this means that each node participates to the communication of data. Thanks to this approach two nodes can therefore communicate together by using intermediate nodes.</p>
+            <p>With their wireless feature, Wireless Sensor Networks are adapted for deployment in large geographical areas as a cost-efficient solution.</p>
+            <p> While being initially developed for military purpose, WSN have numerous and various applications, and are primarily used for either tracking or monitoring:</p>
+            <ul>
+              <li>Environmental monitoring: Wireless Sensor Networks can monitor environmental variables such as temperature, humidity, atmospheric pressure, air pollution.</li>
+              <li>Factories monitoring: WSN are also widely used in plants to monitor temperature, but also to track products and transportations.</li>
+              <li>Medical monitoring: Sensors can be implanted inside the human body to monitor their health through observing vital signs, electrocardiograms, glucose level.</li>
+              <li>Military tracking: Military uses WSN for battlefield surveillance, through tracking the enemy position for instance.</li>
+            </ul>
+            <p>Unlike conventional networks, often considered as limitless technologies (for instance, scalability issues can be solved by adding wires), Wireless Sensor Networks present both sensing, computation but also communication limited capabilities, majorly due to the small size of the sensor nodes. As we can see, WSN require special efforts regarding the sensor nodes hardware, as well as they need reliable and effective security mechanisms.</p>
+            <p></p>
+            <p></p>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
