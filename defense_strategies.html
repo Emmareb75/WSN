@@ -128,28 +128,24 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Introduction</li>
-              <li class="active"><a href="wsn.html">WSN Outline</a></li>
+              <li><a href="wsn.html">WSN Outline</a></li>
               <li class="nav-header">Security</li>
               <li><a href="security.html">Issues</a></li>
               <li><a href="principles.html">Principles</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
+
        <div class="span9">
           <div class="hero-unit">
-            <h1>Wireless sensor networks</h1><br>
-            <p>Wireless Sensor Network, often abbreviated as “WSN”, is an emerging and fast-growing technology. One network of this type consists of a large number of sensor nodes, also called “motes”, spatially distributed. The nodes sense environmental changes and report them to the other nodes through a flexible network architecture.</p>
-            <p>With their wireless feature, Wireless Sensor Networks are adapted for deployment in large geographical areas as a cost-efficient solution.</p>
-            <p> While being initially developed for military purpose, WSN have numerous and various applications, and are primarily used for either tracking or monitoring:</p>
-            <ul>
-              <li>Environmental monitoring: Wireless Sensor Networks can monitor environmental variables such as temperature, humidity, atmospheric pressure, air pollution.</li>
-              <li>Factories monitoring: WSN are also widely used in plants to monitor temperature, but also to track products and transportations.</li>
-              <li>Medical monitoring: Sensors can be implanted inside the human body to monitor their health through observing vital signs, electrocardiograms, glucose level.</li>
-              <li>Military tracking: Military uses WSN for battlefield surveillance, through tracking the enemy position for instance.</li>
-            </ul>
-            <p>Unlike conventional networks, often considered as limitless technologies (for instance, scalability issues can be solved by adding wires), Wireless Sensor Networks present both sensing, computation but also communication limited capabilities, majorly due to the small size of the sensor nodes. As we can see, WSN require special efforts regarding the sensor nodes hardware, as well as they need reliable and effective security mechanisms.</p>
-            <p></p>
-            <p></p>
+            <h1>Defense strategies</h1><br>
+            <p>The main goal of security is to provide protection services from all kinds of attacks. Achieving this is difficult, but the complex systems designed with this purpose must rely on a set of requirements that should be able to guarantee scalability, efficiency and reliability. There are are several properties that the foundation of a secure wireless sensor network should be built on.</p>
+            <p><b>Data confidentiality</b> is one of the vital requirements for a wireless security network, due to the purpose of the network itself. The data transmitted throughout the network is generally sensitive, so guaranteeing that the information can not be intercepted by an intruder is essential. It can refer to protecting either a whole message or a part of it from an adversary trying to undertake traffic analysis. Overall, confidentiality is a method of ensuring that only authorized sensor nodes are allowed to access the information.</p>
+            <p><b>Authentication and integrity</b> ensure that the sender and the received data packets can be trusted. An adversary could potentially change messages or inject malicious information, so the authentication and integrity of data are crucial security requirements. Source authentication ensures that the sender is authorized, whereas data authentication ensures that the data has not been anyhow modified during the transmission.</p>
+            <p><b>Availability</b> is another very important aspect, since many WSNs are used for tracking and monitoring purposes. Therefore, they must record and process real-time events and the unavailability of some particular nodes might cause the network to fail in reporting the desired results. Availability ensures that the sensor nodes can retrieve the data secured through confidentiality and authenticity whenever their services are required. Since the battery life of the sensor nodes is limited in WSNs, the network might sometimes be exploited by adversaries exhausting the nodes and making them unavailable to the network.</p>
+            <p><b>Resilience to attacks</b> is required for a network to preserve its functionality when a set of nodes are compromised or not available for a certain time period.</p>
+            <p><b>Survivability</b> refers to the capacity of the network to provide a minimum level of service in the case of attacks, major failures or power loss.</p>
+            <p>Depending on the particular type of WSN in discussion, different properties may have different degrees of importance. Confidentiality and resilience to attacks for instance will always be the core of a WSN used for military tracking purposes, while a weather monitoring system may be more reliant on the availability of the nodes in order to provide high quality results. Therefore, the numerous limitations of WSNs in terms of power, memory and computational capacity force the design of such a network to be heavily reliant on the desired functionality of the system.</p>
           </div>
         </div><!--/span-->
       </div><!--/row-->
