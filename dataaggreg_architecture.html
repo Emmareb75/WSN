@@ -160,10 +160,12 @@
        <div class="span9">
           <div class="hero-unit">
             <h1>Data Aggregation Architecture</h1><br>
-            <p><b>Tree-based architecture:</b> In this structure, the leaf nodes are sources: they provide monitored information to intermediate data aggregators</p>
-            <p><b>Cluster-based architecture:</b></p>
-            <p><b>Chain-based architecture:</b></p>
-            <p><b>Structure free:</b> This architecture basically means that the network does not have a particular architecture or structure - <a href="wsn_networkarchitecture.html">learn more about WSN Architecture</a>.</p>
+            <p>There exist various network structures when using Data Aggregation; all based on the following main architectures:</p>
+            <p><b>Tree-based architecture</b> is a simple architecture. All nodes are organised hierarchically to form am aggregation tree. Source nodes, considered as leaves, send data to the sink node, the root, by the intermediate of data aggregator – each node has a parent to forward its data. This structure is extremely efficient because it allows using shortest path algorithms, implementing minimum spanning trees, and therefore minimising communication and power costs, whilst improving data flow. 
+            </p>
+            <p><b>Cluster-based architecture</b> consists of subdividing sensor nodes into clusters, each cluster comprising a unique local data aggregator: the cluster head. The data is sent from the source nodes to the cluster head that performs aggregation and then transmits the resulting data to the sink node - or an eventual base-station - directly, or via multi hopping through other cluster heads. As previously stated, the benefit of executing Data Aggregation increases if relay-nodes perform the aggregation incrementally whilst the data is being sent. However, using this architecture, aggregation is only executed once during the data transmission.</p>
+
+            <p><b>Chain-based architecture</b> relies on node neighbouring. The farthest node from the sink node initiates chain reaction – similar to the well-known domino effect. At each step, the current node sends its data to its closest neighbour, selected as its successor in the chain. This successor then aggregates its own data with the data received and the chain reaction goes on until it reaches the sink node. The issue when using this structure is that if a single node happens to fail or is attacked, the whole data transmission is compromised.</p>
             <p></p>
             <p></p>
           </div>
