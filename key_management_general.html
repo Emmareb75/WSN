@@ -160,17 +160,17 @@
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
-
        <div class="span9">
           <div class="hero-unit">
-            <h1>Security Principles</h1><br>
-            <p>The main goal of security is to provide protection services from all kinds of attacks. Achieving this is difficult, but the complex systems designed with this purpose must rely on a set of requirements that should be able to guarantee scalability, efficiency and reliability. There are are several properties that the foundation of a secure wireless sensor network should be built on.</p>
-            <p><b>Data confidentiality</b> is one of the vital requirements for a wireless security network, due to the purpose of the network itself. The data transmitted throughout the network is generally sensitive, so guaranteeing that the information can not be intercepted by an intruder is essential. It can refer to protecting either a whole message or a part of it from an adversary trying to undertake traffic analysis. Overall, confidentiality is a method of ensuring that only authorized sensor nodes are allowed to access the information.</p>
-            <p><b>Authentication and integrity</b> ensure that the sender and the received data packets can be trusted. An adversary could potentially change messages or inject malicious information, so the authentication and integrity of data are crucial security requirements. Source authentication ensures that the sender is authorized, whereas data authentication ensures that the data has not been anyhow modified during the transmission.</p>
-            <p><b>Availability</b> is another very important aspect, since many WSNs are used for tracking and monitoring purposes. Therefore, they must record and process real-time events and the unavailability of some particular nodes might cause the network to fail in reporting the desired results. Availability ensures that the sensor nodes can retrieve the data secured through confidentiality and authenticity whenever their services are required. Since the battery life of the sensor nodes is limited in WSNs, the network might sometimes be exploited by adversaries exhausting the nodes and making them unavailable to the network.</p>
-            <p><b>Resilience to attacks</b> is required for a network to preserve its functionality when a set of nodes are compromised or not available for a certain time period.</p>
-            <p><b>Survivability</b> refers to the capacity of the network to provide a minimum level of service in the case of attacks, major failures or power loss.</p>
-            <p>Depending on the particular type of WSN in discussion, different properties may have different degrees of importance. Confidentiality and resilience to attacks for instance will always be the core of a WSN used for military tracking purposes, while a weather monitoring system may be more reliant on the availability of the nodes in order to provide high quality results. Therefore, the numerous limitations of WSNs in terms of power, memory and computational capacity force the design of such a network to be heavily reliant on the desired functionality of the system.</p>
+            <h1>Key Management</h1><br>
+            <p>Since most of the security schemes proposed for wireless sensor networks heavily rely on cryptography, the problem of effectively distributing and further managing the keys needed to ensure secure communication in the network has become one of paramount importance.</p>
+            <p>The term <i>key management</i> thus refers to the task of guaranteeing the key relationships across valid nodes across the network according to desired features such as energy awareness and scalability.</p>
+            <p>Although key management in traditional wireless networks has been a well-studied problem for a long time, the limitations of wireless sensor networks in terms of energy, memory and processing power prevent previous protocols from being used. Moreover, WSNs are generally orders of magnitude larger than traditional networks, require resilience against attacks and have unique communication patterns establishing links between sensor nodes, aggregator nodes, or base stations. Therefore, schemes involving <i>key bootstrapping, network wide shared keys</i>, or <i>master and link keys</i> have been deemed as not good enough to deal with this type of constraints.</p>
+            <h2>Types of Keys</h2>
+            <p>Cryptographic systems generally distinguish two types of keys: <i>symmetric keys</i> and <i>asymmetric keys.</i></p>
+            <p>In an algorithm based on symmetric key cryptography, each of the parties encrypting and decrypting a message has the same key.</p>
+            <p>In contrast, asymmetric keys are two mathematically linked distinct keys used in conjunction during communication and each sensor in the network has a pair of keys: the public one and the private one. Therefore, asymmetric cryptography is also known as <i>public key cryptography</i>.</p>
+            <p>Due to the heavyweight nature of techniques used in public key cryptography (RSA, ECC), symmetric cryptography is the typical choice in wireless sensor networks.</p>
           </div>
         </div><!--/span-->
       </div><!--/row-->
