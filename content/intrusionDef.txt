@@ -1,0 +1,33 @@
+<h1>Definition and different classifications</h1><br>
+<p>Security such as authentication and cryptography enhance the security of sensor
+networks, however this methods cannot deter all possible attacks. Attacks may
+still come from inside the network, we say “inside” in the matter that an
+attacker already possesses the key to the network, so we already see the need
+for another form of defense.
+ID short for Intrusion Detection  gather data from the system operations and
+analysis for verification. ID systems can be classified by using as a point of
+reference the technique they use. Therefore we have: signature based detection,
+specification-based detection, and anomaly detection. Signature based detection
+uses previous data, imagined or copied from mature networks, to prevent a
+similar attack, but this type of detection makes the network vulnerable to
+unknown attacks. However people know exactly what each designed protocol should
+function. Any sensor node that does not follow the protocol specification has a
+very high chance of being malicious. The advantage of the specification-based
+detection is a very low rate of false alarm, but this kind of defense cannot
+detect attacks that do not violate protocol specification. Which leads us to the
+anomaly detection which not only detects incorrect behavior(violates
+specifications), but also detects abnormal behaviors(do not violate
+specification). In simpler words this kind of defense takes the normal
+behaviour of the network, where the network has no malicious attacks, usually
+this is accomplished  through automate training and compares it with the actual
+network behaviour searching for deviations. Even if anomaly detections can
+detect a wider range of attacks compared to previous presented technologies
+they have a drawback and that is the high rate of false alarms.
+We can also classify the ID systems on the basis of their locations. ID systems
+that are operating on a single node are called host-based ID system(IDS), this
+kind of ID is responsible for the security of the host node. ID  systems
+located on gateways nodes or separate monitors analyzes network traffic and
+uses this data to secure parts or the entire network. This ID system is called
+network-based IDS. In present most of the ID systems for WSN are network-base
+and use a combination of specification-based and anomaly-based detection.</p>
+

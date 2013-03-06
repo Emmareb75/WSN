@@ -11,115 +11,9 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="bootstrap/css/font-awesome.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-
-      .navbar-inner, .navbar .btn-navbar {
-        background: #ba0300;
-
-        background: -moz-linear-gradient(top,  #ba0300 0%, #840000 100%);
-
-        background: -webkit-gradient(linear, left top, left bottom,
-        color-stop(0%,#ba0300), color-stop(100%,#840000));
-
-        background: -webkit-linear-gradient(top,  #ba0300 0%,#840000 100%);
-
-        background: -o-linear-gradient(top,  #ba0300 0%,#840000 100%);
-
-        background: -ms-linear-gradient(top,  #ba0300 0%,#840000 100%);
-
-        background: linear-gradient(to bottom,  #ba0300 0%,#840000 100%);
-
-        filter: progid:DXImageTransform.Microsoft.gradient(
-        startColorstr='#ba0300', endColorstr='#840000',GradientType=0 );
-     }
-
-       .navbar .nav .active > a, .navbar .nav .active > a:hover {
-         background: #ba0300;
-       }
-
-      .navbar .nav > li > a {
-         color: white;
-       }
-
-       .navbar .nav > li > a:hover {
-           color: #840000;
-       }
-
-       .navbar .nav .active > a, .navbar .nav .active > a:hover {
-
-           color:white;
-       }
-
-       .nav-list .active > a, .nav-list .active > a:hover {
-         background: #ba0300;
-       }
-
-       .nav-list > li > a:hover{
-         color: #840000;
-       }
-
-       .nav-list > li >a{
-         color: #CE7171;
-       }
-
-       .nav-list > .active > a:hover,
-       .nav-list > .active > a:focus {
-           color: white;
-             text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-               background-color: #840000;
-             }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-
-      .btn-primary:hover,
-      .btn-primary:focus,
-      .btn-primary:active,
-      .btn-primary.active,
-      .btn-primary.disabled,
-      .btn-primary[disabled] {
-          color: white;
-          background-color: black;
-          *background-color: red;
-      }
-
-
-      .btn-primary {
-        background: #ba0300;
-
-        background: -moz-linear-gradient(top,  #ba0300 0%, #840000 100%);
-
-        background: -webkit-gradient(linear, left top, left bottom,
-        color-stop(0%,#ba0300), color-stop(100%,#840000));
-
-        background: -webkit-linear-gradient(top,  #ba0300 0%,#840000 100%);
-
-        background: -o-linear-gradient(top,  #ba0300 0%,#840000 100%);
-
-        background: -ms-linear-gradient(top,  #ba0300 0%,#840000 100%);
-
-        background: linear-gradient(to bottom,  #ba0300 0%,#840000 100%);
-
-        filter: progid:DXImageTransform.Microsoft.gradient(
-        startColorstr='#ba0300', endColorstr='#840000',GradientType=0 );
-      }
-
-      @media (max-width: 980px) {
-        /* Enable use of floated navbar text */
-        .navbar-text.pull-right {
-          float: none;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-      }
-
-    </style>
-
+    <link href="css/color.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
@@ -127,15 +21,12 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
   </head>
 
   <body>
-    <style>
-
-    </style>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
@@ -162,46 +53,47 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Introduction</li>
-              <li><a href="wsn.html">Definition of WSNs</a></li>
-              <li><a href="wsn_networkarchitecture.html">Network Architecture</a></li>
-              <li><a href="wsn_nodearchitecture.html">Node Architecture</a></li>
-              <li><a href="wsn_datacommunication.html">Data Communication</a></li>
-              <li><a href="wsn_motivation.html">Motivation</a></li>
-              <li><a href="wsn_applications.html">Applications</a></li>
-              <li><a href="wsn_limitations.html">Limitations</a></li>
+              <li><a onclick="callFile('wirelessSensorNetworks.txt')">Definition of WSNs</a></li>
+              <li><a onclick="callFile('networkArchitecture.txt')">Network Architecture</a></li>
+              <li><a onclick="callFile('nodeArchitecture.txt')">Node Architecure</a></li>
+              <li><a onclick="callFile('dataCommunication.txt')">Data Communication</a></li>
+              <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
+              <li><a onclick="callFile('applicationsOfWSN.txt')">Applications</a></li>
+              <li><a onclick="callFile('limitationOfWSN.txt')">Limitations</a></li>
               <li class="nav-header">Security</li>
-              <li><a href="security.html">Issues</a></li>
-              <li><a href="principles.html">Principles</a></li>
+              <li><a onclick="callFile('securityIssues.txt')">Issues</a></li>
+              <li><a onclick="callFile('securityPrinciples.txt')">Principles</a></li>
               <li class="nav-header">Key Management</li>
-              <li><a href="key_management_general.html">General</a></li>
-              <li><a href="key_management_schemes.html">Key Management Schemes</a></li>
+              <li><a onclick="callFile('keyManagement.txt')">General</a></li>
+              <li><a onclick="callFile('keyManagementSchemes.txt')">Key Management Schemes</a></li>
               <li class="nav-header">Attacks</li>
-              <li><a href="attacks.html">Classification</a></li>
+              <li><a onclick="callFile('attacks.txt')">Classification</a></li>
               <li class="nav-header">Defense</li>
-              <li><a href="defense_strategies.html">Strategies</a></li>
+	      <li><a onclick="callFile('intrusionDef.txt')"> Intrusion Detection</a></li>
+              <li><a onclick="callFile('intrusionTheoryDet.txt')"> Detecting Techniques in Theory</a></li> 
+              <li><a onclick="callFile('defenseStrategies.txt')">Strategies</a></li>
               <li class="nav-header">Layers</li>
-              <li><a href="layers.html">Definition</a></li>
-              <li><a href="layers_motivation.html">Motivation</a></li>
-              <li><a href="layers_physical.html">Physical Layer</a></li>
-              <li><a href="layers_link.html">Link Layer</a></li>
-              <li><a href="layers_routing.html">Routing Layer</a></li>
-              <li><a href="layers_application.html">Application Layer</a></li>
+              <li><a onclick="callFile('layers.txt')">Definition</a></li>
+              <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
+              <li><a onclick="callFile('physicalLayer.txt')">Physical Layer</a></li>
+              <li><a onclick="callFile('linkLayer.txt')">Link Layer</a></li>
+              <li><a onclick="callFile('routingLayer.txt')">Routing Layer</a></li>
+              <li><a onclick="callFile('applicationLayer.txt')">Application Layer</a></li>
               <li class="nav-header">Data Aggregation</li>
-              <li><a href="dataaggreg.html">Definition</a></li>
-              <li><a href="dataaggreg_protocol.html">Protocol</a></li>
-              <li><a href="dataaggreg_architecture.html">Architecture</a></li>
-              <li><a href="dataaggreg_security.html">Security Issues</a></li>
+              <li><a onclick="callFile('dataAggregation.txt')">Definition</a></li>
+              <li><a onclick="callFile('dataAggregationArchitecture.txt')">Architecture</a></li>
+              <li><a onclick="callFile('interactionsWithSecurityPrinciples.txt')">Security Issues</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
-          <div class="hero-unit">
+          <div id="main" class="hero-unit">
             <h1>Security in Wireless Sensor Networks.</h1>
             <p>This is a simple presentation on Security in Wireless Sensor
             Networks.</p>
             <p><a href="wsn.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
           </div>
-          <div class="row-fluid">
+          <div id="lowerDivs" class="row-fluid">
             <div class="span4">
               <h2>WSN Outline</h2>
               <p>Wireless Sensor Network, often abbreviated as “WSN”, is an
@@ -225,7 +117,7 @@
               <p><a class="btn" href="principles.html">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-->
-          <div class="row-fluid">
+          <div id="lowerDivs1" class="row-fluid">
             <div class="span4">
               <h2>Defense Strategies</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -269,6 +161,35 @@
     <script src="bootstrap/js/bootstrap-collapse.js"></script>
     <script src="bootstrap/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript">
+      var n;
+
+      if(navigator.appName.search('Microsoft') > -1) {
+        n = new ActiveXObject('MSXML2.XMLHTTP');
+      } else {
+        n = new XMLHttpRequest();
+      }
+
+      $('li > a').click(function() {
+        $('li').removeClass();
+        $(this).parent().addClass('active');
+      });
+
+      function callFile(file) {
+        n.open('get', "content/" + file, true);
+        n.onreadystatechange=output;
+        n.send(null);
+      }
+
+      function output() {
+        if(n.readyState == 4) {
+          var el = document.getElementById('main');
+          el.innerHTML = n.responseText;
+          document.getElementById('lowerDivs').innerHTML = null;
+          document.getElementById('lowerDivs1').innerHTML = null;
+        }
+      }
+    </script>
 
   </body>
 </html>

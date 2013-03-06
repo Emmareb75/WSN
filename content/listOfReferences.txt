@@ -1,0 +1,19 @@
+            <h1>List of References</h1><br>
+            <ul>
+              <li>http://discovery.bits-pilani.ac.in/rahul/netsec/netsec-sim-2006-01-dr-rahul-banerjee-bits-pilani-secure.pdf</li>
+              <li>http://www.firewall.cx/general-topics-reviews/security-articles/267-network-security-intro.html</li>
+              <li>http://arxiv.org/pdf/0712.4169.pdf</li>
+              <li>http://www.cs.odu.edu/~mukka/cs772f11/Lectures/day9/c-41.pdf</li>
+              <li>http://www.eecis.udel.edu/~fei/reading/070426.wsn.security.survey.pdf</li>
+              <li>http://www.cs.virginia.edu/~stankovic/psfiles/wsn.pdf</li>
+              <li>http://sensors-and-networks.blogspot.co.uk/2011/02/schematic-digaram-of-sensor-node.html</li>
+              <li>http://webhosting.devshed.com/c/a/Web-Hosting-Articles/Wireless-Sensor-Networks-part-2-Limitations/</li>
+
+              <li>http://www.cs.uni-paderborn.de/index.php?id=1119&L=1</li>
+              <li>http://www.ist-ubisecsens.org/publications/SecuritySolutionsWSN.pdf</li>
+              <li>https://www.novapublishers.com/catalog/product_info.php?products_id=5556</li>
+
+              <li>http://hondo.informatik.uni-freiburg.de/teaching/seminar/adhoc-w09/submissions/DataAggInWSN.pdf</li>
+              <li>http://www.enggjournals.com/ijcse/doc/IJCSE11-03-03-080.pdf</li>
+              <li>http://www.ieee.li/pdf/viewgraphs/ni_introduction_wireless_sensor_networks.pdf</li>
+            </ul>

@@ -1,0 +1,7 @@
+            <h1>Layers</h1><br>
+            <p>In order to comprehend a communication system like in a wireless sensor network, it is useful to classify the communication specifications by its similarity in the function. Such a group of communication is called a layer. You can imagine it like a building. Each layer serves the layer above it, is served by the layer below it. Note that it is mere an abstraction when we talk about WSN; in practice, the majority of the sensor networks are based on the TinyOS# platform- where there is no formal differentiation of layers. Therefore there are many possible ways to split it.
+Common grouping in the network stack in TinyOS(1) is four major layers.</p>
+            <p><ul><li><a href="layers_physical.html">Physical Layer</a></li>
+                   <li><a href="layers_link.html">Link Layer</a></li>
+                   <li><a href="layers_routing.html">Routing Layer</a></li>
+                   <li><a href="layers_application.html">Application Layer</a></li></ul></p>

@@ -1,0 +1,2 @@
+            <h1>Physical Layer</h1><br>
+            <p>This is the lowest layer, therefore the most important; all the layers above are based and dependant on this layer. It provides an interface for establishing, maintaining a physical connection between the nodes so that they can transmit raw bits stream(3) on them.  This bit stream gets converted to a physical signal that can be transmit using a physicial medium. In the case of the wireless sensor network, the type of the physical signal would be radio-wave.</p>
