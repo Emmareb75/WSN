@@ -1,17 +1,58 @@
             <h1>Node Architecture</h1><br>
             <p>Sensor nodes are tiny devices that have to support a variety of operations. Therefore they need to be design with care to optimise both their size and performances. The components of a conventianl sensor node are the following ones:
                 <div class="row-fluid">
-                    <div class="span6"><h3>Microcontroller</h3> The controller comprises a general-purpose processor. Due to the wireless nature of the system, this processor must be adapted to embedded applications and consume very little energy. One of the most commonly used processor in Wireless Sensor Networks is the Atmel ATMega, indeed, by balancing power-consumption and processing-speed, it presents all the qualities required. </div>
+                    <div class="span6">
+                        <h3>Microcontroller</h3>
+                            <p>The controller comprises a general-purpose processor. Due to the wireless nature of the system, this processor must be adapted to embedded applications and consume very little energy. One of the most commonly used processor in Wireless Sensor Networks is the Atmel ATMega: by balancing power-consumption and processing-speed, it presents all the qualities required by the sensor nodes.
+                            </p>
+                    </div>
 
-                    <div class="span6"><h3>Transceiver</h3> that can operate through different states: transmission, reception, idle mode, sleeping mode.</div>
+                    <div class="span6">
+                        <h3>Transceiver</h3>
+                            <p>The transceiver is the communication interface between the sensor node and the rest of the network: it is able to receive bit streams as well as converting data into streams. Wireless Sensor Networks often use radio band, and in this case, the transceiver has a reception frequency-range; it is able to get data transmitted through a specific and limited radio band – also called radio spectrum.
+                            Every transceiver presents different operational states:
+                            <ul>
+                                <li>
+                                    <p><b>Transmit state</b> where the transceiver sends data converted into bit streams to the network, in a definite radio band.</p>
+                                </li>
+                                <li>
+                                    <p><b>Receive state</b> where the gadget expects to receive data and receives it.</p>
+                                </li>
+                                <li>
+                                    <p><b>Idle state</b> where the transceiver is ready to receive data, but does not do so: it means it is inactive. This state is set up by switching off some hardware functions – in the aim of saving energy. However, when being in this state, the transceiver consumes as much as energy than when being in the receive state, therefore it is better to switch it off entirely (sleep state).
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><b>Sleep state</b> where the device is not able to receive something immediately due to significant parts of its hardware being switched off. This state prevent from useless power-consumption.</p>
+                                </li>
+                            </ul>
+                            </p>
+                    </div>
                 </div>
-                <div class="row-fluid">
-                    <div class="span6"><h3>Power Source</h3> that has to provide as much energy as possible at the smallest volume, lightest weight, longest lifetime. </div>
 
-                    <div class="span6"><h3>Memory</h3> that is present under two shapes (internal one (micro-controller, volatile) and external one (flash, not volatile)).</div>
-                </div>
                 <div class="row-fluid">
-                    <div class="span6"><h3>Sensors</h3> that monitor the environnement and collect data about it.</div>
+                    <div class="span6">
+                        <h3>Power Source</h3>
+                            <p>that has to provide as much energy as possible at the smallest volume, lightest weight, longest lifetime.
+                            </p>
+                    </div>
+
+                    <div class="span6">
+                        <h3>Memory</h3>
+                            <p>that is present under two shapes (internal one (micro-controller, volatile) and external one (flash, not volatile)).
+                            </p>
+                    </div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h3>Sensors</h3>
+                            <p>that monitor the environnement and collect data about it.
+                            </p>
+                    </div>
+                    <div class="span6 pagination-centered">
+                        <img src="images/wsn/node_architecture.png">
+                    </div>
                 </div>
                </p>
 
