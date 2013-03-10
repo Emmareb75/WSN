@@ -6,7 +6,7 @@
                     <li><b>A Power Source:</b> that has to provide as much energy as possible at the smallest volume, lightest weight, longest lifetime. </li>
                     <li><b>Memory:</b> that is present under two shapes (internal one (micro-controller, volatile) and external one (flash, not volatile)). </li>
                     <li><b>Several Sensors and Actuators:</b> that monitor the environnement and collect data about it.</li>
-               <ul>
+               </ul>
                </p>
                <p>A brief overwiew of three sensor nodes and their characteristics allows to understand the hardware of sensor nodes in general: 
                     <ul class="thumbnails">
@@ -68,5 +68,7 @@
                     Although the BTNode and the MICA2 Mote features the same microcontroller, power supply, and have a similar size, the BTNode offers a big RAM capacity (244 kB), much greater than the MICA2 Mote's one (2 kB).
                     The MICA2dot, slightly bigger than a  £1 coin, shares the same memory capacity with the MICA2 Mote.
                     <!-- However, its battery life remains limited by a 3 V coin cell, whilst the MICA2 offers 2 x AA batteries. -->
+                </p>
+                <p>
                 </p>
 

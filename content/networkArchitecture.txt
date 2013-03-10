@@ -9,20 +9,21 @@
             </ul>
 
             <h2> Architecture topologies </h2>
-            <img class="pull-right" style="width: 30%;" src="images/wsn/P2P_topology.png">
+            <img class="pull-right" style="width: 30%;" src="images/wsn/P2P.png">
             <h3>Peer-to-Peer topology (P2P)</h3><p>This network topology allows each node to communicate directly – i.e. through no intermediate node - with another. Each node is a peer device able to act as both a “client” and a “server” to the other nodes on the network.</p>
               
               </br>
               </br>
-              <img class="pull-left" style="width: 30%;" src="images/wsn/star_topology.png">
+              <img class="pull-left" style="width: 35%;" src="images/wsn/star.png">
+              </br>
               <h3>Star topology</h3><p>In this case, every sensor node of the network is connected to a same and unique central node that centralise information. Nodes can communicate to each other only using the central node as intermediate node. No direct communication, apart with the central node, can be operated between the network’s nodes. The central node acts as a "server" whilst the other nodes are "clients".</p>
               </br>
               </br>
               </br>
-               <img class="pull-right" style="width: 30%;" src="images/wsn/mesh_topology.png">
+               <img class="pull-right" style="width: 30%;" src="images/wsn/mesh.png">
                <h3>Mesh topology</h3><p>This network allow data to hop from node to node, this allows the network to be self-healing – this means that if one node fails or happens to be compromised, the data communication can still occur using other nodes and reach the desired node.</p>
               </br>
               </br>
               <h3>Tree topology</h3><p>The whole network is hierarchically organised and forms a tree. At the top of the tree, the sink node - here called root node - is the main communication node. The basic sensor nodes are located at the tree leaves and transmit data to intermediate sensor nodes. Those sensor nodes then forward the data to the root node – sink node - using other intermediate nodes. Thus, each leave can only communicates with a specific intermediate node and can not communicate directly with any other node. The Tree network is considered a hybrid of both the Star and Peer to Peer networking topologies.</p>
-              <p><div class="span12 pagination-centered"><img style="width: 80%;" src="images/wsn/tree_topology.png"></div></p>
+              <p><div class="span12 pagination-centered"><img style="width: 80%;" src="images/wsn/tree.png"></div></p>
             </ul>
