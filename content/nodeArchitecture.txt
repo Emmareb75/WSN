@@ -1,24 +1,46 @@
             <h1>Node Architecture</h1><br>
-            <p>Sensor nodes are tiny devices that have to support a variety of operations. Therefore they need to be design with care to optimise both their size and performances. A conventional sensor node comprises the following devices:</p>
+            <p>Sensor nodes are tiny devices that have to support a variety of operations. Therefore they need to be designed with care to optimise both their size and performances. A conventional sensor node comprises the following devices:</p>
                 <div class="row-fluid">
                     <div class="span6">
 
                         <div class="row-fluid">
                         <div class="span12">
                             <h3>Microcontroller</h3>
-                                <p>The controller performs tasks, processes the collected data, and importantly: controls the performance and the functionality of all the other components of the sensor node.
-                                Due to the wireless nature of the system, the processor comprised by the microcontroller must be adapted to embedded applications and consume very little energy. One of the most commonly used processor in Wireless Sensor Networks is the Atmel ATMega: by balancing power-consumption and processing-speed, it presents all the qualities required by the sensor nodes.
-                                <b>// TO DEVELOP</b>
-
-                                </p>
+                            <p>The controller performs tasks, processes the collected data, and, importantly, controls the performance and the functionality of all the other components of the sensor node.
+                            Due to the wireless nature of the system, the processor comprised by the microcontroller must be adapted to embedded applications and consume very little energy. One of the most commonly used processor in Wireless Sensor Networks is the Atmel ATMega: by balancing power-consumption and processing-speed, it presents all the qualities required by the sensor nodes.
+                            <b>// TO DEVELOP</b>
+                            </p>
                         </div> <!--span12-->
                         </div> <!--row-->
 
                         <div class="row-fluid">
                         <div class="span12">
                             <h3>Power Source</h3>
-                                <p>that has to provide as much energy as possible at the smallest volume, lightest weight, longest lifetime.
-                                </p>
+                            <p>The power source must provide has much energy as possible for the sensor node to be efficient. However this is a challenge: supplying energy to the node has to be done at the smallest volume, the lightest weight, and the longest lifetime.
+                            </p>
+                            <p>
+                            Sensor nodes energy supply is made through batteries; on top of the above requirements, batteries have to ensure a voltage stability to avoid DC-to-DC conversion. Indeed, this conversion, consisting of switching from a direct current at a given voltage to another direct current at a different voltage, can damage the other components of the sensor node – those that could not work at the new voltage. Two types of battery are available:  non-rechargeable battery - this is the primary power source of any sensor node and rechargeable.
+                            </p>
+                            <p>
+                            In Wireless Sensor Networks, the rechargeable battery can obviously not be charged by a wired source, and therefore implies that the sensor node use energy scavenging. Scavenging is the process of producing energy through using environmental resources:
+                            <ul>
+                                <li>
+                                    <p>
+                                    The light of the sun can be converted to electricity power by photovoltaic cells and therefore supply a power from 10μW to 15mW per cm<sup>2</sup> of solar cell.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                    The air temperature differences can produce current - about 1V for difference of 5K.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                    Other physical measures such as vibrations, pressure variations (using piezoelectricity) and liquid flows can also generate power, from 10<sup>-1</sup> to 10<sup>4</sup> μW/cm<sup>2</sup> depending on the technique.
+                                    </p>
+                                </li>
+                            </ul>
+                            </p>
                         </div> <!--span12-->
                         </div> <!--row-->
                     </div> <!--span6-->
@@ -64,7 +86,7 @@
                             <p>that is present under two shapes (internal one (micro-controller, volatile) and external one (flash, not volatile)).
                             </p>
                     </div>
-                </div>
+                </div> <!-- row-->
 
                 <br></br>
 
@@ -74,8 +96,7 @@
                         <br></br>
                         <img src="images/wsn/node_architecture.png" width="70%">
                     </div>
-                </div>
-               </p>
+                </div> <!-- row-->
 
                <br></br>
 
