@@ -24,21 +24,5 @@
               </br>
               </br>
               <h3>Tree topology</h3><p>The whole network is hierarchically organised and forms a tree. At the top of the tree, the sink node - here called root node - is the main communication node. The basic sensor nodes are located at the tree leaves and transmit data to intermediate sensor nodes. Those sensor nodes then forward the data to the root node – sink node - using other intermediate nodes. Thus, each leave can only communicates with a specific intermediate node and can not communicate directly with any other node. The Tree network is considered a hybrid of both the Star and Peer to Peer networking topologies.</p>
-              </br>
-              <div class="span12 pagination-centered"><img style="width: 70%;" src="images/wsn/tree_topology.png"></div>
-              </br>
-              </br>
-              </br>
-              </br>
-              </br>
-              </br>
-              </br>
-              </br> 
-              </br>
-              </br>
-              </br>
-              </br>
-              </br>
-              </br> 
-
+              <p><div class="span12 pagination-centered"><img style="width: 80%;" src="images/wsn/tree_topology.png"></div></p>
             </ul>

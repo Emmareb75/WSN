@@ -1,0 +1,36 @@
+            <h1>Node Architecture</h1><br>
+            <p>Sensor nodes are tiny devices that have to support a variety of operations. Therefore they need to be design with care to optimise both their size and perfomances. A conventional sensor node features:
+                <ul>
+                    <li><b>A Microcontroller:</b> that perfoms tasks, processes data and controls the functionnality of other components of the sensor node.</li>
+                    <li><b>A Transceiver:</b> that can operate through different states: transmission, reception, idle mode, sleeping mode.</li>
+                    <li><b>A Power Source:</b> that has to provide as much energy as possible at the smallest volume, lightest weight, longest lifetime. </li>
+                    <li><b>Memory:</b> that is present under two shapes (internal one (micro-controller, volatile) and external one (flash, not volatile)). </li>
+                    <li><b>Several Sensors and Actuators:</b> that monitor the environnement and collect data about it.</li>
+               <ul>
+               </p>
+               <p> Here are some example of well-known sensor nodes:
+                    <ul class="thumbnail">
+                        <li class="span3">
+                            <div class="thumbnail">
+                                <img src="images/wsn/mica2dot.jpg">
+                                <h3>Mica2 Dot</h3>
+                                <p> Test test test</p>
+                            </div>
+                        </li>
+                        <li class="span3">
+                            <div class="thumbnail">
+                                <img src="images/wsn/mica2dot.jpg">
+                                <h3>Mica2 Dot</h3>
+                                <p> Test test2222 test</p>
+                            </div>
+                        </li>
+                        <li class="span3">
+                            <div class="thumbnail">
+                                <img src="images/wsn/mica2dot.jpg">
+                                <h3>Mica2 Dot</h3>
+                                <p> Test fffffftest test</p>
+                            </div>
+                        </li>
+                    </ul>
+                </p>
+
