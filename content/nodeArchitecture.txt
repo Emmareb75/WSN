@@ -1,0 +1,146 @@
+            <h1>Node Architecture</h1><br>
+            <p>Sensor nodes are tiny devices that have to support a variety of operations. Therefore they need to be design with care to optimise both their size and performances. A conventional sensor node comprises the following devices:</p>
+                <div class="row-fluid">
+                    <div class="span6">
+
+                        <div class="row-fluid">
+                        <div class="span12">
+                            <h3>Microcontroller</h3>
+                                <p>The controller performs tasks, processes the collected data, and importantly: controls the performance and the functionality of all the other components of the sensor node.
+                                Due to the wireless nature of the system, the processor comprised by the microcontroller must be adapted to embedded applications and consume very little energy. One of the most commonly used processor in Wireless Sensor Networks is the Atmel ATMega: by balancing power-consumption and processing-speed, it presents all the qualities required by the sensor nodes.
+                                <b>// TO DEVELOP</b>
+
+                                </p>
+                        </div> <!--span12-->
+                        </div> <!--row-->
+
+                        <div class="row-fluid">
+                        <div class="span12">
+                            <h3>Power Source</h3>
+                                <p>that has to provide as much energy as possible at the smallest volume, lightest weight, longest lifetime.
+                                </p>
+                        </div> <!--span12-->
+                        </div> <!--row-->
+                    </div> <!--span6-->
+
+                    <div class="span6">
+                        <h3>Transceiver</h3>
+                            <p>The transceiver is the communication interface between the sensor node and the rest of the network: it is able to receive bit streams as well as converting data into streams. Wireless Sensor Networks often use radio band, and in this case, the transceiver has a reception frequency-range; it is able to get data transmitted through a specific and limited radio band – also called radio spectrum.
+                            Every transceiver presents different operational states:
+                            <ul>
+                                <li>
+                                    <p><b>Transmit state</b> where the transceiver sends data converted into bit streams to the network, in a definite radio band.</p>
+                                </li>
+                                <li>
+                                    <p><b>Receive state</b> where the gadget expects to receive data and receives it.</p>
+                                </li>
+                                <li>
+                                    <p><b>Idle state</b> where the transceiver is ready to receive data, but does not do so: it means it is inactive. This state is set up by switching off some hardware functions – in the aim of saving energy. However, when being in this state, the transceiver consumes as much as energy than when being in the receive state, therefore it is better to switch it off entirely (sleep state).
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><b>Sleep state</b> where the device is not able to receive something immediately due to significant parts of its hardware being switched off. This state prevents from useless power-consumption.</p>
+                                </li>
+                            </ul>
+                            </p>
+                    </div> <!-- span6-->
+                </div> <!-- row-->
+
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h3>Sensors</h3>
+                            <p>that monitor the environnement and collect data about it.
+                                Area of coverage. /
+                                Direction of sensor. (radiates energy or not) /
+                                Passive or active. /
+                                Passive, omnidirectional:light, thermometer, microphones, hygrometer. /
+                                Passive, narrow-beam: Camera /
+                                Active sensors: Radar /
+                            </p>
+                    </div>
+
+                    <div class="span6">
+                        <h3>Memory</h3>
+                            <p>that is present under two shapes (internal one (micro-controller, volatile) and external one (flash, not volatile)).
+                            </p>
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="row-fluid">
+                    <div class="span12 pagination-centered">
+                        <h2> Node Architecture Diagram</h2>
+                        <br></br>
+                        <img src="images/wsn/node_architecture.png" width="70%">
+                    </div>
+                </div>
+               </p>
+
+               <br></br>
+
+               <h2>Examples of Sensor Nodes</h2>
+                <br></br>
+                <p>
+                <ul class="thumbnails">
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <img src="images/wsn/mica2mote.png">
+                            <h3 class="pagination-centered">MICA2 Mote</h3>
+                            <h4 class="pagination-centered">UC Berkeley</h4>
+                            <p>
+                                <ul>
+                                    <li>Controller: Atmel ATMega 128</li>
+                                    <li>Radio Spectrum: ISM (Industrial, Scientific, Medical)</i>
+                                    <li>RAM Capacity: 2 kB </li>
+                                    <li>Flash Memory: 128 kB</li>
+                                    <li>Battery: 2 x AA batteries</li>
+                                    <li>Size (mm): 58 x 32 x 7 (exc. battery)</li>
+                                    <li>Weight (g): 18 (exc. battery)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <img src="images/wsn/mica2dot.png">
+                            <h3 class="pagination-centered">MICA2dot</h3>
+                            <h4 class="pagination-centered">UC Berkeley</h4>
+                            <p>
+                                <ul>
+                                    <li>Controller: Atmel ATMega 128</li>
+                                    <li>Radio Spectrum: ISM (Industrial, Scientific, Medical)</i>
+                                    <li>RAM Capacity: 2 kB </li>
+                                    <li>Flash Memory: 128 kB</li>
+                                    <li>Battery: 3 V button cell</li>
+                                    <li>Size (mm): 25 x 6 (exc. battery)</li>
+                                    <li>Weight (g): 3 (exc. battery) </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <img src="images/wsn/btnodesmall.png">
+                            <h3 class="pagination-centered">BTNode rev3</h3>
+                            <h4 class="pagination-centered">ETH Zurich</h4>
+                            <p class="text-align: justified">
+                                <ul>
+                                    <li>Controller: Atmel ATMega 128</li>
+                                    <li>Radio Spectrum: ISM (Industrial, Scientific, Medical) + Bluetooth</i>
+                                    <li>RAM Capacity: 64 kB +  180 kB</li>
+                                    <li>Flash Memory: 128 kB</li>
+                                    <li>Battery: 2 x AA batteries</li>
+                                    <li>Size (mm): 58.15 x 33 (excl. battery)</li>
+                                    <li>Weight (g): not available</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                Although the BTNode and the MICA2 Mote features the same microcontroller, power supply, and have a similar size, the BTNode offers a big RAM capacity (244 kB), much greater than the MICA2 Mote's one (2 kB).
+                The MICA2dot, slightly bigger than a  £1 coin, shares the same memory capacity with the MICA2 Mote.
+                <!-- However, its battery life remains limited by a 3 V coin cell, whilst the MICA2 offers 2 x AA batteries. -->
+                </p>
+                
+
