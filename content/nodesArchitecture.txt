@@ -9,7 +9,7 @@
                <ul>
                </p>
                <p> Here are some example of well-known sensor nodes:
-                    <ul class="thumbnail">
+                    <ul class="thumbnails">
                         <li class="span3">
                             <div class="thumbnail">
                                 <img src="images/wsn/mica2dot.jpg">

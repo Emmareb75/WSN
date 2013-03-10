@@ -2,3 +2,11 @@
             <p>Wireless Sensor Networks, often abbreviated as “WSN”, is an emerging and fast-growing technology.  Recent advances in Computing, Microelectronics and Communication, as well as the proliferation of “smart” energy-management applications, have caused increasing interest in Wireless Sensor Networks research.</p>
             <p>WSN provide an economic and simple alternative to conventional wired networks. Indeed, conventional networks scalability is often compromised by the cost of wiring new sensors to the existent network. Moreover, WSN allow access to impossible-to-wire areas such as catastrophe, hazardous or restricted areas.</p>
             <p>A Wireless Sensor Network basically consists of a large number of spatially distributed sensor nodes. A WSN usually counts from a few hundreds to thousands of nodes. Those sensor nodes monitor environmental changes, process the collected data and communicate it to the other nodes through the network architecture.</p>
+
+             <h1>Applications & Motivations</h1><br>
+            <p>While being initially developed for military purpose, WSNs are now used widely for tracking or monitoring.</p>
+            <p><b>Environmental monitoring:</b> Wireless Sensor Networks can monitor environmental variables such as temperature, humidity, atmospheric pressure, air pollution, etc...</p>
+            <p><b>Buidling monitoring:</b> WSNs are widely used to monitor temperature in buildings, but also to track factories products and transportations.</p>
+            <p><b>Health care:</b>  Sensors can be implanted inside the human body to monitor their health through observing vital signs, electrocardiograms, glucose level, etc...</p>
+            <p><b>Military tracking:</b> Military uses WSNs for battlefield surveillance, through tracking the enemy position for instance.</p>
+            <p>There are numerous applications and therefore various type of data treated, each of them having specific security requirements such as consistency, reliability, accuracy.</p>
