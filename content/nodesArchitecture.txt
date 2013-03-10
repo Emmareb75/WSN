@@ -8,29 +8,65 @@
                     <li><b>Several Sensors and Actuators:</b> that monitor the environnement and collect data about it.</li>
                <ul>
                </p>
-               <p> Here are some example of well-known sensor nodes:
+               <p>A brief overwiew of three sensor nodes and their characteristics allows to understand the hardware of sensor nodes in general: 
                     <ul class="thumbnails">
-                        <li class="span3">
+                        <li class="span4">
                             <div class="thumbnail">
-                                <img src="images/wsn/mica2dot.jpg">
-                                <h3>Mica2 Dot</h3>
-                                <p> Test test test</p>
+                                <img src="images/wsn/mica2mote.png">
+                                <h3 class="pagination-centered">MICA2 Mote</h3>
+                                <h4 class="pagination-centered">UC Berkeley</h4>
+                                <p>
+                                    <ul>
+                                        <li>Controller: Atmel ATMega 128</li>
+                                        <li>Radio Spectrum: ISM (Industrial, Scientific, Medical)</i>
+                                        <li>RAM Capacity: 2 kB </li>
+                                        <li>Flash Memory: 128 kB</li>
+                                        <li>Battery: 2 x AA batteries</li>
+                                        <li>Size (mm): 58 x 32 x 7 (exc. battery)</li>
+                                        <li>Weight (g): 18 (exc. battery)</li>
+                                    </ul>
+                                </p>
                             </div>
                         </li>
-                        <li class="span3">
+                        <li class="span4">
                             <div class="thumbnail">
-                                <img src="images/wsn/mica2dot.jpg">
-                                <h3>Mica2 Dot</h3>
-                                <p> Test test2222 test</p>
+                                <img src="images/wsn/mica2dot.png">
+                                <h3 class="pagination-centered">MICA2dot</h3>
+                                <h4 class="pagination-centered">UC Berkeley</h4>
+                                <p>
+                                    <ul>
+                                        <li>Controller: Atmel ATMega 128</li>
+                                        <li>Radio Spectrum: ISM (Industrial, Scientific, Medical)</i>
+                                        <li>RAM Capacity: 2 kB </li>
+                                        <li>Flash Memory: 128 kB</li>
+                                        <li>Battery: 3 V button cell</li>
+                                        <li>Size (mm): 25 x 6 (exc. battery)</li>
+                                        <li>Weight (g): 3 (exc. battery) </li>
+                                    </ul>
+                                </p>
                             </div>
                         </li>
-                        <li class="span3">
+                        <li class="span4">
                             <div class="thumbnail">
-                                <img src="images/wsn/mica2dot.jpg">
-                                <h3>Mica2 Dot</h3>
-                                <p> Test fffffftest test</p>
+                                <img src="images/wsn/btnodesmall.png">
+                                <h3 class="pagination-centered">BTNode rev3</h3>
+                                <h4 class="pagination-centered">ETH Zurich</h4>
+                                <p class="text-align: justified">
+                                    <ul>
+                                        <li>Controller: Atmel ATMega 128</li>
+                                        <li>Radio Spectrum: ISM (Industrial, Scientific, Medical) + Bluetooth</i>
+                                        <li>RAM Capacity: 64 kB +  180 kB</li>
+                                        <li>Flash Memory: 128 kB</li>
+                                        <li>Battery: 2 x AA batteries</li>
+                                        <li>Size (mm): 58.15 x 33 (excl. battery)</li>
+                                        <li>Weight (g): not available</li>
+                                    </ul>
+                                </p>
                             </div>
                         </li>
                     </ul>
+                    Although the BTNode and the MICA2 Mote features the same microcontroller, power supply, and have a similar size, the BTNode offers a big RAM capacity (244 kB), much greater than the MICA2 Mote's one (2 kB).
+                    The MICA2dot, slightly bigger than a  £1 coin, shares the same memory capacity with the MICA2 Mote.
+                    <!-- However, its battery life remains limited by a 3 V coin cell, whilst the MICA2 offers 2 x AA batteries. -->
                 </p>
 
