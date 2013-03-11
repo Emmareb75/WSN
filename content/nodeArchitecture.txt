@@ -5,7 +5,7 @@
 
                         <div class="row-fluid">
                         <div class="span12">
-                            <h3>Microcontroller</h3>
+                            <h2>Microcontroller</h2>
                             <p>The controller performs tasks, processes the collected data, and, importantly, controls the performance and the functionality of all the other components of the sensor node. Especially, it comprises the internal memory of the sensor node, as well as a processor.
                             Due to the wireless nature of the system, the processor must be adapted to embedded applications and consume very little energy.
                             Amongst various processors the Atmel ATMega is often used on sensor nodes: by balancing power-consumption and processing-speed, it presents all the qualities required.
@@ -14,13 +14,15 @@
                         </div> <!--span12-->
                         </div> <!--row-->
 
+                        <br>
+
                         <div class="row-fluid">
                         <div class="span12">
-                            <h3>Power Source</h3>
+                            <h2>Power Source</h2>
                             <p>The power source must provide has much energy as possible for the sensor node to be efficient. However this is a challenge: supplying energy to the node has to be done at the smallest volume, the lightest weight, and the longest lifetime.
                             </p>
                             <p>
-                            Sensor nodes energy supply is made through batteries; on top of the above requirements, batteries have to ensure a voltage stability to avoid DC-to-DC conversion. Indeed, this conversion, consisting of switching from a direct current at a given voltage to another direct current at a different voltage, can damage the other components of the sensor node – those that could not work at the new voltage. Two types of battery are available:  non-rechargeable battery - this is the primary power source of any sensor node and rechargeable.
+                            Sensor nodes energy supply is made through batteries; on top of the above requirements, batteries have to ensure a voltage stability to avoid DC-to-DC conversion. Indeed, this conversion, consisting of switching from a direct current at a given voltage to another direct current at a different voltage, can damage the other components of the sensor node – those that could not work at the new voltage. Two types of battery are available:  non-rechargeable and rechargeable.
                             </p>
                             <p>
                             In Wireless Sensor Networks, the rechargeable battery can obviously not be charged by a wired source, and therefore implies that the sensor node use energy scavenging. Scavenging is the process of producing energy through using environmental resources:
@@ -47,31 +49,59 @@
                     </div> <!--span6-->
 
                     <div class="span6">
-                        <h3>Transceiver</h3>
-                            <p>The transceiver is the communication interface between the sensor node and the rest of the network: it is able to receive bit streams as well as converting data into streams. Wireless Sensor Networks often use radio band, and in this case, the transceiver has a reception frequency-range; it is able to get data transmitted through a specific and limited radio band – also called radio spectrum.
-                            Every transceiver presents different operational states:
-                            <ul>
-                                <li>
-                                    <p><b>Transmit state</b> where the transceiver sends data converted into bit streams to the network, in a definite radio band.</p>
-                                </li>
-                                <li>
-                                    <p><b>Receive state</b> where the gadget expects to receive data and receives it.</p>
-                                </li>
-                                <li>
-                                    <p><b>Idle state</b> where the transceiver is ready to receive data, but does not do so: it means it is inactive. This state is set up by switching off some hardware functions – in the aim of saving energy. However, when being in this state, the transceiver consumes as much as energy than when being in the receive state, therefore it is better to switch it off entirely (sleep state).
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h2>Transceiver</h2>
+                                    <p>The transceiver is the communication interface between the sensor node and the rest of the network: it is able to receive bit streams as well as converting data into streams. Wireless Sensor Networks often use radio band, and in this case, the transceiver has a reception frequency-range; it is able to get data transmitted through a specific and limited radio band – also called radio spectrum.
+                                    Every transceiver presents different operational states:
+                                    <ul>
+                                        <li>
+                                            <p><b>Transmit state</b> where the transceiver sends data converted into bit streams to the network, in a definite radio band.</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Receive state</b> where the gadget expects to receive data and receives it.</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Idle state</b> where the transceiver is ready to receive data, but does not do so: it means it is inactive. This state is set up by switching off some hardware functions – in the aim of saving energy. However, when being in this state, the transceiver consumes as much as energy than when being in the receive state, therefore it is better to switch it off entirely (sleep state).
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b>Sleep state</b> where the device is not able to receive something immediately due to significant parts of its hardware being switched off. This state prevents from useless power-consumption.</p>
+                                        </li>
+                                    </ul>
                                     </p>
-                                </li>
-                                <li>
-                                    <p><b>Sleep state</b> where the device is not able to receive something immediately due to significant parts of its hardware being switched off. This state prevents from useless power-consumption.</p>
-                                </li>
-                            </ul>
-                            </p>
+                                </div> <!--span12-->
+                            </div> <!--row-->
+
+                        <br>
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h2>Memory</h2>
+                                    <p>The memory of a sensor node generally consists of two shapes of memory: one internal, the other external.</p>
+                                    <ul>
+                                        <li><b>Internal memory:</b>
+                                            <p>
+                                            It is a Random Access Memory (RAM), therefore it is volatile: when not powered, its content is erased.
+                                            </p>
+                                        </li>
+                                        <li><b>External memory:</b>
+                                            <p>In most of the cases, the external memory is Flash Memory, coupled with EEPROM (Electrically Erasable Programmable Read-Only Memory – programmed and erased using field electron emission). Those two external memories are non-volatile, i.e. they retain the stored information even when not powered.
+                                            </p>
+                                            <p>
+                                            The difference relies on the erasing process of their content: in both case, the data is stored using quantum cells to trap electrons. When the bit stored is one, an electron is present in the quantum cell. When the bit stored corresponds to 0, no electron is trapped.
+                                            When erasing EEPROM content, the only erased cells are the one containing electrons (bit = 1) that must have the logic value 0.  In the case of Flash Memory, every cell is erased, whether it contains an electron or not.
+                                            This explains that Flash Memory is much faster than EEPROM and therefore the biggest proportion of the external memory will be Flash Memory (typically about 128 kB against 4 kB for EEPROM)
+                                            </p>
+                                        </li>
+                            </div>
+                        </div> <!--row-->
                     </div> <!-- span6-->
                 </div> <!-- row-->
 
                 <div class="row-fluid">
                     <div class="span6">
-                        <h3>Sensors</h3>
+                        <h2>Sensors</h2>
                             <p>that monitor the environnement and collect data about it.
                                 Area of coverage. /
                                 Direction of sensor. (radiates energy or not) /
@@ -80,25 +110,6 @@
                                 Passive, narrow-beam: Camera /
                                 Active sensors: Radar /
                             </p>
-                    </div>
-
-                    <div class="span6">
-                        <h3>Memory</h3>
-                            <p>The memory of a sensor node generally consists of two shapes of memory: one internal, the other external.</p>
-                            <ul>
-                                <li><b>Internal memory:</b>
-                                    <p>
-                                    It is a Random Access Memory (RAM), therefore it is volatile: when not powered, its content is erased.
-                                    </p>
-                                </li>
-                                <li><b>External memory:</b>
-                                    <p>In most of the cases, the external memory is Flash Memory, coupled with EEPROM (Electrically Erasable Programmable Read-Only Memory – programmed and erased using field electron emission). Those two external memories are non-volatile, i.e. they retain the stored information even when not powered.
-                                    The difference relies on the erasing process of their content: in both case, the data is stored using quantum cells to trap electrons. When the bit stored is one, an electron is present in the quantum cell. When the bit stored corresponds to 0, no electron is trapped.
-                                    When erasing EEPROM content, the only erased cells are the one containing electrons (bit = 1) that must have the logic value 0.  In the case of Flash Memory, every cell is erased, whether it contains an electron or not.
-                                    This explains that Flash Memory is much faster than EEPROM and therefore the biggest proportion of the external memory will be Flash Memory (typically about 128 kB against 4 kB for EEPROM)
-                                    </p>
-                                </li>
-
                     </div>
                 </div> <!-- row-->
 
@@ -114,7 +125,7 @@
 
                <br></br>
 
-               <h2>Examples of Sensor Nodes</h2>
+               <h2 class="pagination-centered">Examples of Sensor Nodes</h2>
                 <br>
                 <p>
                 <ul class="thumbnails">

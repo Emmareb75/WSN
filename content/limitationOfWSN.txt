@@ -1,3 +1,5 @@
             <h1>Limitation of WSNs</h1><br>
             <p>Unlike conventional networks, often considered as limitless, Wireless Sensor Networks present both sensing, computation but also communication limited capabilities, majorly due to the small size of the sensor nodes.</p>
             <p> WSN require special efforts regarding the sensor nodes hardware, as well as they need reliable and effective security mechanisms.</p>
+            Redundancy when overlapping of area coverage + not same range of coverage also causes pbs + hardware limitation (battery consumption by FLASH memory, weight and size of components, speed of processing data, cost of performing cryptography, etc...) + ..
+
