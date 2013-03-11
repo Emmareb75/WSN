@@ -1,8 +1,8 @@
  <h1>Proposed Re-keying Mechanism</h1><br>
+            <img class="pull-right" style="width: 50%;" src="images/key_management/rekeying_flowchart.png">
             <p>A proposed re-keying mechanism relies on the classic initial random key pre-distribution phase, where each node is assigned a key ring prior to the deployment.</p>
             <h2>The Basic Idea</h2>
             <p>The basic idea proposes utilizing the unused keys from a node's key ring, with the aim of re-keying involving the base station or key managing server to a minimal degree in the process.</p>
             <p>The construction of the new key rings involves the key server picking each key in a node's key ring randomly and then determining its global frequency over all the key rings the server has. The server then makes the final key rings according to the frequency ranking, putting the most frequent key at the top of the ring and the least frequent one at the bottom of the ring. The new rings are deployed in the sensors and the WSN is ready to operate securely again.</p>
             <p>The following figures present a simple flowchart of the re-keying mechanism along with a theoretical expectation of the number of key-index comparisons on a revocation.</p>
-            <img class="pull-left" style="width: 50%;" src="images/key_management/rekeying_flowchart.png">
-            <img class="pull-right" style="width: 50%;" src="images/key_management/revocation.png">
+            <img class="pull-left" style="width: 50%;" src="images/key_management/revocation.png">
