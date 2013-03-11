@@ -123,6 +123,23 @@
                                             <img src="images/wsn/uniform_cover.png" style="width:90%;" name="image" onmouseover="image.src='images/wsn/uniform_cover_numbers.png'" onmouseout="image.src='images/wsn/uniform_cover.png'"/>
                                         </div>
                                     </div> <!--row-->
+
+                                    <br></br>
+
+                                     <div class="row-fluid">
+                                        <div class="span8 pagination-centered">
+                                            <img style="width: 80%;" src="images/wsn/not_uniform_cover.png"> 
+                                        </div>
+                                        <div class="span4">
+                                            <p>
+                                            <br></br>
+                                            Moreover, contrary to the general idea we have of coverage area, it is important to stress that this region is not always uniform - in the sense that is does not always cover a circular region around the sensor node.
+                                            </p>
+                                        </div>
+                                    </div> <!--row-->
+
+                                    <p>
+                                    </p>
                                 </li>
                             </ul>
                     </div>
