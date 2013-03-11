@@ -100,14 +100,29 @@
                 </div> <!-- row-->
 
                 <div class="row-fluid">
-                    <div class="span6">
+                    <div class="span12">
                         <h2>Sensors</h2>
                             <p>A node features one or several sensors. Each sensor monitors environment variables and their variations, and has specific characteristic that may vary from one sensor to another, within the same network.
                             </p>
                             <ul>
-                                <li><b>Area of coverage: The area of coverage determines the area in which the sensor can sense and feel its environment and its modifications. The sensor won’t detect events happening outside of the area of coverage and therefore no data about those events will be collected.</b>
-                                    <p>
-                                    </p>
+                                <li><b>Area of coverage:</b>
+                                    <p> The area of coverage determines the area in which the sensor can sense and feel its environment and its modifications. The sensor won’t detect events happening outside of the area of coverage and therefore no data about those events will be collected.</p>
+                                    <br></br>
+                                    <img style="width: 70%;" src="images/wsn/detection.png"> 
+
+                                     <br></br>
+
+                                    <div class="row-fluid">
+                                        <div class="span4">
+                                            <p>
+                                            <br></br><br></br>
+                                            Depending on the network architecture and the way the sensor nodes are spatially organised, the coverage area of several sensors can overlap events one or several times, as illustrated by the figure. Overlapping coverage areas causes redundancy when collecting the network data.
+                                            </p>
+                                        </div>
+                                         <div class="span8 pagination-centered">
+                                            <img src="images/wsn/uniform_cover.png" style="width:90%;" name="image" onmouseover="image.src='images/wsn/uniform_cover_numbers.png'" onmouseout="image.src='images/wsn/uniform_cover.png'"/>
+                                        </div>
+                                    </div> <!--row-->
                                 </li>
                             </ul>
                     </div>
@@ -119,7 +134,7 @@
                     <div class="span12 pagination-centered">
                         <h2> Node Architecture Diagram</h2>
                         <br> 
-                        <img src="images/wsn/node_architecture.png" width="70%">
+                        <img src="images/wsn/node_architecture.png" width="80%">
                     </div>
                 </div> <!-- row-->
 
