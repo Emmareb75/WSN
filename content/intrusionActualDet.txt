@@ -1,0 +1,27 @@
+<h1>Actual detection techniques</h1><br>
+<p>One can find the violations listed above by analyzing traffic features and
+network traffic. The following  ID techniques are all based on analyzing
+traffic features, however they do not implement directly the rules above but
+instead use anomaly detection based on preknown specification, learned
+knowledge or even a form of artificial intelligence.
+In ref. [1] we find a proposed specification-based ID to detect attacks on
+AODV(Ad hoc on-demand distance vector, meaning it establishes a route to
+destination only on demand) routing. In this approach they use finite state
+machines to specify correct AODV behavior and use distribute network monitors
+to detect runtime violation of the AODV specification. Ref.[2] also proposes a
+specification-based ID concerning routing attacks, but opposed to the previous
+approach they use state machines to specify DSR(dynamic source routing similar
+to an AODV but it uses source routing meaning it allows the sender to partially
+or completely specify the route of the package) routing behavior instead of
+AODV routing behavior. Besides that the protocol can specify the sequence
+relation for some special kind of packets(e.g., routing messages).  This
+sequence relations among general packets can also be learned automatically,
+therefore attacks can be detected by comparing the runtime traffic with the
+learned one.
+Ref.[4] proposes a different traffic feature to be analysed. In two different
+buffers, a long term receiver and a short term intrusion, where it records the
+arrival time for each package under observation, it verifies them against the
+mean and a standard deviation of the interarrival time between the two buffers
+respectively. It is considered a anomalous arrival if the data in the two
+buffers deviate a lot.</p>
+

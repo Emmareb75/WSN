@@ -1,0 +1,19 @@
+<h1>ID System Evaluation</h1><br>
+
+<p>There are two common measurements for evaluating the performance of a ID
+system: the false positive rate(FP) and false negative rate(FN).  FP is defined
+as the proportion of normal events erroneously classified as abnormal. FN is
+defined as the proportion of abnormal events erroneously classified as normal.
+It is trivial to say that an ideal ID system should have both FP and FN as low
+as possible, but in practice this scenario is not quite possible. In real ID
+system a trade-off between the two measurements is usually made, given that the
+two measurements influence in opposite ways when we adjust the system. Besides
+FP and FP we are also concerned with the overhead communication by Id system.
+We already know the WSN is extremely resource-constrained thus we would like to
+introduce as little overhead as possible. Although WSN are designed for low
+rate communication a broad range of real-time application, such as highway
+traffic coordination, medical care and even video transmission, have been
+introduced. When an ID system is supposed to perform on such real-time systems
+it needs to fulfill the real-time requirement so it will not cause performance
+issues to the application.</p>
+
