@@ -2,12 +2,19 @@
 <p>Security such as authentication and cryptography enhance the security of sensor
 networks, however this methods cannot deter all possible attacks. Attacks may
 still come from inside the network, we say “inside” in the matter that an
-attacker already possesses the key to the network, so we already see the need
-for another form of defense.
-ID short for Intrusion Detection  gather data from the system operations and
-analysis for verification. ID systems can be classified by using as a point of
-reference the technique they use. Therefore we have: signature based detection,
-specification-based detection, and anomaly detection. Signature based detection
+attacker already possesses acceses to the network, therefore we see the need
+for yet another form of defense.
+</p>
+<p>
+ID short for Intrusion Detection  gather data from the system operations at
+runtime and
+analysis for verification.
+</p>
+<p>
+ID systems can be classified using as a point of
+reference the technique they use. Therefore we have: <b>signature based
+detection</b>,
+<b>specification-based detection</b>, and <b>anomaly detection</b>.Signature based detection
 uses previous data, imagined or copied from mature networks, to prevent a
 similar attack, but this type of detection makes the network vulnerable to
 unknown attacks. However people know exactly what each designed protocol should
