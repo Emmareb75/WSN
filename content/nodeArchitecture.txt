@@ -38,6 +38,16 @@
             <h2>Sensors</h2>
                 <p>A node features one or several sensors. Each sensor monitors environment variables and their variations, and has specific characteristic that may vary from one sensor to another, within the same network.
                 </p>
+                <p> Sensors are classified withing three categories:
+                    <ul>
+                        <li><b>Passive Omnidirectional</b><p></p>
+                        </li>
+                        <li><b>Passive Narrow-Beam</b><p></p>
+                        </li>
+                        <li><b>Active</b><p></p>
+                        </li>
+                    </ul>
+                </p>
                 <ul>
                     <li><b>Area of coverage:</b>
                         <p> The area of coverage determines the area in which the sensor can sense and feel its environment and its modifications. The sensor won’t detect events happening outside of the area of coverage and therefore no data about those events will be collected.</p>
