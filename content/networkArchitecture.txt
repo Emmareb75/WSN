@@ -15,7 +15,7 @@
               <div class="span6 pagination-centered">
                 <h3>Peer-to-Peer (P2P)</h3><p>This network topology allows each node to communicate directly – i.e. through no intermediate node - with another. Each node is a peer device able to act as both a “client” and a “server” to the other nodes on the network.</p>
                 <br></br>
-                <img style="width: 80%;" src="images/wsn/P2P.png">
+                <img style="width: 80%;" src="images/wsn/p2p.png">
               </div>
               <div class="span6 pagination-centered">
                 <h3>Star</h3><p>In this case, every sensor node of the network is connected to a same and unique central node that centralise information. Nodes can communicate to each other only using the central node as intermediate node. No direct communication, apart with the central node, can be operated between the network’s nodes. The central node acts as a "server" whilst the other nodes are "clients".</p>
