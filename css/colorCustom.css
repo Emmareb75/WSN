@@ -27,10 +27,12 @@ p > a:hover {
 }
 
 .hero-unit {
-  margin-top: -60px;
+  margin-top: -20px;
   background: none;
   padding-top: 0;
 }
+
+
 
 .navbar-inner,
 .navbar .btn-navbar {
