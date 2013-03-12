@@ -2,32 +2,39 @@
             <p>To understand the global architecture of a WSN, it is essential to first enlighten the different types of nodes comprised by Wireless Sensor Networks and to understand their respective role.</p>
             <h2>Node Roles</h2>
             <div class="row-fluid">
-              <div class="span5"><p><b>Basic Sensor Nodes: </b>those nodes features only restricted functions: they are able to monitor data and communicate it to the other nodes.</p></div>
-              <div class="span6 offset1"><p><b>Data Aggregators: </b>they are sensor nodes with the additional features that allow them collect data from their peer nodes and to perform <a href="dataaggreg.html">aggregation</a> and computations on it.</p></div>
+              <div class="span6"><p><b>Basic Sensor Nodes: </b>those nodes features only restricted functions: they are able to monitor data and communicate it to the other nodes.</p></div>
+              <div class="span6"><p><b>Data Aggregators: </b>they are sensor nodes with the additional features that allow them collect data from their peer nodes and to perform <a href="dataaggreg.html">aggregation</a> and computations on it.</p></div>
             </div>
             <div class="row-fluid">
-              <div class="span5"><p><b>Data Sink Nodes: </b>are the nodes in the network that collect all the network data and transmit it for further processing.</p></div>
-              <div class="span6 offset1"><p><b>Data Gateways: </b>provide routing from a network to other networks; to be exact, they are responsible of allowing access from the outside, or from sub-networks, to the WSN and vice-versa. When a network does not feature sub-networks, the gateway node is also the sink node.</p></div>
+              <div class="span6"><p><b>Data Sink Nodes: </b>are the nodes in the network that collect all the network data and transmit it for further processing.</p></div>
+              <div class="span6"><p><b>Data Gateways: </b>provide routing from a network to other networks; to be exact, they are responsible of allowing access from the outside, or from sub-networks, to the WSN and vice-versa. When a network does not feature sub-networks, the gateway node is also the sink node.</p></div>
             </div>
 
             <h2> Architecture topologies </h2>
             <div class="row-fluid">
-              <div class="span5 pagination-centered">
+              <div class="span6 pagination-centered">
                 <h3>Peer-to-Peer (P2P)</h3><p>This network topology allows each node to communicate directly – i.e. through no intermediate node - with another. Each node is a peer device able to act as both a “client” and a “server” to the other nodes on the network.</p>
+                <br></br>
                 <img style="width: 80%;" src="images/wsn/P2P.png">
               </div>
-              <div class="span6 pagination-centered offset1">
+              <div class="span6 pagination-centered">
                 <h3>Star</h3><p>In this case, every sensor node of the network is connected to a same and unique central node that centralise information. Nodes can communicate to each other only using the central node as intermediate node. No direct communication, apart with the central node, can be operated between the network’s nodes. The central node acts as a "server" whilst the other nodes are "clients".</p>
-                <img style="width: 50%;" src="images/wsn/star.png">
+                <img style="width: 55%;" src="images/wsn/star.png">
               </div>
             </div>
             <br></br>
             <div class="row-fluid">
-              <div class="span5 pagination-centered">
-                 <h3>Mesh</h3><p>This network allow data to hop from node to node, this allows the network to be self-healing – this means that if one node fails or happens to be compromised, the data communication can still occur using other nodes and reach the desired node.</p>
-                 <img style="width: 80%;" src="images/wsn/mesh.png">
+              <div class="span6 pagination-centered">
+                 <h3>Mesh</h3>
+                 <p>
+                  Mesh networking relies on the collaboration between the nodes of a network when transmitting data: each node is connected to every other sensor node of the network. In other terms, on top of handling its own data, each sensor node must be a relay for all the other nodes.
+                </p>
+                 <p>
+                  This configuration allows data to hop from node to another a gives to the network a significant quality: the one to be self-healing and therefore reliable. This means that if one node fails or happens to be compromised, the data communication can still occur using other nodes and reach the desired node.
+                </p>
+                 <img style="width: 62%;" src="images/wsn/mesh.png">
               </div>
-                 <div class="span6 pagination-centered offset1">
+                 <div class="span6 pagination-centered">
                     <h3>Tree</h3><p>The whole network is hierarchically organised and forms a tree. At the top of the tree, the sink node - here called root node - is the main communication node. The basic sensor nodes are located at the tree leaves and transmit data to intermediate sensor nodes. Those sensor nodes then forward the data to the root node – sink node - using other intermediate nodes. Thus, each leave can only communicates with a specific intermediate node and can not communicate directly with any other node. The Tree network is considered a hybrid of both the Star and Peer to Peer networking topologies.</p>
                     <img style="width: 100%;" src="images/wsn/tree.png">
                 </div>

@@ -116,7 +116,7 @@
                                         <div class="span4">
                                             <p>
                                             <br></br><br></br>
-                                            Depending on the network architecture and the way the sensor nodes are spatially organised, the coverage area of several sensors can overlap events one or several times, as illustrated by the figure. Overlapping coverage areas causes redundancy when collecting the network data.
+                                            Depending on the network architecture and the way the sensor nodes are spatially organised, the coverage area of several sensors can overlap events one or several times, as illustrated by the figure. Overlapping coverage areas causes spatial redundancy: i.e. it is possible to obtain information for a specific location from different sources<sup>[1]</sup>
                                             </p>
                                         </div>
                                          <div class="span8 pagination-centered">
@@ -133,7 +133,7 @@
                                         <div class="span4">
                                             <p>
                                             <br></br>
-                                            Moreover, contrary to the general idea we have of coverage area, it is important to stress that this region is not always uniform - in the sense that is does not always cover a circular region around the sensor node.
+                                            Moreover, contrary to the general idea we have of coverage area, it is important to stress that this region is not always uniform, in the sense that is does not always cover a circular region around the sensor node.
                                             </p>
                                         </div>
                                     </div> <!--row-->
