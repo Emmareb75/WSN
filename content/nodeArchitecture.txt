@@ -36,8 +36,10 @@
                         </ul>
 
             <h2>Sensors</h2>
+            <h3>From Analogue to Digital</h3>
+                <p>A node features one or several sensors. Each sensor monitors environment variables and their variations, and produces a continuous analogue signal with the sensed data. However, sensor nodes processor works only on digital signal. Thus the sensor must be coupled with an Analogue-to-Digital Converter (ADC) to convert the data so the processor can further process it.</p> 
+
             <h3> Different types of sensors</h3>
-                <p>A node features one or several sensors. Each sensor monitors environment variables and their variations, and produces a continuous analogue signal with the sensed data.
                 Sensors are classified withing three categories: <i>passive omnidirectional</i>, such as lights, thermometers, or microphones; <i>passive narrow-beam</i>, for instance, cameras; and <i>active</i> like radars or sonars.
                     <div class="row-fluid">
                         <div class="span12">
