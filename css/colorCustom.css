@@ -18,12 +18,12 @@ p > a:hover {
 
 @font-face {
  font-family: "coolvetica";
- src: url("css/font/coolvetica.ttf");
+ src: url("font/coolvetica.ttf");
 }
 
 @font-face {
  font-family: "coolvetica";
- src: url("css/font/coolvetica.eot");
+ src: url("font/coolvetica.eot");
 }
 
 .hero-unit {

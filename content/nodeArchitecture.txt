@@ -36,71 +36,90 @@
                         </ul>
 
             <h2>Sensors</h2>
-                <p>A node features one or several sensors. Each sensor monitors environment variables and their variations, and has specific characteristic that may vary from one sensor to another, within the same network.
+            <h3>From Analogue to Digital</h3>
+                <p>A node features one or several sensors. Each sensor monitors environment variables and their variations, and produces a continuous analogue signal with the sensed data. However, sensor nodes processor works only on digital signal. Thus the sensor must be coupled with an Analogue-to-Digital Converter (ADC) to convert the data so the processor can further process it.</p> 
+
+            <h3> Different types of sensors</h3>
+                Sensors are classified withing three categories: <i>passive omnidirectional</i>, such as lights, thermometers, or microphones; <i>passive narrow-beam</i>, for instance, cameras; and <i>active</i> like radars or sonars.
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="span4 offset1">
+                            <p><b>Passive sensors</b> monitor their environment without interacting with it - they don't need to radiate energy to collect data. They are self-powered and require energy only to amplify their analogue signal.</p>
+                            </div>
+                            <div class="span4 offset2">
+                                <p><b>Active sensors</b>, unlike passive sensors, probe the environment using for instance a radar or a sonar. Those sensors are power consuming because they require to be continuously powered.</p>
+                            </div> 
+                           
+                           <div class="span1"></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="span4 offset1">
+                            <p><b>Narrow-Beam sensors</b>, at the opposite, have a precise notion of the direction of their measurments.</p>
+                            </div>
+                            <div class="span4 offset2">
+                            <p><b>Omnidirectional sensors</b> are unable to know their direction. They have no notion of it.</p></div> 
+                            <div class="span1"></div>                
+                        </div>
+                    </div>
                 </p>
-                <p> Sensors are classified withing three categories:
-                    <ul>
-                        <li><b>Passive Omnidirectional</b><p></p>
-                        </li>
-                        <li><b>Passive Narrow-Beam</b><p></p>
-                        </li>
-                        <li><b>Active</b><p></p>
-                        </li>
-                    </ul>
-                </p>
-                <ul>
-                    <li><b>Area of coverage:</b>
-                        <p> The area of coverage determines the area in which the sensor can sense and feel its environment and its modifications. The sensor won’t detect events happening outside of the area of coverage and therefore no data about those events will be collected.</p>
-                        <br></br>
+
+                <h3> Area of Coverage</h3>
+                <p> Sensors within a same Wireless Sensor Network are also distinguishable on a specific characteristic that may vary from one sensor to another: their area of coverage.
+                The area of coverage determines the area in which the sensor can sense and feel its environment and its modifications. The sensor won’t detect events happening outside of the area of coverage and therefore no data about those events will be collected.</p>
+                <br>
+                <div class="row-fluid">
+                    <div class="span11 pagination-centered">
                         <img style="width: 70%;" src="images/wsn/detection.png"> 
+                    </div>
+                    <div class="span1"></div>
+                </div>
 
-                         <br></br>
+                 <br></br>
 
-                        <div class="row-fluid">
-                            <div class="span4">
-                                <p>
-                                <br></br><br></br>
-                                Depending on the network architecture and the way the sensor nodes are spatially organised, the coverage area of several sensors can overlap events one or several times, as illustrated by the figure. Overlapping coverage areas causes spatial redundancy: i.e. it allows to obtain information for a specific location from different sources<sup>[1]</sup>.
-                                </p>
-                            </div>
-                             <div class="span8 pagination-centered">
-                                <img src="images/wsn/uniform_cover.png" style="width:90%;" name="image" onmouseover="image.src='images/wsn/uniform_cover_numbers.png'" onmouseout="image.src='images/wsn/uniform_cover.png'"/>
-                            </div>
-                        </div> <!--row-->
-
-                        <br></br>
-
-                        <div class="row-fluid">
-                            <div class="span8 pagination-centered">
-                                <img style="width: 80%;" src="images/wsn/uniform_diffd_cover.png"> 
-                            </div>
-                            <div class="span4">
-                                <p>
-                                <br></br>
-                                Moreover, the coverage area radius of each sensor node can be different from one node to another.
-                                </p>
-                            </div>
-                        </div> <!--row-->
-
-                        <br></br>
-
-                         <div class="row-fluid">
-                            <div class="span4">
-                                <p>
-                                <br></br>
-                                On top of that, the region of coverage is not always uniform, in the sense that is does not always cover a circular region around the sensor node.
-
-                                </p>
-                            </div>
-                            <div class="span8 pagination-centered">
-                                <img style="width: 80%;" src="images/wsn/not_uniform_cover.png"> 
-                            </div>
-                        </div> <!--row-->
-
+                <div class="row-fluid">
+                    <div class="span4">
                         <p>
+                        <br></br><br></br>
+                        Depending on the network architecture and the way the sensor nodes are spatially organised, the coverage area of several sensors can overlap events one or several times, as illustrated by the figure. Overlapping coverage areas causes spatial redundancy: i.e. it allows to obtain information for a specific location from different sources<sup>[1]</sup>.
                         </p>
-                    </li>
-                </ul>
+                    </div>
+                     <div class="span8 pagination-centered">
+                        <img src="images/wsn/uniform_cover.png" style="width:90%;" name="image" onmouseover="image.src='images/wsn/uniform_cover_numbers.png'" onmouseout="image.src='images/wsn/uniform_cover.png'"/>
+                    </div>
+                </div> <!--row-->
+
+                <br></br>
+
+                <div class="row-fluid">
+                    <div class="span8 pagination-centered">
+                        <img style="width: 80%;" src="images/wsn/uniform_diffd_cover.png"> 
+                    </div>
+                    <div class="span4">
+                        <p>
+                        <br></br>
+                        Moreover, the coverage area radius of each sensor node can be different from one node to another.
+                        </p>
+                    </div>
+                </div> <!--row-->
+
+                <br></br>
+
+                 <div class="row-fluid">
+                    <div class="span4">
+                        <p>
+                        <br></br>
+                        On top of that, the region of coverage is not always uniform, in the sense that is does not always cover a circular region around the sensor node.
+
+                        </p>
+                    </div>
+                    <div class="span8 pagination-centered">
+                        <img style="width: 80%;" src="images/wsn/not_uniform_cover.png"> 
+                    </div>
+                </div> <!--row-->
+
+                <br>
 
                 <h2>Transceiver</h2>
                         <p>The transceiver is the communication interface between the sensor node and the rest of the network: it is able to receive bit streams as well as converting data into streams. Wireless Sensor Networks often use radio band, and in this case, the transceiver has a reception frequency-range; it is able to get data transmitted through a specific and limited radio band – also called radio spectrum.
