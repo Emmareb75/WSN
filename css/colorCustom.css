@@ -1,0 +1,182 @@
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-image: url("background/cubes.png");
+  background-repeat; repeat;
+  background-attachment: fixed;
+}
+
+p > a {
+  color: #c54913;
+}
+
+p > a:hover {
+  color: #d7805a;
+  text-decoration: none;
+}
+
+@font-face {
+ font-family: "coolvetica";
+ src: url("css/font/coolvetica.ttf");
+}
+
+@font-face {
+ font-family: "coolvetica";
+ src: url("css/font/coolvetica.eot");
+}
+
+.hero-unit {
+  margin-top: -60px;
+  background: none;
+  padding-top: 0;
+}
+
+.navbar-inner,
+.navbar .btn-navbar {
+  opacity: 1;
+  background-color: #c54913; /* Old browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  border: none;
+  /*box-shadow: none;*/
+}
+
+.navbar {
+  /*width: 360px;*/
+
+}
+
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+  background: #d7805a;
+  color: white;
+  box-shadow: none;
+}
+
+.navbar .nav > li > a {
+  color: white;
+  text-shadow: none;
+}
+
+.navbar .nav > li > a:hover {
+  color: #444444;
+}
+
+.nav-list {
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.accordion-toggle {
+  font-size: 13px;
+  color: #444444;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.accordion-toggle:hover {
+  text-decoration: none;
+  color: #c54913;
+  font-weight: bold;
+}
+
+.accordion-inner {
+  background-color: #c54913;
+  cursor: pointer;
+}
+
+.accordion-inner .active > a,
+.accordion-inner .active > a:hover {
+  color: #444444;
+}
+
+.accordion-inner > li > a:hover{
+  color: #444444;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.accordion-inner > li > a {
+  color: white;
+}
+
+
+.sidebar-nav {
+  padding: 9px 0;
+  /*min-width: 200px;*/
+  /*position:fixed; -> problem of responsivness*/
+}
+
+h1, h2, h3, h4 {
+  font-family: "coolvetica";
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: white;
+  background-color: black;
+  *background-color: black;
+}
+
+
+
+.btn-primary {
+  background: #c54913; /* Old browsers */
+
+  background: -moz-linear-gradient(top,  #c54913 0%, #c54913 100%); /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c54913), color-stop(100%,#c54913)); /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top,  #c54913 0%,#c54913 100%); /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top,  #c54913 0%,#c54913 100%); /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top,  #c54913 0%,#c54913 100%); /* IE10+ */
+
+  background: linear-gradient(to bottom,  #c54913 0%,#c54913 100%); /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c54913', endColorstr='#c54913',GradientType=0 ); /* IE6-9 */
+}
+
+@media (max-width: 1100px) {
+/* Enable use of floated navbar text */
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+    .hero-unit-index {
+    margin-top: -20px;
+    padding-top: 0px;
+  }
+
+  .sidebar-nav {
+    position: static;
+  }
+
+  .span2 {
+    min-width: 100%;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-unit-index {
+    margin-top: -20px;
+    padding-top: 0px;
+  }
+
+  .sidebar-nav {
+    position: static;
+  }
+
+}
