@@ -1,9 +1,9 @@
 <h1>Alert and Response</h1></br>
 
-<p>As soon as an attack is detected, the base station is alerted where the
-administrator can be notified through a client system. The administrator
-determines the response, such as revoking the malicious node. After the alert
-was received, each node will try to rebuild the routing table to bypass the
+<p>As soon as an <b>attack is detected</b>, the base station is alerted where the
+administrator can be notified through a client system. The <b>administrator
+determines the response</b>, such as revoking the malicious node. After the alert
+was received, each node will try to <b>rebuild the routing table</b> to bypass the
 possible malicious node if necessary. Finally, the malicious node is revoked
 from the network.</p>
 
