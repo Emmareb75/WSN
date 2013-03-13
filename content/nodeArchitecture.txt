@@ -3,29 +3,31 @@
                                 <div class="row-fluid">
                     <div class="span12 pagination-centered">
                         <br> 
-                        <img src="images/wsn/node_architecture.png" width="80%">
+                        <img src="images/wsn/node_architecture.png" width="60%">
                     </div>
                 </div> <!-- row-->
 
                 <br></br>
 
-                <h2>Microcontroller</h2>
-                <p>The microcontroller performs tasks, processes the collected data, and, importantly, controls the performance and the functionality of all the other components of the sensor node. Especially, it comprises the internal memory of the sensor node, as well as a processor.
+                <h2>Microcontroller and Processing Unit</h2>
+                <p>The microcontroller performs tasks, processes the collected data, and, importantly, controls the performance and the functionality of all the other components of the sensor node. Especially, it comprises the internal memory of the sensor node, as well as the processor: together they form the processing unit.
+
+                <h3>Processor</h3> 
                 Due to the wireless nature of the system, the processor must be adapted to embedded applications and consume very little energy.
                 Amongst various processors the Atmel ATMega is often used on sensor nodes: by balancing power-consumption and processing-speed, it presents all the qualities required.
                 <b>// TO DEVELOP</b>
                 </p>
 
-                <h2>Memory</h2>
+                <h3>Memory</h3>
                         <p>The memory of a sensor node generally consists of two shapes of memory: one internal, the other external.</p>
                         <ul>
                             <li><b>Internal memory: </b>
                                 <p>
-                                It is a Random Access Memory (RAM), therefore it is volatile: when not powered, its content is erased.
+                                The internal memory consist of a Random Access Memory (RAM), therefore it is volatile: when not powered, its content is erased. This memory temporary stores the sensed data.
                                 </p>
                             </li>
                             <li><b>External memory: </b>
-                                <p>In most of the cases, the external memory is Flash Memory, coupled with EEPROM (Electrically Erasable Programmable Read-Only Memory – programmed and erased using field electron emission). Those two external memories are non-volatile, i.e. they retain the stored information even when not powered.
+                                <p>Extra-memory, called external-memory, can be added to the sensor node. In most of the cases, the external memory is Flash Memory, coupled with EEPROM (Electrically Erasable Programmable Read-Only Memory – programmed and erased using field electron emission). Those two types of external memory are non-volatile, i.e. they retain the stored information even when not powered.
                                 </p>
                                 <p>
                                 The difference relies on the erasing process of their content: in both case, the data is stored using quantum cells to trap electrons. When the bit stored is one, an electron is present in the quantum cell. When the bit stored corresponds to 0, no electron is trapped.
@@ -35,7 +37,7 @@
                             </li>
                         </ul>
 
-            <h2>Sensors</h2>
+            <h2>Sensing Unit</h2>
             <h3>From Analogue to Digital</h3>
                 <p>A node features one or several sensors. Each sensor monitors environment variables and their variations, and produces a continuous analogue signal with the sensed data. However, sensor nodes processor works only on digital signal. Thus the sensor must be coupled with an Analogue-to-Digital Converter (ADC) to convert the data so the processor can further process it.</p> 
 
@@ -136,7 +138,7 @@
                                 </p>
                             </li>
                             <li>
-                                <p><b>Sleep state</b> where the device is not able to receive something immediately due to significant parts of its hardware being switched off. This state prevents from useless power-consumption.</p>
+                                <p><b>Sleep state</b> where the device is not able to receive something immediately due to significant parts of its hardware being switched off. This state prevents from useless power-consumption. Switching the transceiver state from the sleep state to another is called "waking up" the sensor node.</p>
                             </li>
                         </ul>
                     </p>
