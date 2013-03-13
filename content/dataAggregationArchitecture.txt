@@ -1,12 +1,49 @@
            <h1>Data Aggregation Protocols & Architectures</h1><br>
             <p>There exist various network protocols leading to specific structures when performing Data Aggregation. Each of them presents its own advantages but also has a certain energy-cost. </p>
 
-            <h2>Tree-based protocol</h2><p> This protocol creates and maintains a minimum spanning tree, called aggregation tree. All nodes of the Wireless Sensor Network are therefore organised hierarchically. Source nodes, considered as leaves, send data to the sink node by the intermediate of data aggregator – each node has a parent to forward its data. Here, the sink node is the tree root and global data aggregator of the network, in the sense that it is the only node performing the aggregation of the whole network data. Tree-based protocol is extremely efficient because it allows using shortest path algorithms, implementing different minimum spanning trees, and therefore minimising communication and power costs, whilst improving data flow.</p>
+            <div class="row-fluid">
+            	<div class="span6">
+		            <h2>Tree-based protocol</h2><p> This protocol creates and maintains a minimum spanning tree, called aggregation tree. All nodes of the Wireless Sensor Network are therefore organised hierarchically. Source nodes, considered as leaves, send data to the sink node by the intermediate of data aggregator – each node has a parent to forward its data. Here, the sink node is the tree root and global data aggregator of the network, in the sense that it is the only node performing the aggregation of the whole network data. Tree-based protocol is extremely efficient because it allows using shortest path algorithms, implementing different minimum spanning trees, and therefore minimising communication and power costs, whilst improving data flow.</p>
+		            <p> Tiny AGgregation (TAG) approach is one of those tree-based protocols. It has been designed for aggregation in low-power Wireless Sensor Networks, and works in two phases: the distribution phase and the collection phase.
+		            	<ul>
+		            	<li>
+		            		<p><b>Distribution phase</b> is the phase during which the network is organised into a rooted tree where the root, as previously stated, is the sink node - or an eventual base-station. The distribution starts with broadcasting a data packet in a certain area around the root, located at level 1 of the tree. The first node to receive the data is then sets to the level of its parent node incremented by one, and the operation is repeated from this node until all the awaken nodes of the network are part of the tree.
+		            		</p>
+		            		<p>When sleeping node wakes up, it notifies the root and sends information pertaining to its distance from the root node. TAG protocol allows the distribution phase to be iterated periodically by the sink node - or base-station - to generate a new minimum spanning tree with newly awaken sensor nodes.
+		            		</p>
+		            	</li>
+		            	<li>
+		            		<p><b>Collection phase</b> simply consists in aggregating the data through the tree, as specified above. 
+		            		</p>
+		            	</li>
+		            </ul>
+		            </p>
+		        </div>
+		        <div class="span6">
+		            <h2>Cluster-based protocol</h2><p> The protocols here consists of assigning several sensor nodes together to form clusters, each cluster comprising a unique local data aggregator: the cluster head. Thus, the protocol results in  The data is sent from the source nodes to the cluster head that performs aggregation and then transmits the resulting data to the sink node - or an eventual base-station - directly, or via multi hopping through other cluster heads. As previously stated, the benefit of executing Data Aggregation increases if relay-nodes perform the aggregation incrementally whilst the data is being sent. However, using this architecture, aggregation is only executed once during the data transmission.</p>
 
-            <h2>Cluster-based protocol</h2><p> The protocols here consists of assigning several sensor nodes together to form clusters, each cluster comprising a unique local data aggregator: the cluster head. The data is sent from the source nodes to the cluster head that performs aggregation and then transmits the resulting data to the sink node - or an eventual base-station - directly, or via multi hopping through other cluster heads. As previously stated, the benefit of executing Data Aggregation increases if relay-nodes perform the aggregation incrementally whilst the data is being sent. However, using this architecture, aggregation is only executed once during the data transmission.</p>
+		            <p>One example of power-conserving cluster-based protocol, that was the first protocol of this type, is called LEACH (Low-Energy Adaptive Clustering Hierarchy). This approach works in two phases: the setup phase and the steady-state phase.
+		            <ul>
+		            	<li>
+		            		<p><b>Setup phase</b> is the phase during which the network is organised into clusters and the cluster heads are selected. 
+		            		</p>
+		            	</li>
+		            	<li>
+		            		<p><b>Steady-up phase</b> comprises data aggregation performed the cluster heads and the data transmisson from the points of aggregation to the sink node - or base-station. 
+		            		</p>
+		            	</li>
+		            </ul>
+		            However, although in LEACH protocol all nodes have the same amount of power, the protocol also assumes that any sensor node of the Wireless Sensor Network has the ability to act as a cluster head, and that each (non-cluster head) node communicates its data sporadically. Those two assumptions are contradictory: if the data is sporadically communicated, it is higly possible that one cluster head would have to aggregate more data - and therefore use more power - than another cluster head. Therefore, in principle, a cluster head aggregating a lot of data would require more energy than its peers aggregating less. Some recent improved versions of LEACH now handles the question of node energy capacity.
+		            </p> 
+	            </div>
+	        </div>
 
-            <h2>Chain-based protocol</h2><p> It relies on node neighbouring and results in a flat architecture of sensor nodes. The farthest node from the sink node initiates chain reaction – similar to a domino effect. At each step, the current node sends its data to its closest neighbour, selected as its successor in the chain. This successor then aggregates its own data with the data received and the chain reaction goes on until it reaches the sink node. The issue when using this structure is that if a single node happens to fail or is attacked, the whole data transmission is compromised.</p>
-
-            <h2>Gossip-based protocol</h2><p> The protocol generates a peer-to-peer architecture and, once again, relies on node neighbouring. Based on Poisson process, each node is awaken randomly and communicate its data to one of more of its neighbours - the number of neighbours depending on the gossip algorithm chosen. Thus, on top of communicating information, every node must also be able to aggregate the data it could potentialy receive from its neighbours and has an estimate of the global data aggregate of the network. Gossip-based protocols present the advantage of generating a rough approximation of aggregated data in a very short time<sup>[1]</sup> </p>
-            <p> http://digitool.library.mcgill.ca/view/action/singleViewer.do?dvs=1363135392113~573&locale=en_US&show_metadata=false&VIEWER_URL=/view/action/singleViewer.do?&DELIVERY_RULE_ID=6&adjacency=N&application=DIGITOOL-3&frameId=1&usePid1=true&usePid2=true</p>
-
+            <div class="row-fluid">
+            	<div class="span6">
+		            <h2>Chain-based protocol</h2><p> A chain-based protocol relies on node neighbouring and results in a flat architecture of sensor nodes. The farthest node from the sink node initiates chain reaction – similar to a domino effect. At each step, the current node sends its data to its closest neighbour, selected as its successor in the chain. This successor then aggregates its own data with the data received and the chain reaction goes on until it reaches the sink node. The issue when using this structure is that if a single node happens to fail or is attacked, the whole data transmission is compromised.</p>
+		        </div>
+		        <div class="span6">
+		            <h2>Gossip-based protocol</h2><p> The protocol generates a peer-to-peer architecture and, once again, relies on node neighbouring. Based on Poisson process, each node is awaken randomly and communicate its data to one of more of its neighbours - the number of neighbours depending on the gossip algorithm chosen. Thus, on top of communicating information, every node must also be able to aggregate the data it could potentialy receive from its neighbours and has an estimate of the global data aggregate of the network. Gossip-based protocols present the advantage of generating a rough approximation of aggregated data in a very short time<sup>[1]</sup> </p>
+		            <p> http://digitool.library.mcgill.ca/view/action/singleViewer.do?dvs=1363135392113~573&locale=en_US&show_metadata=false&VIEWER_URL=/view/action/singleViewer.do?&DELIVERY_RULE_ID=6&adjacency=N&application=DIGITOOL-3&frameId=1&usePid1=true&usePid2=true</p>
+	            </div>
+	        </div>

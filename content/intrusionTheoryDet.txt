@@ -7,12 +7,12 @@ in ref. [3] proposes that a successful attack on the WSN will show the following
 <div class="row-fluid">
 <div class="span4">
 <ol>
-<li><b>Interval rule</b>: If the time interval determined by the transmission of two consecutive messages is bigger or smaller than normal a failure is raised.</li>
-<li><b>Retransmission rule</b>: A monitor listens to a message, in one of his
+<li><p><b>Interval rule</b>: If the time interval determined by the transmission of two consecutive messages is bigger or smaller than normal a failure is raised.</li>
+<li><p><b>Retransmission rule</b>: A monitor listens to a message, in one of his
 neighbors where the next message transmisson must occur, but the message is not
-transmitted a failure is raise.</li>
-<li><b>Integrity rule</b>: The message payload must remain
-constant along it’s path in the network from origin to destination. However if in the other sensor nodes exist data aggregation techniques the rule is expected, because the ID system does not care about what is inside the messages.</li>
+transmitted a failure is raise.</p></li>
+<li><p><b>Integrity rule</b>: The message payload must remain
+constant along it’s path in the network from origin to destination. However if in the other sensor nodes exist data aggregation techniques the rule is expected, because the ID system does not care about what is inside the messages.</p></li>
 </ol>
 </div>
 <div class="span8 pagination-right">
