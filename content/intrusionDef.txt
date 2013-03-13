@@ -1,40 +1,61 @@
 <h1>Definition and different classifications</h1><br>
 <p>Security such as authentication and cryptography enhance the security of sensor
 networks, however this methods cannot deter all possible attacks. Attacks may
-still come from inside the network, we say “inside” in the matter that an
+still come from inside the network, we say <i>“inside”</i> in the matter that an
 attacker already possesses acceses to the network, therefore we see the need
 for yet another form of defense.
 </p>
 <p>
-ID short for Intrusion Detection  gather data from the system operations at
+ID short for <i>Intrusion Detection</i>  gather data from the system operations at
 runtime and
 analysis for verification.
 </p>
+<ul >
+IDS can be classified using as a point of
+reference the technique they use. Therefore we can identify them as:
+<li><b>Signature based detection</b></li>
+<li><b>Specification based detection</b></li>
+<li><b>Anomaly detection</b></li>
+</ul>
 <p>
-ID systems can be classified using as a point of
-reference the technique they use. Therefore we have: <b>signature based
-detection</b>,
-<b>specification-based detection</b>, and <b>anomaly detection</b>.Signature based detection
-uses previous data, imagined or copied from mature networks, to prevent a
+<i>Signature based detection</i>
+uses previous data, imagined or copied from already fully developed networks, to prevent a
 similar attack, but this type of detection makes the network vulnerable to
 unknown attacks. However people know exactly what each designed protocol should
-function. Any sensor node that does not follow the protocol specification has a
-very high chance of being malicious. The advantage of the specification-based
+functioni, the <i>specification based detection</i>. As a direct consequence, any sensor node that does not follow the protocol specification has a
+very high chance of being malicious. The advantage of the
+<i>specification based</i>
 detection is a very low rate of false alarm, but this kind of defense cannot
 detect attacks that do not violate protocol specification. Which leads us to the
-anomaly detection which not only detects incorrect behavior(violates
-specifications), but also detects abnormal behaviors(do not violate
-specification). In simpler words this kind of defense takes the normal
-behaviour of the network, where the network has no malicious attacks, usually
-this is accomplished  through automate training and compares it with the actual
-network behaviour searching for deviations. Even if anomaly detections can
-detect a wider range of attacks compared to previous presented technologies
-they have a drawback and that is the high rate of false alarms.
-We can also classify the ID systems on the basis of their locations. ID systems
-that are operating on a single node are called host-based ID system(IDS), this
-kind of ID is responsible for the security of the host node. ID  systems
-located on gateways nodes or separate monitors analyzes network traffic and
-uses this data to secure parts or the entire network. This ID system is called
-network-based IDS. In present most of the ID systems for WSN are network-base
-and use a combination of specification-based and anomaly-based detection.</p>
+<i>anomaly detection</i> which not only detects incorrect behavior(violates
+specifications), but also detects abnormal behaviors(that do not violate
+specification). In simpler words this kind of defense takes the <i>"normal"</i>
+behaviour of the network and compares it with the actual network behaviour in
+search for deviations. In
+most cases the <i>"normal"</i> behaviour is determined through automate training. Even if anomaly detections can
+detect a wider range of attacks compared to detecting
+techniques previosly presented.
+They have a an immens drawback, the high rate of false alarms.
+</p>
+<ul>
+We can also classify the IDS at the basis location on which we deploy them.
+<li>IDS
+that are operating on a single node are called <b> stand-alone</b> IDS, this
+kind of IDS is only responsible for the security of the host node.</li>
+<li>IDS
+that operate on a single node but the idividual IDS communicate between
+themselves are called <b>cooperative</b> IDS, this
+kind of IDS takes part in decisions along side other idividual IDS. For example
+Ioannis Krontiris, Thanassis Giannetsos, and Tassos Dimitriou in ref.[8]
+presents a voting algorithm which is based on the presumption  that an attacker
+is not able to outnumber the legitimate nodes.</li>
+<li>IDS
+located on gateways nodes or separate monitors are called <b>hierarchial</b> IDS. This kind of IDS analyzes network traffic and
+uses the data to secure parts of or the entire network.</li>
+</ul>
+<p>
+<emp>In present, most of the IDS for WSN are network-base
+and use a combination of specification-based and anomaly-based
+detection.</emp>
+</p>
 
