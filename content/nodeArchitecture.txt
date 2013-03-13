@@ -136,7 +136,7 @@
                                 </p>
                             </li>
                             <li>
-                                <p><b>Sleep state</b> where the device is not able to receive something immediately due to significant parts of its hardware being switched off. This state prevents from useless power-consumption.</p>
+                                <p><b>Sleep state</b> where the device is not able to receive something immediately due to significant parts of its hardware being switched off. This state prevents from useless power-consumption. Switching the transceiver state from the sleep state to another is called "waking up" the sensor node.</p>
                             </li>
                         </ul>
                     </p>
