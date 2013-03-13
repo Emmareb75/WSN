@@ -1,31 +1,104 @@
-<h1>Deployment Strategies of ID Systems</h1><br>
+<h1>Deployment Strategies of IDS</h1><br>
 
-<p>We will present a few different strategies of how to deploy ID systems. A
-simple approach is to install an ID system for every single node in the network
-which makes the ID only responsible for the security of the host. This approach
-almost completely eliminates the communication overhead. This method makes
-sense when the ID system is more secured and therefore more trustworthy than
-the host node. Another approach will make the ID system monitor it’s
+<p>We will present a few different strategies of how to deploy IDS in networks
+. In general there are three main deployment strategies.
+</p>
+<div class="row-fluid">
+<div class="span4">
+<p>
+A simple approach is to install an IDS on <b>every single node</b> (<b>a node
+based IDS</b>), so the IDS is only responsible for the security of the host.
+This approach almost completely eliminates the communication overhead. But
+because of the fact that we place IDS on every sensor node on the path from
+source to destination. We can strongly affirm that each packet is <b>analyzed
+multiple times</b> leading to a huge waste of computational resources. Further more
+we can intuitively see that this approach is very hard to implement efficiently
+on a large scale network.
+</p>
+</div>
+<div class="span8 pagination-right">
+<font size="2"><i>Fig 1. presents a network where the IDS is installed on every
+single node.
+</i>
+</font>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span8 pagination-right">
+<font size="2"><i>Fig 1. presents a network where the IDS is installed oonly in
+cluster nodes.
+</i>
+</font>
+</div>
+<div class="span4">
+<ol>
+Another possible strategy would be to place the IDS modules on the<b> base
+station</b>
+. The <b>base station</b> can analyze all the traffic in the sensor network regardless
+of topology or routing changes and each packet is not proccesse multiple times.
+Nevertheless, altough a packet is not processed many times, this placement
+strategy might overwhelm the base station leading to a large number of packets
+not being analyzed.
+</div>
+</div>
+</ol>
+<div class="row-fluid">
+<div class="span4">
+<ol>
+Our last approach will be to make the IDS monitor(watchdog) reponsible for it’s
 neighbour nodes, knowing the fact that a node can also oversee the transmission
-by neighboring nodes in the wireless world. We already know that a normal
+of neighboring nodes in the wireless world. We already know that a normal
 sensor node is resource-constrained and most of the times easy to be
-compromised, so it was proposed by [1] to use special monitoring nodes for ID
-usage. In a cluster-based network most of the network traffic will go through a
-cluster head,  Ref.[5] deploys ID systems only on this clusters heads in order
+compromised, so it was proposed by C. Tseng, P. Balasubramanyam, C. Ko, R.
+Limprasittiporn, J. Rowe, and K. Levitt in ref.[1] to use special
+monitoring nodes for ID
+usage. In the search for an efficient deployment strategy for the IDS modules
+we try to position the IDS monitors in such a way that all the packets would be
+inspected only once, in order to ease the resource constraint of the WSN. We
+want to place the IDS modules so that the monitor would be able to cover all
+paths in the network. In order to achive this, the WSN may be divided into
+<b>clusters</b> with each cluster having a <b>cluster head</b>. This approach implies that
+every node member of a certain cluster forwards its data packets to the <b>cluster
+head</b>. The drawback of this approach is the high quantity of overhead
+communication since the nodes do not select the shortes path, but instead have
+to forward their packets thorugh the cluster node.
+</div>
+<div class="span8 pagination-right">
+<font size="2"><i>Fig 1. presents a network where the IDS is installed oonly in
+<b>cluster nodes</b>.
+</i>
+</font>
+
+</div>
+</div>
+</ol>
+<ul>
+<li>Y. Huang and W. LeeRef. in ref.[5] deploy IDS only on this <b>clusters
+heads</b> in order
 to save precious resources. But this method loses monitoring coverage this
 happens because the cluster head has no way of knowing details inside the
 network, which makes it particularly difficult to detect and/or respond to
-attacks, such as jamming attacks, impersonating attacks. Ref.[6] tries to place
-the detection modules at an optimal place, thus on all the nodes that belong to
-the minimum cut-set. Here a cut-set is a set of sensor nodes such that all
+attacks, such as jamming attacks, impersonating attacks.
+</li>
+<li>
+F. Anjum, D.
+Subhadrabandhu, S. Sarkar, and R. Shetty in ref.[6] tried to place
+the detection modules at an <b>optimal place</b>, thus on all the nodes that belong to
+the minimum <b>cut-set</b>. Here a <b>cut-set</b> is a set of sensor nodes such that all
 paths from all cluster heads to the base station traverse this set of node.
 This deployment is optimal if we assume that the intruder is to do harm, cause
-failure of the base station by delivering malicious packets. All the methods
+failure of the base station by delivering malicious packets.
+</li>
+<li>
+All the methods
 presented so far distribute the ID system among a few nodes and through
-cooperation makes the ID as efficient as central-based system. Ref.[7] makes
-use of such a central-based ID system but specifies that this system cannot
+cooperation makes the ID as efficient as central-based system. A. Agah, S.K.
+Das, K. Basu, and M. Asadi in ref.[7] makes
+use of a <b>central-based IDS</b> that we presented in Fig. 2, but specifies that this system cannot
 protect all sensor nodes in the same time due to resource limitations.
 Therefore, the ID system only chooses the most important node to protect
-continuously based on a game approach, which is formulated as two-player
-attack-defense problem.</p>
+continuously based on a <b>game approach</b>, which is formulated as two-player
+attack-defense problem.
+</li>
+</ul>
 

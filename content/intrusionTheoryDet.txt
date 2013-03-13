@@ -1,13 +1,39 @@
 <h1>Detecting Techniques</h1><br>
-<p>We presume that the attacks on the WSN can behave in arbitrary ways which makes it near to impossible to model attacks based on statistics. Nevertheless the behavior of the attacker will violate the normal behaviour of the network. Ref. [29] proposes that a successful attack on the WSN will show the following anomalies:
+<p>We presume that the attacks on the WSN can behave in arbitrary ways which
+makes it near to impossible to model attacks based on statistics. Nevertheless
+we know the behavior of the attacker will violate the normal behaviour of the
+network. A.P. da Silva, M. Martins, B. Rocha, A. Loureiro, L. Ruiz, and H. Wong
+in ref. [3] proposes that a successful attack on the WSN will show the following anomalies:
+<div class="row-fluid">
+<div class="span4">
 <ol>
-<li>Interval rule: If the interval of time that measures  the transmission of two consecutive messages is bigger or smaller than normal a failure is raised.</li>
-<li>Retransmission rule: A monitor listens to a message, in one of his neighbors where the next transmission of the message must occur, but the message is not transmitted.</li>
-<li>Integrity rule: The message payload must remain constant along it’s path in the network from origin to destination. However if in the other sensor nodes exist data aggregation techniques the rule is expected, because the ID system does not care about what is inside the messages.</li>
-<li>Delay rule: The retransmission of a message must occur before a defined interval of time.</li>
-<li>Repetition rule: The same message can be retransmitted in respect to a limit number of times by the same neighbor. </li>
-<li>Radio transmission range: All the messages that a node receives must come from one of its neighbors. </li>
-<li>Jamming rule: The number of collisions of a message must be lower than the expected number of collisions.</li>
+<li><b>Interval rule</b>: If the time interval determined by the transmission of two consecutive messages is bigger or smaller than normal a failure is raised.</li>
+<li><b>Retransmission rule</b>: A monitor listens to a message, in one of his
+neighbors where the next message transmisson must occur, but the message is not
+transmitted a failure is raise.</li>
+<li><b>Integrity rule</b>: The message payload must remain
+constant along it’s path in the network from origin to destination. However if in the other sensor nodes exist data aggregation techniques the rule is expected, because the ID system does not care about what is inside the messages.</li>
+</ol>
+</div>
+<div class="span8 pagination-right">
+<br>
+<img src="images/intrusion/schemeSection2.png" width="90%" height="90%">
+<br>
+<br>
+<br>
+<font size="2"><i>Fig 1. Model presented in ref[1]. <b>(1) is presented in the
+previous section, (2) is our current phase</b> </i></font>
+</div>
+</div>
+<ol start="4">
+<li><b>Delay rule</b>: The retransmission of a message must occur before a defined interval of time.</li>
+<li><b>Repetition rule</b>: The same message can only be retransmitted until a
+certain number of times is reached, by the same neighbours. </li>
+<li><b>Radio transmission range</b>: All the messages that a node receives must
+come from one of its neighbours (note that a node knows its neighbours in
+ref.[1]'s approach to the problem). </li>
+<li><b>Jamming rule</b>: The number of collisions of a message must be lower
+than a certain number of collisions.</li>
 </ol>
 </p>
 

@@ -1,27 +1,80 @@
 <h1>Actual detection techniques</h1><br>
-<p>One can find the violations listed above by analyzing traffic features and
-network traffic. The following  ID techniques are all based on analyzing
-traffic features, however they do not implement directly the rules above but
-instead use anomaly detection based on preknown specification, learned
+<p>One can find apply the previosly presented rules on analyzing traffic features and
+network traffici, in order to detect potential malicious attacks . The
+following IDS implementation are all based on analyzing
+traffic features. They do not only implement the rules above but also
+use <i>anomaly detection</i> based on preknown specification, from learned
 knowledge or even a form of artificial intelligence.
-In ref. [1] we find a proposed specification-based ID to detect attacks on
-AODV(Ad hoc on-demand distance vector, meaning it establishes a route to
-destination only on demand) routing. In this approach they use finite state
+</p>
+<div class="row-fluid">
+<div class="span4">
+<p>
+In C. Tseng, P. Balasubramanyam, C. Ko, R. Limprasittiporn, J. Rowe, and K.
+Levitt ref. [1]'s approach we find a specification-based IDS to detect attacks on
+AODV routing. In this approach they use finite state
 machines to specify correct AODV behavior and use distribute network monitors
-to detect runtime violation of the AODV specification. Ref.[2] also proposes a
-specification-based ID concerning routing attacks, but opposed to the previous
-approach they use state machines to specify DSR(dynamic source routing similar
-to an AODV but it uses source routing meaning it allows the sender to partially
+to detect runtime violation of the AODV specification.
+<ol>
+The <b>Ad hoc On-demand Distance Vector</b>(AODV) routing
+protocol is a reactive and stateless protocol that establishes routes
+only as desired by a source node using route request (RREQ) and
+route reply (RREP) messages. When a node wants to find a route
+to a destination node, it broadcasts a Route Request (RREQ)
+message with a unique RREQ ID (RID) to all its neighbors. When
+a node receives a RREQ message, it updates the sequence number
+of source node and sets up reverse routes to the source node in the
+routing tables. If the node is the destination or the node has a
+route to the destination that meet the freshness requirements, it
+unicasts a route reply (RREP) back to the source node.
+</ol>
+<ol>
+In AODV, sequence number (SN) plays a role to indicate the
+freshness of the routing information and guarantee loop-free
+routes.
+</ol>
+</p>
+</div>
+<div class="span8 pagination-right">
+<font size="2"><i>Fig 1. (presented in ref[1]), illustrates the flow of the
+RREQ and RREP messages in
+a scenario wherein a node A wants to find a route to a node D.
+(Initially, nodes A, B, C and D do not have routes to each other).
+A broadcasts a RREQ message (a1), which reaches B. B then rebroadcast the
+request (b1). C recieves the messages and
+broadcasts the message (c1), which arrives at the destination node
+D. Last, D unicasts back the RREP message to A. We call these
+RREQ and RREP packets a request-reply flow. The values of the
+fields in the routing messages are denoted in Table 1.</i></font>
+</div>
+</div>
+<p>
+In applying the specification based IDS to monitor AODV, the authors first
+focus on the routing messages that are exchanged in the discovery of routes. In
+particular to this example, they <i>attempt to monitor all the RREQ and RREP
+messages in a request-reply</i> flow from a source node to a destination node and
+back to the source. Their specification requires that all nodes send RREQ and
+RREP messages according to the protocol specification and the RREQ ID, and the
+sequence numbers are correct.
+</p>
+<br>
+<h2> Other implementations </h2>
+<p>
+Ref.[2] also proposes a
+<i>specification-based IDS</i> concerning routing attacks, but opposed to the previous
+approach they use state machines to specify <b>Dynamic Source Routing</b>(DSR is similar
+to an AODV but it uses source routing, meaning it allows the sender to partially
 or completely specify the route of the package) routing behavior instead of
-AODV routing behavior. Besides that the protocol can specify the sequence
+AODV routing behavior. Besides that, the protocol can specify the sequence
 relation for some special kind of packets(e.g., routing messages).  This
 sequence relations among general packets can also be learned automatically,
 therefore attacks can be detected by comparing the runtime traffic with the
 learned one.
+</p>
+<p>
 Ref.[4] proposes a different traffic feature to be analysed. In two different
 buffers, a long term receiver and a short term intrusion, where it records the
 arrival time for each package under observation, it verifies them against the
 mean and a standard deviation of the interarrival time between the two buffers
 respectively. It is considered a anomalous arrival if the data in the two
-buffers deviate a lot.</p>
+buffers deviate more than a certain limit.</p>
 
