@@ -5,23 +5,23 @@ system: <b>the false positive rate</b>(FP) and <b>false negative rate</b>(FN).
 </p>
 <ul>
 <li>
-<b>FP</b> is defined
-as the proportion of normal events erroneously classified as abnormal.
+<p><b>FP</b> is defined
+as the proportion of normal events erroneously classified as abnormal.</p>
 </li>
 <li>
-<b>FN</b> is
+<p><b>FN</b></p> is
 defined as the proportion of abnormal events erroneously classified as normal.
 </li>
 </ul>
 It is trivial to say that an ideal ID system should have both <b>FP</b> and
-<b>FN</b> as low
+<p><b>FN</b></p> as low
 as possible, but in practice this scenario is not quite possible. In real IDS
 the implentation of the IDS module must make <i>"trade-offs"</i> between the two measurements is usually made, given that the
 two measurements influence themselves in opposite ways when we try to favor one
 of them.
 <p>
 Besides
-<b>FP</b> and <b>FN</b> we are also concerned in measuring the overhead communication
+<p><b>FP</b></p> and <b>FN</b> we are also concerned in measuring the overhead communication
 that the IDS generates.
 We already know the WSN is extremely resource-constrained thus we would like to
 introduce as little overhead as possible.

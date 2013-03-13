@@ -1,6 +1,6 @@
             <h1>Network Architecture</h1><br>
             <p>To understand the global architecture of a WSN, it is essential to first enlighten the different types of nodes comprised by Wireless Sensor Networks and to understand their respective role.</p>
-            <h2>Node Roles</h2>
+            <h2>Different Types of Node</h2>
             <div class="row-fluid">
               <div class="span6"><p><b>Basic Sensor Nodes: </b>those nodes features only restricted functions: they are able to monitor data and communicate it to the other nodes.</p></div>
               <div class="span6"><p><b>Data Aggregators: </b>they are sensor nodes with the additional features that allow them collect data from their peer nodes and to perform <a onclick="callFile('dataAggregation.txt')">aggregation</a> and computations on it.</p></div>
@@ -10,7 +10,7 @@
               <div class="span6"><p><b>Data Gateways: </b>provide routing from a network to other networks; to be exact, they are responsible of allowing access from the outside, or from sub-networks, to the WSN and vice-versa. When a network does not feature sub-networks, the gateway node is also the sink node.</p></div>
             </div>
 
-            <h2> Architecture topologies </h2>
+            <h2>Architecture Topologies</h2>
             <div class="row-fluid">
               <div class="span6 pagination-centered">
                 <h3>Peer-to-Peer (P2P)</h3><p>This network topology allows each node to communicate directly – i.e. through no intermediate node - with another. Each node is a peer device able to act as both a “client” and a “server” to the other nodes on the network.</p>
