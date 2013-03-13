@@ -8,6 +8,19 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+.sidebar-nav-fixed {
+    position:fixed;
+    top:60px;
+    width:14.64%;
+}
+
+@media (max-width: 1100px) {
+    .sidebar-nav-fixed {
+        position:static;
+        width:auto;
+    }
+}
+
 .clearfix {
   *zoom: 1;
 }
