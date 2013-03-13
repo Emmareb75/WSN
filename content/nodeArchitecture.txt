@@ -9,8 +9,8 @@
 
                 <br></br>
 
-                <h2>Microcontroller and Processing Unit</h2>
-                <p>The microcontroller performs tasks, processes the collected data, and, importantly, controls the performance and the functionality of all the other components of the sensor node. Especially, it comprises the internal memory of the sensor node, as well as the processor: together they form the processing unit.
+                <h2>Microcontroller</h2>
+                <p>The microcontroller performs tasks such as data communication, processes the collected information, and, importantly, controls the performance and the functionality of all the other components of the sensor node. It comprises the memory of the sensor node, as well as the processor, but also a clock generator, one or more Analogue-to-Digital Convertor (ADC) and input/output interface.
 
                 <h3>Processor</h3> 
                 Due to the wireless nature of the system, the processor must be adapted to embedded applications and consume very little energy.
@@ -27,7 +27,7 @@
                                 </p>
                             </li>
                             <li><b>External memory: </b>
-                                <p>Extra-memory, called external-memory, can be added to the sensor node. In most of the cases, the external memory is Flash Memory, coupled with EEPROM (Electrically Erasable Programmable Read-Only Memory – programmed and erased using field electron emission). Those two types of external memory are non-volatile, i.e. they retain the stored information even when not powered.
+                                <p>Extra-memory, called external-memory, can be added to the sensor node. In most of the cases, the external memory is Flash Memory, coupled with EEPROM (Electrically Erasable Programmable Read-Only Memory – programmed and erased using field electron emission). Those two types of external memory are non-volatile, i.e. they retain the stored information even when not powered, this is why they are used to store the program instructions. 
                                 </p>
                                 <p>
                                 The difference relies on the erasing process of their content: in both case, the data is stored using quantum cells to trap electrons. When the bit stored is one, an electron is present in the quantum cell. When the bit stored corresponds to 0, no electron is trapped.
@@ -36,6 +36,8 @@
                                 </p>
                             </li>
                         </ul>
+
+<HR COLOR="#444444" SIZE="3">
 
             <h2>Sensing Unit</h2>
             <h3>From Analogue to Digital</h3>
@@ -121,7 +123,7 @@
                     </div>
                 </div> <!--row-->
 
-                <br>
+<HR COLOR="#444444" SIZE="3">
 
                 <h2>Transceiver</h2>
                         <p>The transceiver is the communication interface between the sensor node and the rest of the network: it is able to receive bit streams as well as converting data into streams. Wireless Sensor Networks often use radio band, and in this case, the transceiver has a reception frequency-range; it is able to get data transmitted through a specific and limited radio band – also called radio spectrum.
@@ -142,6 +144,8 @@
                             </li>
                         </ul>
                     </p>
+
+<HR COLOR="#444444" SIZE="3">
 
                 <h2>Power Source</h2>
                 <p>The power source must provide has much energy as possible for the sensor node to be efficient. However this is a challenge: supplying energy to the node has to be done at the smallest volume, the lightest weight, and the longest lifetime.
@@ -169,10 +173,9 @@
                     </li>
                 </ul>
 
+<HR COLOR="#444444" SIZE="3">
 
-                <br></br>
-
-               <h2 class="pagination-centered">Examples of Sensor Nodes</h2>
+               <h2>Examples of Sensor Nodes</h2>
                 <br>
                 <p>
                 <ul class="thumbnails">
