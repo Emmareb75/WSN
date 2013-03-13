@@ -1,5 +1,5 @@
            <h1>Data Aggregation Protocols & Architectures</h1><br>
-            <p>There exist various network protocols leading to specific structures when performing Data Aggregation. Each of them presents its own advantages but also has a certain energy-cost. </p>
+            <p>There exist various network protocols leading to specific structures when performing Data Aggregation. Each of them presents its own advantages but also has a certain energy-cost. The following approaches give an overview of data aggregation protocols.</p>
 
             <div class="row-fluid">
             	<div class="span6">
@@ -41,9 +41,11 @@
             <div class="row-fluid">
             	<div class="span6">
 		            <h2>Chain-based protocol</h2><p> A chain-based protocol relies on node neighbouring and results in a flat architecture of sensor nodes. The farthest node from the sink node initiates chain reaction – similar to a domino effect. At each step, the current node sends its data to its closest neighbour, selected as its successor in the chain. This successor then aggregates its own data with the data received and the chain reaction goes on until it reaches the sink node. The issue when using this structure is that if a single node happens to fail or is attacked, the whole data transmission is compromised.</p>
+		            <p>An famous example of chain-based data aggregation protocol is PEGASIS: Power-Efficient Data-Gathering Protocol for Sensor Information Systems (PEGASIS). The protocol assumes that all sensors have inclusive knowledge of the network. Inclusive knowledge means that each node is aware of the presence of absolutely all nodes of the network. PEGASIS starts when the farthest node from the sink initiates chain formation as described above.
+		            </p>
 		        </div>
 		        <div class="span6">
-		            <h2>Gossip-based protocol</h2><p> The protocol generates a peer-to-peer architecture and, once again, relies on node neighbouring. Based on Poisson process, each node is awaken randomly and communicate its data to one of more of its neighbours - the number of neighbours depending on the gossip algorithm chosen. Thus, on top of communicating information, every node must also be able to aggregate the data it could potentialy receive from its neighbours and has an estimate of the global data aggregate of the network. Gossip-based protocols present the advantage of generating a rough approximation of aggregated data in a very short time<sup>[1]</sup> </p>
+		            <h2>Gossip-based protocol</h2><p> The protocol, also know as Epidemic protocol, relies on node neighbouring. Based on Poisson process, each node is awaken randomly and communicate its data to one of more of its neighbours - the number of neighbours depending on the gossip algorithm chosen. Thus, on top of communicating information, every node must also be able to aggregate the data it could potentialy receive from its neighbours and has an estimate of the global data aggregate of the network. Gossip-based protocols present the advantage of generating a rough approximation of aggregated data in a very short time<sup>[1]</sup> </p>
 		            <p> http://digitool.library.mcgill.ca/view/action/singleViewer.do?dvs=1363135392113~573&locale=en_US&show_metadata=false&VIEWER_URL=/view/action/singleViewer.do?&DELIVERY_RULE_ID=6&adjacency=N&application=DIGITOOL-3&frameId=1&usePid1=true&usePid2=true</p>
 	            </div>
 	        </div>
