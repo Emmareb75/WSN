@@ -5,7 +5,7 @@
 	Common grouping in the network stack in TinyOS has four major layers:<b> Physical layer, Link layer, Routing layer, Application layer</b>.</p>
 	</div>
 	<div class="span6 pagination-centered">
-	<img src="images/layers/cube.jpg" width="50%">
+	<img src="images/layers/cube.png" width="50%">
 	</div>
 	</div>
 <p> TinyOS It is an operating  system for wireless sensor network nodes. Operation system is responsible for managing the hardware resources and providing the software with it. It is much less complex than general-purpose operating systems. Use of less complex OS on a wireless sensor network nodes should make a lot of sense; Normally,nodes are not expected to do anything general or flexible. The user would limit its use to some specific purpose. Therefore you would not need an OS like UNIX or MacOS. The limited resource and the processor capability would not allow it to have these kinds of OS anyways!</p>
