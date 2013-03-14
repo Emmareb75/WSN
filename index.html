@@ -227,14 +227,13 @@
 
       var paper = Raphael('mainlogo', 800, 410);
 
-
       var image = paper.image("css/image/logo-V4-5.png", 0,
                             -1, 900, 350);
 
       function expandBlob() {
          var bbox = image.getBBox();
 
-         image.animate({"transform": "s 1 1.05" + ",10 0"}, 800, "backOut",
+         image.animate({"transform": "s 1 1.07" + ",10 0"}, 800, "backOut",
                      function(){image.animate({"transform":"s 1 1"}, 1000, "elastic")});
       };
 
@@ -262,16 +261,28 @@
       function output() {
         if(n.readyState == 4) {
           var el = document.getElementById('main');
-          el.innerHTML = n.responseText;
-          if($('#lowerDivs').innerHTML != null
-              && $('#lowerDivs1').innerHTML != null) {
-            $('#lowerDivs').innerHTML = null;
-            $('#lowerDivs1').innerHTML = null;
+          $(el).fadeOut(400).delay(100).queue(function(t){
+              if($('#lowerDivs').innerHTML != null
+                  && $('#lowerDivs1').innerHTML != null) {
+                $('#lowerDivs').html("");
+                $('#lowerDivs1').html("");
+              }
+              $(el).css({
+                "background-color" : "#f5f5f5",
+                "padding" : "60px",
+                "margin-top" : "10px",
+                "margin-bottom" : "30px",
+                "font-size" : "18px",
+                "font-weight" : "200",
+                "line-height" : "30px",
+                "border-radius" : "5px",
+                "border" : "1px solid #e5e5e5"}
+                );
+              $(el).html(n.responseText);
+              t();
+              }).fadeIn(200);
           }
-          document.getElementById('main').style.cssText='background-color:#f5f5f5; padding: 60px; margin-top:10px; margin-bottom: 30px; font-size: 18px; font-weight: 200; line-height: 30px; border-radius:5px; border: 1px solid #e5e5e5;'
-        }
       }
     </script>
-
   </body>
 </html>
