@@ -66,11 +66,11 @@
             <li><a href="http://www.willow.co.uk/html/mpr5x0-_mica2dot_series.html">Willow Technologies Ltd., MICA2DOT Datasheet</a></li>
             <li><a href="http://www.enggjournals.com/ijcse/doc/IJCSE10-02-09-076.pdf">Ajay Jangra, Swati, Richa and Priyanka, Wireless Sensor Network (WSN): Architectural Design issues and Challenges, 2010</a></li>
             <li><a href="http://docs.tinyos.net/tinywiki/index.php/Getting_Started_with_TinyOS#Installing_on_a_mica-family_mote_.28micaz.2C_mica2.2C_mica2dot.29">Unknown author, Getting Started with TinyOS</a></li>
-            <li><a href="http://en.wikipedia.org/wiki/ISM_band">Unknown author, ISM Band</a></li>
+            <li><a href="http://en.wikipedia.org/wiki/ISM_band">Unknown author, Wikipedia, ISM Band</a></li>
             <li><a href="http://www.btnode.ethz.ch/Main/Features">Unknown author, BTnodes - A Distributed Environment for Prototyping Ad Hoc Networks, 2006</a></li>
             <li><a href="https://www.eol.ucar.edu/rtf/facilities/isa/internal/CrossBow/DataSheets/mica2dot.pdf">Unknown author, MICA2DOT</a></li>
             <li><a href="http://bullseye.xbow.com:81/Products/Product_pdf_files/Wireless_pdf/MICA2_Datasheet.pdf">Unknown author, MICA2</a></li>
-            <li><a href="http://en.wikipedia.org/wiki/List_of_wireless_sensor_nodes">Unknown author, List Of Wireless Sensor Nodes</a></li>
+            <li><a href="http://en.wikipedia.org/wiki/List_of_wireless_sensor_nodes">Unknown author, Wikipedia, List Of Wireless Sensor Nodes</a></li>
             <li><a href="http://wiki.answers.com/Q/What_is_the_difference_between_flash_memory_and_EEPROM">Unknown author, What is the difference between flash memory and EEPROM?, 2011</a></li>
             <li><a href="http://www.csie.nctu.edu.tw/~yctseng/papers.pub/mobile45-coverage-wsna.pdf">Chi-Fu Huang and Yu-Chee Tseng, The Coverage Problem in a Wireless Sensor Network</a></li>
             <li><a href="http://www.nrcan.gc.ca/earth-sciences/geography-boundary/remote-sensing/fundamentals/1212">Natural Resources Canada, Passive vs. Active Sensing</a></li>
@@ -162,6 +162,22 @@
             pages 1–10, New
             York, NY, USA, 2008. ACM.</li>
     </ol>
+</div>
+
+
+<HR COLOR="#444444" SIZE="3">
+
+<div id="layer">
+    <h1>Layer</h1>
+        </br>
+        <ol>
+            <li><a href="http://wwwpub.zih.tu-dresden.de/~dargie/wsn.htm">W.Dargie, C.Poellabaeur, Chapter 5: Physical Layer 
+Available</a></li>
+            <li><a href="http://comp.ist.utl.pt/ece-wsn/doc/slides/sensys-ch4-physical.pdf">A. Grilo, Ad hoc and Sensor Networks Chapter 4: Physical layer</a></li>
+            <li><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.154.4089">J I.Krontiris, T.Dimitriou, H.Sorough, M.Salajegheh, WSN Link-layer Security Frameworks</a></li>
+            <li><a href="http://www.ipcsit.com/vol35/003-CNCS2012-N010.pdf">A.A.A. Alkhatib, G. S.Baicher, Wireless Sensor Network Architecture</a></li>
+            <li><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4654293">I.Krontiris, T. Giannetsos, T. Dimitriou, Launching a Sinkhole Attack in Wireless Sensor Networks; the Intruder Side</a></li>
+        </ol>
 </div>
 
 

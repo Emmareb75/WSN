@@ -17,6 +17,9 @@ on a large scale network.
 </p>
 </div>
 <div class="span8 pagination-right">
+<div class="span12 pagination-centered">
+<img src="images/intrusion/net1.png" width="40%">
+</div>
 <font size="2"><i>Fig 1. presents a network where the IDS is installed on every
 single node.
 </i>
@@ -25,6 +28,9 @@ single node.
 </div>
 <div class="row-fluid">
 <div class="span8 pagination-right">
+<div class="span12 pagination-centered">
+<img src="images/intrusion/net2.png" width="40%">
+</div>
 <font size="2"><i>Fig 1. presents a network where the IDS is installed oonly in
 cluster nodes.
 </i>
@@ -64,6 +70,9 @@ communication since the nodes do not select the shortes path, but instead have
 to forward their packets thorugh the cluster node.
 </div>
 <div class="span8 pagination-right">
+<div class="span12 pagination-centered">
+<img src="images/intrusion/net3.png" width="40%">
+</div>
 <font size="2"><i>Fig 1. presents a network where the IDS is installed oonly in
 <b>cluster nodes</b>.
 </i>
