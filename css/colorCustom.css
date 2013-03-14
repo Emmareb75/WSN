@@ -1,7 +1,7 @@
 
 body {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   background-image: url("background/cubes.png");
   background-repeat; repeat;
   background-attachment: fixed;
@@ -14,6 +14,16 @@ p > a {
 p > a:hover {
   color: #d7805a;
   text-decoration: none;
+}
+
+a {
+  color: #c74825;
+}
+
+a:hover {
+  color: #d7805a;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*

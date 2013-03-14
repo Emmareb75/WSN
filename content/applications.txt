@@ -19,7 +19,7 @@
 <br>
                    <div class="row-fluid">
                         <div class="span5 pagination-centered">
-                          <img width="60%" src="http://sine.ni.com/cms/images/casestudies/veski.jpg?size">
+                          <img width="80%" src="http://sine.ni.com/cms/images/casestudies/veski.jpg?size">
                         </div>
                     <div class="span7">
                         <p>

@@ -71,7 +71,7 @@
         </br>
         <ol>
             <li><a href="http://hondo.informatik.uni-freiburg.de/teaching/seminar/adhoc-w09/submissions/DataAggInWSN.pdf"> Claude Castellucia, Einar Mykletun, Gene Tsudnik Efficient Aggregation of encrypted data in Wireless Sensor Networks, 2009</a></li>
-            <li><a href="http://surface.syr.edu/cgi/viewcontent.cgi?article=1021&amp;context=eecs">Pramod K. Varshney and Ramesh Rajagopalan, Data aggregation techniques in sensor networks: A survey, 2006</a></li>
+            <li><a href="http://surface.syr.edu/cgi/viewcontent.cgi?article=1021&context=eecs">Pramod K. Varshney and Ramesh Rajagopalan, Data aggregation techniques in sensor networks: A survey, 2006</a></li>
             <li><a href="http://www.enggjournals.com/ijcse/doc/IJCSE11-03-03-080.pdf">Kiran Maraiya#, Kamal Kant*, Nitin Gupta#, Architectural Based Data Aggregation
             Techniques in Wireless Sensor Network: A
             Comparative Study, 2011</a></li>

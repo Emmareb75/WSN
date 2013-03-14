@@ -1,11 +1,12 @@
 <h1>Wireless sensor networks</h1><br>
 
+<div class="span12 pagination-centered">
+	<img style="width:45%;" src="images/index/wsn.png">
+</div>
+
 <p>Wireless Sensor Networks, often abbreviated as “WSN”, is an emerging and fast-growing technology.  Recent advances in Computing, Microelectronics and Communication, as well as the proliferation of “smart” energy-management applications, have caused increasing interest in Wireless Sensor Networks research. Moreover, environmental events such as the unexpected and murderous collapsing of a highway bridge in Minnesota in 2007 or devastating landslides, forest fires, encourage the use of Wireless Sensor Network to watch the environment and prevent catastrophes. </p>
 <p>WSN provide an economic and simple alternative to conventional wired networks. Indeed, conventional networks scalability, i.e. their capacity to be expanded, is often compromised by the cost of wiring new sensor nodes to the existing network. On top of that, Wireless Sensor Networks allow access to areas where it is impossible to wire, such as catastrophe, hazardous or restricted areas.</p>
 <p>Wireless Sensor Networks basically consist of a large number of spatially distributed sensor nodes. A conventional WSN usually counts from a few hundreds to thousands of nodes. The sensor nodes monitor environmental variations, process the collected data and communicate it to the other nodes through the network architecture.</p>
 
-<div class="span12 pagination-centered">
-	<img style="width:45%;" src="images/index/wsn.png">
-</div>
 
 
