@@ -60,7 +60,7 @@
                 Introduction
               </a>
             </div>
-            <div id="collapseOne" class="accordion-body collapse in">
+            <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
               <div class="accordion-inner">
                   <li><a onclick="callFile('wirelessSensorNetworks.txt')">Overview</a></li>
                   <li><a onclick="callFile('applications.txt')">Various Applications</a></li>
@@ -100,9 +100,9 @@
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse"
-                data-parent="#accordion2" href="#collapseSeven">Data Aggregation</a>
+                data-parent="#accordion2" href="#collapseFour">Data Aggregation</a>
             </div>
-            <div id="collapseSeven" class="accordion-body collapse">
+            <div id="collapseFour" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('dataAggregation.txt')">Definition</a></li>
                   <li><a onclick="callFile('dataAggregationArchitecture.txt')">Aggregation Protocols</a></li>
@@ -112,9 +112,10 @@
           </div>
           <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">Attacks</a>
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseFive">Attacks</a>
             </div>
-            <div id="collapseFour" class="accordion-body collapse">
+            <div id="collapseFive" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('attackers.txt')">Types of Attackers</a></li>
                   <li><a onclick="callFile('attacks.txt')">Various Attacks</a></li>
@@ -123,9 +124,10 @@
           </div>
           <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">Defense</a>
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseSix">Defense</a>
             </div>
-            <div id="collapseFive" class="accordion-body collapse">
+            <div id="collapseSix" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('intrusionDef.txt')"> Intrusion Detection (IDS)</a></li>
                   <li><a onclick="callFile('intrusionTheoryDet.txt')"> Detecting Techniques</a></li>
@@ -138,9 +140,11 @@
           </div>
           <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">Layers</a>
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseSeven">Layers</a>
+
             </div>
-            <div id="collapseSix" class="accordion-body collapse">
+            <div id="collapseSeven" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('layers.txt')">Definition</a></li>
                   <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
@@ -172,7 +176,7 @@
               <i class="icon-search icon-2x"></i>
               <h2>Overview</h2>
               <p>Wireless Sensor Networks, is an emerging and fast-growing technology. Recent advances in Computing, Microelectronics and Communication, as well as the proliferation of “smart” energy-management applications, have caused increasing interest in Wireless Sensor Networks research.</p>
-              <p><a class="btn" href="wsn.html">View details &raquo;</a></p>
+              <p><a class="btn" onclick="callFile('wirelessSensorNetworks.txt')">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="span4 pagination-centered">
               <i class="icon-lock icon-2x"></i>
@@ -182,13 +186,13 @@
               characteristics and unique application features requires some
               extra security requirements including the typical network
               requirements.</p>
-              <p><a class="btn" href="security.html">View details &raquo;</a></p>
+              <p><a class="btn" onclick="callFile('securityIssues.txt')">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="span4 pagination-centered">
               <i class="icon-align-justify icon-2x"></i>
               <h2>Layers</h2>
               <p>In order to comprehend a communication system like in a wireless sensor network, it is useful to classify the communication specifications by its similarity in the function. Such a group of communication is called a layer.</p>
-              <p><a class="btn" href="principles.html">View details &raquo;</a></p>
+              <p><a class="btn" onclick="callFile('layers.txt')">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-->
           <div id="lowerDivs1" class="row-fluid">
@@ -196,19 +200,19 @@
               <i class="icon-plus icon-2x"></i>
               <h2>Data Aggregation</h2>
               <p>Sensor nodes present several limitations, mostly due to their constrained power capabilities1. Amongst the features of sensor nodes, data communication is notably the most power consuming. Hence, it is important to minimise the amount of data transiting through the Wireless Sensor Network and optimise the overall bandwidth utilisation by preventing overwhelming amounts to traffic. </p>
-              <p><a class="btn" href="dataaggreg.html">View details &raquo;</a></p>
+              <p><a class="btn" onclick="callFile('dataAggregation.txt')">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="span4 pagination-centered">
               <i class="icon-minus-sign icon-2x"></i>
               <h2>Defense Strategies</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="defense_strategies.html">View details &raquo;</a></p>
+              <p><a class="btn" onclick="callFile('defenseStrategies.txt')">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="span4 pagination-centered">
               <i class="icon-bolt icon-2x"></i>
               <h2>Attacks</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="attacks.html">View details &raquo;</a></p>
+              <p><a class="btn" onclick="callFile('attacks.txt')">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
