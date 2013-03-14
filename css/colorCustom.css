@@ -16,6 +16,7 @@ p > a:hover {
   text-decoration: none;
 }
 
+/*
 @font-face {
  font-family: "coolvetica";
  src: url("font/coolvetica.ttf");
@@ -25,6 +26,7 @@ p > a:hover {
  font-family: "coolvetica";
  src: url("font/coolvetica.eot");
 }
+*/
 
 .hero-unit {
   margin-top: -20px;
@@ -125,7 +127,7 @@ p > a:hover {
 }
 
 h1, h2, h3, h4 {
-  font-family: "coolvetica";
+  font-family: Arial;
 }
 
 .btn-primary:hover,
