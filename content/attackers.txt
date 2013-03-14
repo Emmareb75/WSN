@@ -1,3 +1,4 @@
+<h1> Types of Attackers</h1>
 <p>In order to secure the network, one has to understand the nature of the attack that the network can possibly suffer. Here we look at the various kind of attack and the classification.</p>
 <h2>Purpose</h2>
 <h3>Active attacker</h3>
