@@ -1,0 +1,20 @@
+[
+    {
+        "question": "What does the Q-Composite scheme add on top of the classic Random Key Pre-distribution one?",
+        "answers": [
+            "It requires that any set of Q nodes is fully connected.",
+            "It requires that two nodes share at least Q keys in orded to communicate.",
+            "It does not build on the classic scheme."
+        ],
+        "correct": "It requires that two nodes share at least Q keys in orded to communicate."
+    },
+    {
+        "question": "BLA  add on top of the classic Random Key Pre-distribution one?",
+        "answers": [
+            "It requires that any set of Q nodes is fully connected.",
+            "It requires that two nodes share at least Q keys in orded to communicate.",
+            "It does not build on the classic scheme."
+        ],
+        "correct": "It requires that any set of Q nodes is fully connected."
+    }
+]

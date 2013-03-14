@@ -24,9 +24,21 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+
+    <style type="text/css">
+    a {
+      text-decoration: none;
+      color: #444;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #c74825;
+    }
+    </style>
   </head>
 
-  <body>
+  <body onload="callFile('quiz.txt')">
     <div class="navbar navbar-fixed-top"> <!--navbar-inverse-->
       <div class="navbar-inner">
         <div class="container-fluid ">
@@ -38,7 +50,7 @@
           <div class="nav-collapse collapse">
 
             <ul class="nav">
-              <li ><a href="index.html"><i class="icon-home"></i>Home</a></li>
+              <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
               <li class="active"><a href="quiz.html"><i class="icon-tasks"></i>Quiz</a></li>
               <li><a href="references.html"><i class="icon-book"></i>References</a></li>
             </ul>
@@ -50,7 +62,7 @@
     <div class="container-fluid">
       <div class="row-fluid">
 
-        <div class="span2">
+                <div class="span2">
           <div class="well sidebar-nav sidebar-nav-fixed" style="background:none; border:none; box-shadow:none;">
           <ul class="nav nav-list">
           <div class="accordion" id="accordion2" style="background-color:#f5f5f5;">
@@ -149,7 +161,11 @@
             <div id="collapseSeven" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('layers.txt')">Definition</a></li>
-                  <li><a onclick="callFile('listLayers.txt')">Various Layers</a></li>
+                  <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
+                  <li><a onclick="callFile('physicalLayer.txt')">Physical Layer</a></li>
+                  <li><a onclick="callFile('linkLayer.txt')">Link Layer</a></li>
+                  <li><a onclick="callFile('routingLayer.txt')">Routing Layer</a></li>
+                  <li><a onclick="callFile('applicationLayer.txt')">Application Layer</a></li>
               </div>
             </div>
           </div>
@@ -158,7 +174,7 @@
         <div class="pagination-centered">
           <img src="css/image/group4.png" style="width:84%; max-width:100px; width:expression(this.width > 100px ? "100px" : true);">
           <br></br>
-          <div class="span10 offset1 pagination-centered"><p style="font-size:13px"> Kaho Sato &amp; Alice Sibold, Theodor Gherzan, Adrian Draghici</p></div>
+          <div class="span10 offset1 pagination-centered"> <p text-transformation="uppercase"> Kaho Sato, Alice Sibold, Theodor Gherzan, Adrian Draghici</p></div>
         </div>
 
     </div>
@@ -166,36 +182,16 @@
 
         <div class="span10">
           <div id="main" class="hero-unit">
-            <div id="mainlogo" class="span12 pagination-centered">
           </div>
-          <div id="lowerDivs" class="row-fluid">
-            <div class="span3 pagination-centered">
-              <i class="icon-search icon-2x"></i>
-              <h2><a onclick="callFile('wirelessSensorNetworks.txt')">Overview</h2></a>
-              <p style="font-size:15px;">Wireless Sensor Networks, is an emerging and fast-growing technology. Recent advances in Computing, Microelectronics and Communication, as well as the proliferation of “smart” energy-management applications, have caused increasing interest in Wireless Sensor Networks research.</p>
-            </div><!--/span-->
-            <div class="span3 pagination-centered">
-              <i class="icon-lock icon-2x"></i>
-              <h2><a onclick="callFile('securityIssues.txt')">Security Issues</h2></a>
-              <p style="font-size:15px;">Wireless Sensor Networks are vulnerable to various attacks
-              like any other conventional network, but its limited resource
-              characteristics and unique application features requires some
-              extra security requirements including the typical network
-              requirements.</p>
-            </div><!--/span-->
-            <div class="span3 pagination-centered">
-              <i class="icon-align-justify icon-2x"></i>
-              <h2><a onclick="callFile('intrusionDef.txt')">Defense</h2></a>
-              <p style="font-size:15px;">Security such as authentication and cryptography enhance the security of sensor networks, however these methods cannot deter all possible attacks. Attacks may still come from inside the network, therefore we see the need for yet another form of defense.</p>
-            </div><!--/span-->
-            <div class="span3 pagination-centered">
-              <i class="icon-align-justify icon-2x"></i>
-              <h2><a onclick="callFile('layers.txt')">Layers</h2></a>
-              <p style="font-size:15px;">One can divide a communication system into units called layers. Building a network is like constructing a building in a sense that without the lower layer being established, the above layer cannot be “constructed”.</p>
-            </div><!--/span-->
-          </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
+
+      <hr>
+      <footer>
+        <p>  &copy; Kaho Sato, Alice Sibold, Adrian Draghici, Theodor Gherzan
+          <p> Original design belongs to Group4</p>
+      </footer>
+
     </div><!--/.fluid-container-->
 
     <!-- Le javascript
@@ -214,27 +210,10 @@
     <script src="bootstrap/js/bootstrap-collapse.js"></script>
     <script src="bootstrap/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
-    <script src="js/raphael.js"></script>
+    <script type="text/javascript" src="js/quiz.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
       var n;
-
-      var p = $('#mainlogo').offset();
-
-      var paper = Raphael('mainlogo', 950, 410);
-
-      var image = paper.image("css/image/logo-V4-5.png", 0,
-                            -1, 900, 350);
-
-      function expandBlob() {
-         var bbox = image.getBBox();
-
-         image.animate({"transform": "s 1 1.2" + ",10 0"}, 2000, "backOut",
-                     function(){image.animate({"transform":"s 1 1"}, 1000, "elastic")});
-      };
-
-      expandBlob();
-
-      image.hover(expandBlob);
 
       if(navigator.appName.search('Microsoft') > -1) {
         n = new ActiveXObject('MSXML2.XMLHTTP');
@@ -257,12 +236,7 @@
         if(n.readyState == 4) {
           var el = document.getElementById('main');
           el.innerHTML = n.responseText;
-          if($('#lowerDivs').innerHTML != null
-              && $('#lowerDivs1').innerHTML != null) {
-            $('#lowerDivs').innerHTML = null;
-            $('#lowerDivs1').innerHTML = null;
-          }
-          document.getElementById('main').style.cssText='background-color:#f5f5f5; padding: 60px; margin-top:10px; margin-bottom: 30px; font-size: 18px; font-weight: 200; line-height: 30px; border-radius:5px; border: 1px solid #e5e5e5;'
+          document.getElementById('main').style.cssText='background-color:#f5f5f5; padding: 60px; margin-top:0px; margin-bottom: 30px; font-size: 18px; font-weight: 200; line-height: 30px; border-radius:5px; border: 1px solid #e5e5e5;'
         }
       }
     </script>
