@@ -57,6 +57,16 @@ There are two routing protocols that are popular; have a look at them to have be
 
 <h2>MintRoute</h2>
 
+<div class="row-fluid">
+<div class="span6 pagination-centered">
+<img src="images/layers/mintRoute1.png" width="90%">
+</div>
+<div class="span6 pagination-centered">
+<br><br><br>
+<img src="images/layers/mintRoute2.png" width="90%">
+</div>
+</div>
+
 <p>This is one of the popular routing protocols for WSN along with MultiHopLQI.
 
 In MintRoute, the standard used to calculate the link quality is called error rate. This is measured by sending a packet to the neighbour, and measuring the quality the packet sent to the node. If the packet sent is in a more complete form, that means that the paths has high link quality. The best figure for the link quality is 255.
