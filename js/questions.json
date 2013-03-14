@@ -1,6 +1,15 @@
 [
     {
-        "question": "What does the Q-Composite scheme add on top of the classic Random Key Pre-distribution one?",
+        "question": "What does the key management in a wireless sensor network involve?",
+        "answers": [
+            "Generation and distribution of the keys.",
+            "Storage and periodic renewal of the keys.",
+            "All of the above."
+        ],
+        "correct": "All of the above."
+    },
+    {
+        "question": "What does the Q-Composite key management scheme add on top of the classic Random Key Pre-distribution one?",
         "answers": [
             "It requires that any set of Q nodes is fully connected.",
             "It requires that two nodes share at least Q keys in orded to communicate.",
@@ -9,12 +18,76 @@
         "correct": "It requires that two nodes share at least Q keys in order to communicate."
     },
     {
-        "question": "BLA  add on top of the classic Random Key Pre-distribution one?",
+        "question": "What are path-keys?",
         "answers": [
-            "It requires that any set of Q nodes is fully connected.",
-            "It requires that two nodes share at least Q keys in orded to communicate.",
-            "It does not build on the classic scheme."
+            "They are keys used in intermediate nodes to connect sensors that did not share any keys directly in the discovery phase.",
+            "They are keys used in recent research that implements public key criptography in wireless sensor networks."
+            "They are pairs of keys distributed to the nodes that are still not connected after the shared-key discovery phase.",
         ],
-        "correct": "It requires that any set of Q nodes is fully connected."
+        "correct": "They are keys used in intermediate nodes to connect sensors that did not share any keys directly in the discovery phase."
+    },
+
+    {
+        "question": "Which layer is responsible for routing from the node to the base station?",
+        "answers": [
+            "Physical layer.",
+            "Network layer.",
+            "Link layer."
+        ],
+        "correct": "Network layer."
+    },
+    {
+        "question": "How can jamming attacks be dealt with?",
+        "answers": [
+            "By changing the frequency at which the node send message.",
+            "By making the node sleep.",
+            "Either of the above."
+        ],
+        "correct": "Either of the above."
+    },
+    {
+        "question": "What is the Sybil attack?",
+        "answers": [
+            "It refers to a node continuously being requested messages and being send data to.",
+            "It refers to the attacker faking multiple identities.",
+            "It refers to stealing information by “listening” to the message transmitted."
+        ],
+        "correct": "It refers to the attacker faking multiple identities."
+    },
+    {
+        "question": "What type of IDS should be used if overhead communication is to be avoided?",
+        "answers": [
+            "An IDS deployed on the nodes.",
+            "An IDS deployed on cluster heads.",
+            "An IDS deployed on the base station."
+        ],
+        "correct": "An IDS deployed on the nodes."
+    },
+    {
+        "question": "Which layer is responsible for deciding at which frequency the node must transmit the message?",
+        "answers": [
+            "Physical layer.",
+            "Link layer.",
+            "Network layer."
+        ],
+        "correct": "Physical layer."
+    },
+    {
+        "question": "There are two kinds of memory in a node; to which one is the RAM classified?",
+        "answers": [
+            "Internal.",
+            "External.",
+            "Both."
+        ],
+        "correct": "Internal."
+    },
+    {
+        "question": "What is the primary downside of using anomaly detection in an IDS?",
+        "answers": [
+            "The high rate of false alarms.",
+            "Making the system vulnerable to unknown attacks.",
+            "It can not detect attacks that do not violate the protocol specifications."
+        ],
+        "correct": "The high rate of false alarms."
     }
 ]
