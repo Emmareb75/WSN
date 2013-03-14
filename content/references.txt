@@ -2,9 +2,19 @@
 	<h1>Key Management</h1>
 		</br>
 		<ol>
-			<li>Chan et al.</li>
+			<li>John Paul Walters, Zhengqiang Liang, Weisong Shi and Vipin Chaudhary, Wireless Sensor Network Security: A Survey, 2006.</li>
+			<li>Mohit Saxena, Security in Wireless Sensor Networks, A Layer-based Classification, 2007.</li>
+			<li>Adrian Perrig, John Stankovic and David Wagner, Security In Wireless Sensor Networks, 2004.</li>
+			<li>Pyrgelis Apostolos, Cryptography and Security in Wireless Sensor Networks, 2009.</li>
+			<li>Qinghua Wang and Tingting Zhang, Security in Wireless
+			Sensor Networks, 2008.</li>
+			<li>L. Eschenauer and V. D. Gligor, A key-management
+			scheme for distributed sensor networks, New York, USA, 2002.</li>
+			<li>W. Du, J. Deng, Y. S. Han, and P. K. Varshney, A key
+			predistribution scheme for sensor networks using deployment knowledge, 2006</li>
 			<li>Jinat Rehana. Security of Wireless Sensor Network, 2009.</li>
-			<li>q-comp</li>
+			<li>Haowen Chan, Adrian Perrig , Dawn Song, Random Key Predistribution Schemes for Sensor Networks, 2003.</li>
+			<li>Subir Biswas, Md Mahbubul Haque, Saeed Rashwand, and Jelena Misic, Fast, Seamless Rekeying In Wireless Sensor Networks, 2009.</li>
 		</ol>
 </div>
 <div id="intrusionDetection">
