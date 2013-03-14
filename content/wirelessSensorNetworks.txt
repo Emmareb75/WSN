@@ -9,7 +9,7 @@
 </div>
 
 <div class="span6 pagination-centered">
-	<img style="width:90%;" src="images/index/wsnRotated.png">
+	<img style="width:80%;" src="images/index/wsnRotated.png">
 </div>
 </div>
 
