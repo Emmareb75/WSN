@@ -93,6 +93,21 @@
             Comparative Study, 2011</a></li>
         </ol>
 </div>
+<HR COLOR="#444444" SIZE="3">
+<div id="attacks">
+    <h1>Attacks</h1>
+        </br>
+        <ol>
+            <li><a href="http://staff.ustc.edu.cn/~kxing/Publications/BookChapters/attack-NetworkSecurity.pdf"> CK.Xing, S.S.R.Srinivasan, M.Rivera , Attacks and Countermeasures in Sensor networks: A Survey</a></li>
+            <li><a href="http://www.ee.washington.edu/research/nsl/papers/CDC-10.pdf">T.Bonaci, L. Bushnell, R. Poovendran, Node Capture Attacks in Wireless Sensor Networs: A System Theoretic Approach</a></li>
+            <li><a href="http://www.cerias.purdue.edu/apps/reports_and_papers/view/3106">M. Saxena, Security in Wireless Sensor Network - A Layer Based Classification</a></li>
+             <li><a href="http://www.ipcsit.com/vol30/026-ICNCS2012-G3068.pdf">V.K. Jatav, M.Tripathi, M.S. Gaur, Vijay Laxmi, Wireless Sensor Networks: Attack Models and Detection</a></li>
+            <li><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4654293"> I.Krontiris, T. Giannetsos, T. Dimitriou, Launching a Sinkhole Attack in Wireless Sensor Networks; the Intruder Side</a></li>
+            <li><a href="http://ijcsi.org/papers/7-3-11-23-27.pdf">V.P.Singh, S.Jain, J. Singhai, Hello Flood Attack and its Countermeasure in Wireless Networks </a></li>
+             <li><a href="http://wraits09.di.fc.ul.pt/wraits09paper4.pdf">D. Monica, J.Leitao, L.Rodrigues, C.Ribeiro, On the Use of Radio Resource Tests in Wireless ad hoc Networks</a></li>
+            <li><a href="http://www.techrepublic.com/whitepapers/detection-of-sybil-attack-in-mobile-wireless-sensor-networks/4130495"> S.Sharmila, G. Umamaheswari, Detection of Sybil Attack In Mobile Wireless Sensor Networks</a></li>
+        </ol>
+</div>
 
 
 <HR COLOR="#444444" SIZE="3">
