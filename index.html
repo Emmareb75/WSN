@@ -114,16 +114,21 @@
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse"
-                data-parent="#accordion2" href="#collapseSix">Defense</a>
+                data-parent="#accordion2" href="#collapseSix">Intrusion
+                Detection</a>
             </div>
             <div id="collapseSix" class="accordion-body collapse">
               <div class="accordion-inner">
-                  <li><a onclick="callFile('intrusionDef.txt')"> Intrusion Detection (IDS)</a></li>
-                  <li><a onclick="callFile('intrusionTheoryDet.txt')"> Detecting Techniques</a></li>
-                  <li><a onclick="callFile('intrusionActualDet.txt')"> Implementations</a></li>
-                  <li><a onclick="callFile('intrusionDeplTech.txt')"> Deployment Strategies</a></li>
+                  <li><a onclick="callFile('intrusionDef.txt')"> Definiton and
+                  Classification</a></li>
+                  <li><a onclick="callFile('intrusionTheoryDet.txt')">
+                    Intrusion Detection in Theory</a></li>
+                  <li><a onclick="callFile('intrusionActualDet.txt')">
+                    Implementations </a></li>
+                  <li><a onclick="callFile('intrusionDeplTech.txt')">
+                    Deployment Strategies </a></li>
                   <li><a onclick="callFile('intrusionAlert.txt')"> Alert and Response</a></li>
-                  <li><a onclick="callFile('intrusionIDEvaluation.txt')"> IDS Evaluation Methods</a></li>
+                  <li><a onclick="callFile('intrusionIDEvaluation.txt')"> Evaluation Methods</a></li>
               </div>
             </div>
           </div>
@@ -176,7 +181,7 @@
             </div><!--/span-->
             <div class="span3 pagination-centered">
               <i class="icon-lock icon-2x"></i>
-              <h2><a onclick="callFile('securityIssues.txt')">Security Issues</h2></a>
+              <h2><a onclick="callFile('securityIssues.txt')">Security</h2></a>
               <p style="font-size:15px;">Wireless Sensor Networks are vulnerable to various attacks
               like any other conventional network, but its limited resource
               characteristics and unique application features requires some
@@ -220,7 +225,8 @@
 
       var p = $('#mainlogo').offset();
 
-      var paper = Raphael('mainlogo', 950, 410);
+      var paper = Raphael('mainlogo', 800, 410);
+
 
       var image = paper.image("css/image/logo-V4-5.png", 0,
                             -1, 900, 350);
@@ -228,7 +234,7 @@
       function expandBlob() {
          var bbox = image.getBBox();
 
-         image.animate({"transform": "s 1 1.2" + ",10 0"}, 2000, "backOut",
+         image.animate({"transform": "s 1 1.05" + ",10 0"}, 800, "backOut",
                      function(){image.animate({"transform":"s 1 1"}, 1000, "elastic")});
       };
 

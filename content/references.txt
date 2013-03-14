@@ -123,44 +123,53 @@
 	<h1>Intrusion Detection</h1>
 		</br>
 		<ol>
-             <li> C. Tseng, P. Balasubramanyam, C. Ko, R. Limprasittiporn, J. Rowe, and K.
+             <li><a
+             href="http://seclab.cs.ucdavis.edu/papers/new_aodvids-v1.pdf"> C. Tseng, P. Balasubramanyam, C. Ko, R. Limprasittiporn, J. Rowe, and K.
               Levitt, A specification-based
             intrusion detection system for AODV, in Proc. 1st ACM Workshop on Security of
             Ad Hoc and Sensor
-            Networks, 2003.</li>
-            <li> P. Yi, Y. Jiang, Y. Zhong, and S. Zhang, Distributed intrusion detection
+            Networks, 2003.</a></li>
+            <li> <a
+            href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1619986">P. Yi, Y. Jiang, Y. Zhong, and S. Zhang, Distributed intrusion detection
             for mobile ad hoc networks, in
             Proc. The 2005 Symposium on Applications and the Internet Workshops
-            (SAINT-W’05), 2005.</li>
-            <li> A.P. da Silva, M. Martins, B. Rocha, A. Loureiro, L. Ruiz, and H. Wong,
+            (SAINT-W’05), 2005.</a></li>
+            <li> <a href="http://www.cs.cmu.edu/~hcwong/Pdfs/Q2SWinet05.pdf">A.P. da Silva, M. Martins, B. Rocha, A. Loureiro, L. Ruiz, and H. Wong,
             Decentralized intrusion detection
             in wireless sensor networks, in Proc. 1st ACM International Workshop on Quality
             of Service & Security
             in Wireless and Mobile Networks (Q2SWinet’05), ACM Press, October 2005, pp.
-            16–23.</li>
-            <li> Y. Huang, W. Fan, W. Lee, and P.S. Yu, Cross-feature analysis for detecting
-            ad-hoc routing anomalies, in
+            16–23.</a></li>
+            <li> <a
+            href="ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1203498> Cross-feature analysis for detecting
+            ad-hoc routing anomalie
             Proc. 23rd International Conference on Distributed Computing Systems,
-            2003.</li>
-            <li> Y. Huang and W. Lee, A cooperative intrusion detection system for ad hoc
+            2003.</a></li>
+            <li> <a
+            href="http://pdf.aminer.org/000/340/924/agent_based_cooperative_anomaly_detection_for_wireless_ad_hoc_networks.pdf">
+            Y. Huang and W. Lee, A cooperative intrusion detection system for ad hoc
             networks, in Proc. 1st ACM
-            Workshop on Security of Ad Hoc and Sensor Networks, 2003, pp. 135–147.</li>
-            <li> F. Anjum, D. Subhadrabandhu, S. Sarkar, and R. Shetty, On optimal placement
+            Workshop on Security of Ad Hoc and Sensor Networks, 2003, pp.
+            135–147.</a></li>
+            <li> <a
+            href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1363857">F. Anjum, D. Subhadrabandhu, S. Sarkar, and R. Shetty, On optimal placement
             of intrusion detection modules in sensor networks, in Proc. 1st International
             Conference on Broadband Networks, 2004,
-            pp. 690–699.</li>
-            <li> A. Agah, S.K. Das, K. Basu, and M. Asadi, Intrusion detection in sensor
+            pp. 690–699.</a></li>
+            <li><a
+            href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1347798"> A. Agah, S.K. Das, K. Basu, and M. Asadi, Intrusion detection in sensor
             networks: a non-cooperative
             game approach, in Proc. 3rd IEEE International Symposium on Network Computing
             and Applications,
-            2004, pp. 343–346</li>
-            <li> Ioannis Krontiris, Thanassis Giannetsos, and Tassos Dimitriou. LIDeA: a
+            2004, pp. 343–346</a></li>
+            <li> <a
+            href="http://delivery.acm.org/10.1145/1470000/1460903/a20-krontiris.pdf?ip=129.31.206.127&acc=NO%20RULES&CFID=292491868&CFTOKEN=54132535&__acm__=1363281329_55812b2d4c4a6e3bf011d6a26b623b91"> Ioannis Krontiris, Thanassis Giannetsos, and Tassos Dimitriou. LIDeA: a
             distributed lightweight
             intrusion detection architecture for sensor networks. In SecureComm ’08:
             Proceedings of the 4th
             international conference on Security and privacy in communication netowrks,
             pages 1–10, New
-            York, NY, USA, 2008. ACM.</li>
+            York, NY, USA, 2008. ACM.</a></li>
     </ol>
 </div>
 
