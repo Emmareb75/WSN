@@ -121,7 +121,7 @@ p > a:hover {
 
 
 .sidebar-nav {
-  padding: 9px 0;
+  padding: 10px 0;
   /*min-width: 200px;*/
   /*position:fixed; -> problem of responsivness*/
 }
