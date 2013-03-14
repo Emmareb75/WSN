@@ -7,7 +7,7 @@ The job of the physical layer is to establish a short range communication betwee
 
 <div class="span6">
 <p>
-The process of a short range communication goes like this:</p>
+<a href="references.html">[1,2]</a> The process of a short range communication goes like this:</p>
 <ol>
 <li><p>Sensor collects environmental data such as sound, light...</p></li>
 <li><p>Source encoder encodes the analog data to digital signal.</p></li>
@@ -38,12 +38,12 @@ Therefore the Physical layer needs to provide the specifications on Signal propa
 
 			<p>Link layer has to offer the protocols that makes the network efficient. For example it has to make sure that the two nodes do not send message to the same node at the same time. Also, it is link layers responsibility to arrange the network, so that it is flexible, scalable and strong against the attack.</p>
 
-			<p>The security of this layer has to make sure that the attacker would not gain the information that is exchanged with in the local network. Or at least it has to make sure that the thief of the information would not understand what the message that he stole actually means, using encryption. It also needs to assure that the information was actually sent by the node that belongs to the network, not by the attacker. This has much to do with authentication and is discussed in the <i>Key Managment</i> section.</p>
+			<p> <a href="references.html">[3]</a> The security of this layer has to make sure that the attacker would not gain the information that is exchanged with in the local network. Or at least it has to make sure that the thief of the information would not understand what the message that he stole actually means, using encryption. It also needs to assure that the information was actually sent by the node that belongs to the network, not by the attacker. This has much to do with authentication and is discussed in the <i>Key Managment</i> section.</p>
 
 
 <HR COLOR="#444444" SIZE="3">
 
-            <h1>Routing Layer</h1><br>
+            <h1>Routing Layer(Network Layer)</h1> <a href="references.html">[4]</a> <br>
             <p>By the Physical layer, the connection between the two nodes was established. Then by the Link layer, the connection amongst the nodes that share the LAN was established. Now we can make the path from a node to the base station.
 
 This layer is responsible for routing. As explained in the <introduction>, there are many constraints in the WSN. Amongst them, the protocols concerning the routing must take into account the limited battery and memory and the self-organizing nature.
@@ -53,7 +53,7 @@ The route must satisfy criteria like: short, less energy consuming and easy to g
 <p>
 In order to build up the optimum paths of the nodes to the base station of the network, the nodes must be able to calculate the cost of the possible paths between the nodes in some way.  In these protocols, the standard is called link quality. The smaller the cost is, the better the link quality is. In these protocols, different measurement is used to calculate this. 
 
-There are two routing protocols that are popular; have a look at them to have better understanding of how the routing works.There are two popular routing protocols; one is MintRoute, and the other is MultiHopLQI. </p>
+There are two routing protocols <a href="references.html">[5]</a> that are popular; have a look at them to have better understanding of how the routing works.There are two popular routing protocols; one is MintRoute, and the other is MultiHopLQI. </p>
 
 <h2>MintRoute</h2>
 
