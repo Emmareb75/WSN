@@ -3,7 +3,7 @@
             <h2>Different Types of Node</h2>
             <div class="row-fluid">
               <div class="span6"><p><b>Basic Sensor Nodes: </b>those nodes features only restricted functions: they are able to monitor data and communicate it to the other nodes.</p></div>
-              <div class="span6"><p><b>Data Aggregators: </b>they are sensor nodes with the additional features that allow them collect data from their peer nodes and to perform <a onclick="callFile('dataAggregation.txt')">aggregation</a> and computations on it.</p></div>
+              <div class="span6"><p><b>Data Aggregators: </b>they are sensor nodes with the additional features that allow them collect data from their peer nodes and to perform aggregation and computations on it.</p></div>
             </div>
             <div class="row-fluid">
               <div class="span6"><p><b>Data Sink Nodes: </b>are the nodes in the network that collect all the network data and transmit it for further processing.</p></div>
