@@ -11,6 +11,9 @@
         </ol>
 </div>
 
+
+<HR COLOR="#444444" SIZE="3">
+
 <div id="applications">
     <h1>Applications of WSN</h1>
         </br>
@@ -23,6 +26,9 @@
         </ol>
 </div>
 
+
+<HR COLOR="#444444" SIZE="3">
+
 <div id="limitations">
     <h1>Limitations of WSN</h1>
         </br>
@@ -31,6 +37,9 @@
             <li><a href="https://docs.google.com/file/d/1BCad47OCwNC_MV_Fx6jOBRTYkdZJnO8ZhlfIHNhavUVGW7lBuVM1Hs3B6YCP/edit">???</a></li>
         </ol>
 </div>
+
+
+<HR COLOR="#444444" SIZE="3">
 
 <div id="security">
     <h1>Security</h1>
@@ -44,14 +53,17 @@
         </ol>
 </div>
 
+
+<HR COLOR="#444444" SIZE="3">
+
 <div id="architecture">
     <h1>Architecture and Hardware</h1>
         </br>
         <ol>
             <li><a href="https://www.purelink.ca/en/technologies/related-technologies.php">Purelink Technology Canada, RELATED TECHNOLOGIES, 2012</a></li>
-            <li><a href="http://k5systems.com/TP0001_v1.pdf">Steven Kosmerchock, Wireless Sensor Network Topologies, ???</a></li>
+            <li><a href="http://k5systems.com/TP0001_v1.pdf">Steven Kosmerchock, Wireless Sensor Network Topologies</a></li>
             <li><a href="http://www-old.itm.uni-luebeck.de/teaching/ws0708/wsn/Kapitel2/WSN-WS0708-Kap02-Node%20Architecture.pdf?lang=de">Dr. Horst Hellbruck, Drahtlose Sensornetze, 2007</a></li>
-            <li><a href="http://www.willow.co.uk/html/mpr5x0-_mica2dot_series.html">Willow Technologies Ltd., MICA2DOT Datasheet, ???</a></li>
+            <li><a href="http://www.willow.co.uk/html/mpr5x0-_mica2dot_series.html">Willow Technologies Ltd., MICA2DOT Datasheet</a></li>
             <li><a href="http://www.enggjournals.com/ijcse/doc/IJCSE10-02-09-076.pdf">Ajay Jangra, Swati, Richa and Priyanka, Wireless Sensor Network (WSN): Architectural Design issues and Challenges, 2010</a></li>
             <li><a href="http://docs.tinyos.net/tinywiki/index.php/Getting_Started_with_TinyOS#Installing_on_a_mica-family_mote_.28micaz.2C_mica2.2C_mica2dot.29">Unknown author, Getting Started with TinyOS</a></li>
             <li><a href="http://en.wikipedia.org/wiki/ISM_band">Unknown author, ISM Band</a></li>
@@ -67,6 +79,9 @@
         </ol>
 </div>
 
+
+<HR COLOR="#444444" SIZE="3">
+
 <div id="aggregation">
     <h1>Data Aggregation</h1>
         </br>
@@ -78,6 +93,9 @@
             Comparative Study, 2011</a></li>
         </ol>
 </div>
+
+
+<HR COLOR="#444444" SIZE="3">
 
 <div id="keyManagement">
 	<h1>Key Management</h1>
@@ -98,6 +116,9 @@
 			<li>Subir Biswas, Md Mahbubul Haque, Saeed Rashwand, and Jelena Misic, Fast, Seamless Rekeying In Wireless Sensor Networks, 2009.</li>
 		</ol>
 </div>
+
+
+<HR COLOR="#444444" SIZE="3">
 <div id="intrusionDetection">
 	<h1>Intrusion Detection</h1>
 		</br>
