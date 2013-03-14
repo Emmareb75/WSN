@@ -59,11 +59,11 @@ There are two routing protocols that are popular; have a look at them to have be
 
 <div class="row-fluid">
 <div class="span6 pagination-centered">
-<img src="images/layers/mintRoute1.png" width="90%">
+<img src="images/layers/mintRoute1.png" width="70%">
 </div>
 <div class="span6 pagination-centered">
-<br><br><br>
-<img src="images/layers/mintRoute2.png" width="90%">
+<br><br>
+<img src="images/layers/mintRoute2.png" width="70%">
 </div>
 </div>
 
@@ -83,13 +83,13 @@ Let us consider this node A and B. The node A sends the beacon message to the no
 
 <HR COLOR="#444444" SIZE="3">
 
-<h1> Application Layer</h1>
+<h1> Application Layer</h1><br>
 <p>This layer is there to “personalise” the network according to the use of the WSN. provide software for different applications that translate the data in an understandable form or send queries to obtain certain information.
 </p>
 
 <HR COLOR="#444444" SIZE="3">
 
-<h1>Modulation Layer</h1>
+<h1>Modulation Layer</h1><br>
 <p>
 In WSN, in order to transport the information, the output signal would be in the form of Carrier form; it is a waveform whose property, such as amplitude or frequency  was modulated (it means modified) by mixing a wave with a different property. In general, the new waveform that is output has much higher frequency than that of the input wave. This is per a technique called Frequency Division Multiplexing. When you use a normal radio, you select the program you want to listen by setting the radio to the particular wave frequency. When the frequency is properly set, then you would not hear anything that is on a radio wave with different frequency.
 </p>

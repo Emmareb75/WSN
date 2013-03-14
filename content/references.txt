@@ -6,7 +6,7 @@
             <li><a href="http://www.cs.uni-paderborn.de/index.php?id=1119&L=1">Holger Karla and Andreas Willig, Protocols and Architectures for Wireless Sensor Networks, 2005</a></li>
             <li><a href="http://www.intechopen.com/books/wireless-sensor-networks-application-centric-design/wireless-sensor-networks-an-introduction">Qinghua Wang and Ilangko Balasingham, Wireless Sensor Networks - An Introduction, 2010</a></li>
             <li><a href="http://www.ieee.li/pdf/viewgraphs/ni_introduction_wireless_sensor_networks.pdf">Robert Berger, Introduction to Wireless Sensor Networks, 2009</a></li>
-            <li><a href="http://en.wikipedia.org/wiki/Wireless_sensor_network">Unkown author, Wikipedia, Wireless Sensor Networks</a></li>
+            <li><a href="http://en.wikipedia.org/wiki/Wireless_sensor_network">Unknown author, Wikipedia, Wireless Sensor Networks</a></li>
             <li><a href="http://www.dees.unict.it/users/bando/files/wsn.pdf">Salvatore La Malfa, Wireless Sensor Networks, 2010</a></li>
         </ol>
 </div>
