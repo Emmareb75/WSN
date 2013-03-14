@@ -9,7 +9,6 @@ knowledge or even a form of artificial intelligence.
 <div class="row-fluid">
 <div class="span4">
 <p>
-	<br><br>
 In C. Tseng, P. Balasubramanyam, C. Ko, R. Limprasittiporn, J. Rowe, and K.
 Levitt ref. [1]'s approach we find a specification-based IDS to detect attacks on
 AODV routing. In this approach they use finite state
