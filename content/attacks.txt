@@ -63,8 +63,23 @@ With this kind of antenna, you can transmit the signal at higher power, since yo
 <p>What the network would like to avoid is the energy exhaustion. As soon as the jamming is detected, the node can go to sleep, to avoid letting the energy drownout. The attack would not last forever, so the node can wake up time to time to check if the attack is over or not.<p>
 
 <b>Routing</b>
-<p>So the jamming happens; if the network is dense enough, we can use routing as countermeasure. The nodes near the jammed region edge can tell the nodes that are outside of the jammed region that there is an attack going on. 
-Once the nodes get notified, they can cooperate each other to map the jammed region. Then, it can reroute around the mapped region. For example, if the information was passed to the node A, instead of contacting to B, it would contact to the node C. The nodes in the jammed region can be set to sleep. Since the traffic has to make a detour, it would decrease the efficiency of the network. However the network can assure the information to be passed from the beginning to the end of the network. We can also be less worry about the energy of the node in the jammed region being exhausted.</p>
+<div class="row-fluid">
+	<div class="span6">
+	<p>So the jamming happens; if the network is dense enough, we can use routing as countermeasure. The nodes near the jammed region edge can tell the nodes that are outside of the jammed region that there is an attack going on.</p>
+	</div>
+	 <div class="span6 pagination-centered">
+	<img style="width: 80%;" src="images/attacks/jamming.png">
+	</div>
+</div>
+
+<div class="row-fluid">
+<div class="span5 pagination-centered">
+<img style="width: 80%;" src="images/attacks/jamming2.png">
+</div>
+		<div class="span7">
+			<p>Once the nodes get notified, they can cooperate each other to map the jammed region. Then, it can reroute around the mapped region. For example, if the information was passed to the node A, instead of contacting to B, it would contact to the node C. The nodes in the jammed region can be set to sleep. Since the traffic has to make a detour, it would decrease the efficiency of the network. However the network can assure the information to be passed from the beginning to the end of the network. We can also be less worry about the energy of the node in the jammed region being exhausted.</p>
+		</div>	
+</div>
 
  
 
