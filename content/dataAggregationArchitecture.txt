@@ -1,4 +1,4 @@
-           <h1>Data Aggregation Protocols & Architectures</h1><br>
+           <h1>Protocols & Architectures</h1><br>
             <p>There exist various network protocols leading to specific structures when performing Data Aggregation. Each of them presents its own advantages but also has a certain energy-cost. The following approaches give an overview of data aggregation protocols.</p>
 
             <div class="row-fluid">

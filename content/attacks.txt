@@ -27,17 +27,17 @@ A captured node can be identified according to the several following criterias:
 <p>Jamming is an attack, by emitting a strong signal at the same frequency as the nodes emit the message, make the collision and disrupt the communication. 
 It is like shouting really loud in a room. The conversation between the people in the room would have some noise. If you shout loud enough, people in the room cannot hear each other at all. For a successful jamming, it is required that you shout louder than other people having conversation; in other words the signal from the jammer must be stronger than that from the nodes.</p>
 <p>There are many kinds of jamming.</p>
-
-<h4>Spot Jamming</h4>
+<ul>
+<li>Spot Jamming</li>
 <p>One can emit the signal at one certain frequency at its full energy. It is a very strong attack, but it is very easy to avoid as well; the nodes can just communicate using other frequency. </p>
 
-<h4>Sweep Jamming</h4>
+<li>Sweep Jamming</li>
 <p>One can attack many frequency by changing the frequency he attacks. In WSN, the frequency at which the data is communicated is divided, so that they do not crush. Therefore, attacking various frequency should bring bigger damage to more data communicated.
 However, these attacks do not happen simultaneously. Therefore one can cope with this attack in a same manner as he cope with spot jamming.</p>
 
-<h4>Barrage Jamming<h4> 
+<li>Barrage Jamming</li> 
 <p>One can emit the signal with multiple frequencies at the same time. In this way, the strategy of changing the frequency at which the node emit the signal would not work. However, it is obviously hard for the attacker to emit strong enough signal that can overcome the signal emitted by the node at all the frequencies they want to jam. </p>
- 
+ </ul>
 <i><h4>Countermeasures</h4></i>
 <p><b>Regulated Transmitted Power: </b>
     in order to jam a network, the attacker obviously first needs to know where the signals from the node go around. If the signal emitted from the node is low, the location is hard to detect for the attacker. This is the advantage in using a weak signal. However the stronger the signal is, the more resistant it is against the jamming attack. There are good sides in both strength of signal. Therefore it is advantageous if the node can change the strength of the signal according to the scenario. If the attacker have already identified the location of the network and started jamming, then it can emit the signal stronger, otherwise it can keep it low so that the attacker would not find it. </p>
