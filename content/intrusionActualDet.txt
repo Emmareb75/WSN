@@ -18,14 +18,7 @@ to detect runtime violation of the AODV specification.
 <p>The <b>Ad hoc On-demand Distance Vector</b>(AODV) routing
 protocol is a reactive and stateless protocol that establishes routes
 only as desired by a source node using route request (RREQ) and
-route reply (RREP) messages. When a node wants to find a route
-to a destination node, it broadcasts a Route Request (RREQ)
-message with a unique RREQ ID (RID) to all its neighbors. When
-a node receives a RREQ message, it updates the sequence number
-of source node and sets up reverse routes to the source node in the
-routing tables. If the node is the destination or the node has a
-route to the destination that meet the freshness requirements, it
-unicasts a route reply (RREP) back to the source node.</p>
+route reply (RREP) messages. </p>
 </div>
 <div class="span8 pagination-right">
 <div class="span12 pagination-centered">
@@ -42,8 +35,19 @@ D. Last, D unicasts back the RREP message to A. We call these
 RREQ and RREP packets a request-reply flow. The values of the
 fields in the routing messages are denoted in Table 1.</i></font>
 <div class="span12 pagination-centered">
-<img src="images/intrusion/pic1.png" width="80%">
+<img src="images/intrusion/table.png" width="80%" height="120%">
+<br>
 </div>
+</div>
+<div>
+<p>When a node wants to find a route
+to a destination node, it broadcasts a Route Request (RREQ)
+message with a unique RREQ ID (RID) to all its neighbors. When
+a node receives a RREQ message, it updates the sequence number
+of source node and sets up reverse routes to the source node in the
+routing tables. If the node is the destination or the node has a
+route to the destination that meet the freshness requirements, it
+unicasts a route reply (RREP) back to the source node.</p>
 </div>
 </div>
 <br>

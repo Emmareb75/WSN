@@ -1,6 +1,6 @@
-<h1>Routing layer</h1><br>
+<h1>Routing layer</h1><a href="references.html">[1]</a><br>
 
-<h2>Hello Flood</h2>
+<h2>Hello Flood</h2><a href="references.html">[6]</a>
 <p>This is a kind of DoS attack. In some routing protocols, the nodes have to send “hello” message to announce themselves to their neighbour. Naturally the nodes that receive this message would think that it was sent by the node that the radio signal is reachable from them.
  In Hello flood, the attacker takes advantage of this protocol. She sends fake hello message using his more sophisticated tool (laptop-class device) that has bigger transmission  power, from outside of the actual network. Because of his hello message and sufficiently strong signal, the nodes believe that this device is in the radio range. Now she advertises fake low-cost route from her device to the sink. Attracted by it, many nodes link itself to the attacker’s device. Now the packets would be dropped because the traffic is depending on the route that actually does not exist. It can also emit the signal that is stronger than the base station, and pretend to be the initiator of the route.</p>
 
@@ -11,24 +11,24 @@
 
 
 <b>Encryption</b> 
-	<p>In ref the author suggests to group up every two nodes in the network. Every two nodes have common secret key, and this key is re-generated everytime the communication is made. This would assure that, without being in the range of at least one node, one would not be able to decrypt or verify the message. 
+	<p>In ref the author suggests to group up every two nodes in the network. Every two nodes have common secret key, and this key is re-generated every time the communication is made. This would assure that, without being in the range of at least one node, one would not be able to decrypt or verify the message. 
 	However it would be very energy consuming to re-generate the key this often. Considering the limited processing power and the battery capacity of the node, this is not a desirable feature. 
 	Also if the attacker spoof the identity, this protocol would be ineffective because the secret key will be shared by the node that is supposed to be in pair with the node of which identity the attacker is spoofing. </p>
 
 <HR COLOR="#444444" SIZE="3">
 
 <h2>Sybil Attacks</h2> 
-	<p>[ref1]One of the feature of the WSN is its non-centralized nature. The nodes interact and cooperate each other without any entity that controls over them. In this kind of environment, it is possible for the malicious node to have multiple identity by spoofing the identities of the legitimate nodes in the network. [ref2]
-In the WSN, some protocols are dependant on the assumption that there is one-to-one mapping between the identity and the entity. The attacker’s node with multiple identities collapse these protocols. [ref3]For instance the attacker can affect the routing protocol. Each node has information about its physical location. If a node has multiple set of the physical location, that would confuse the system.
-[ref3] When the network detects some misbehavior, it is often the case that there are some false positives. In this case, the judgement of “suspicious malicious node” would be pended for that moment, and it waits for it to repeat other misbehavior to make sure. Then the malicious node can switch his identity every time it makes an attack, so that it would not be “accused”.</p>
+	<p>One of the feature of the WSN is its non-centralized nature. The nodes interact and cooperate each other without any entity that controls over them. In this kind of environment, it is possible for the malicious node to have multiple identity by spoofing the identities of the legitimate nodes in the network.
+In the WSN, some protocols are dependant on the assumption that there is one-to-one mapping between the identity and the entity. The attacker’s node with multiple identities collapse these protocols. For instance the attacker can affect the routing protocol. Each node has information about its physical location. If a node has multiple set of the physical location, that would confuse the system.
+When the network detects some misbehavior, it is often the case that there are some false positives. In this case, the judgement of “suspicious malicious node” would be pended for that moment, and it waits for it to repeat other misbehavior to make sure. Then the malicious node can switch his identity every time it makes an attack, so that it would not be “accused”.</p>
 
 <i><h3>Countermeasures</h3></i>
-<b>Position Verification</b>
+<b>Position Verification</b> <a href="references.html">[7]</a>
     <p>If the nodes are deployed and the location is fixed, then it can detect the sybil attack by comparing the position that should be at and where the identity tells where it actually is. The identities that are possessed by the node would claim to be different place from where the malicious node is, therefore when these identities are inspected, the network would know the intrusion.</p>
 
 
 
-<b>Radio Resource Test</b> 
+<b>Radio Resource Test</b> <a href="references.html">[8]</a>
 	<p>To detect the Sybil identity, it can put the nodes on a certain test. There are many kinds of tests, and they are based on following assumptions:</p>
 	<ul>
 		<li><p>A node has at most one radio device.

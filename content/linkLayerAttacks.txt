@@ -1,7 +1,7 @@
-<h1>Link Layer Attacks</h1><br>
+<h1>Link Layer Attacks</h1><a href="references.html">[1]</a><br>
 
-<h2>Continuous Channel attack</h2>
-It is a common DoS attack in the physical layer. This attack aims to exhaust the resource, typically battery or channel access, of nodes. This can be achieved by continuously requesting, or transmitting large amount of signal over the channel(see<Collision>). This act monopolise the channel access of the network, and other nodes do not manage to have any access. In other words, the other nodes experience the exhaustion of the channel access. Also, by continuously requesting to a certain node, the attacker can make the battery of the node drained out, and exhaust the power. 
+<h2>Continuous Channel attack</h2><a href="references.html">[3]</a>
+It is a common DoS attack in the physical layer. This attack aims to exhaust the resource, typically battery or channel access, of nodes. This can be achieved by continuously requesting, or transmitting large amount of signal over the channel. This act monopolise the channel access of the network, and other nodes do not manage to have any access. In other words, the other nodes experience the exhaustion of the channel access. Also, by continuously requesting to a certain node, the attacker can make the battery of the node drained out, and exhaust the power. 
 
 <i><h3>Countermeasures</h3></i>
 <p><b>Rate Limiting: </b>
@@ -11,7 +11,7 @@ Countermeasure for this attack is pretty straight-forward; the network can ignor
 <HR COLOR="#444444" SIZE="3">
 
 
-<h2>Collision</h2>
+<h2>Collision</h2><a href="references.html">[3]</a>
 <p>Collision happens when two nodes transmits messages to one node at the same frequency simultaneously. An attacker can cause collision by pretending to be a node using some device. There are two kind of effects; one is Denial of Service. By transmitting a lot of messages on one node, it can drain the energy out from the node. Also this may monopolize the channel access, and cause unfairness., which decreases the efficiency of the network.
 The other is the modification of data. Requests do not have to last long; data disruption for a short period of time is enough to bring some noise/change in the packet of data. Thus it is a power efficient attack compared to Continuous Channel Access attack. Also, it is very difficult to detect the collision. One would not know if the noise caused in the data attributes to, for example, spoiled sensor of a node or intruder. </p>
 
@@ -52,7 +52,7 @@ Now, this malicious node have control over much more information. If this develo
 <p>In order to use this technique, the attacker should know the routing protocol of the network. There are two popular routing protocols; one is MintRoute, and the other is MultiHopLQI. 
 In order to build up the optimum paths of the nodes to the base station of the network, the nodes must be able to calculate the cost of the possible paths between the nodes in some way.  In these protocols, the standard is called link quality. The smaller the cost is, the better the link quality is. In these protocols, different measurement is used to calculate this.</p>
 <br>
-<p>When attacker wishes to develop a Sinkhole attack to the network using the MintRoute protocols, there are two possible things it can do:</p>
+<p><a href="references.html">[4]</a>When attacker wishes to develop a Sinkhole attack to the network using the MintRoute protocols, there are two possible things it can do:</p>
 <ul>
 <li> One is to make the nodes believe that the node compromised by the attacker has better link quality than the others.</li>
 <li> The other is to make the nodes believe that the other nodes are worse than they actually are by impersonating these nodes, and sending fake packets to the node.</li>
