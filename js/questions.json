@@ -6,7 +6,7 @@
             "It requires that two nodes share at least Q keys in orded to communicate.",
             "It does not build on the classic scheme."
         ],
-        "correct": "It requires that two nodes share at least Q keys in orded to communicate."
+        "correct": "It requires that two nodes share at least Q keys in order to communicate."
     },
     {
         "question": "BLA  add on top of the classic Random Key Pre-distribution one?",
