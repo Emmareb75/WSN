@@ -21,16 +21,99 @@ The other is the modification of data. Requests do not have to last long; data d
 There is a clear trade-off here; the computation of the check sum takes up energy, and the node must transmit extra information would cause bigger consumption of the energy. In addition, the redundancy would increase the risk of being overheard.
 Also, Error Correcting Code is not perfect. It can only deal up to certain level of corruption.</p>
 
+<HR COLOR="#444444" SIZE="3">
 
 <h2>Eavesdropping</h2>
 <p>The name gives a big clue on what consist the attack. Eavesdropping means basically to steal the information communicated in the network. The information can be of any kind. It can be the data itself, or it can be something about the network itself.
 Wireless sensor network is especially vulnerable to this kind of attack, because of its nature- being wireless. The signals transmitted are completely open to the public, thus it is easy for attacker to inject the device and extract the raw data from it.
 Eavesdropping itself tend not to be a big threat; for example, if the network is used to monitor where the animals are in the safari, there would be no problem even if somebody eavesdrops this kind of data.  The scary thing about this attack is that, the information stolen can enable the attacker to develop stronger attack to the network. For example, one can have control over a node based on the information gained from the eavesdropping, and from that it can develop blackhole attack. Therefore, it is important to protect the network from this attack</p>
 
+<HR COLOR="#444444" SIZE="3">
+
 <h2>Black Hole Attack</h2>
-<p>The name gives a big clue on what consist the attack. Eavesdropping means basically to steal the information communicated in the network. The information can be of any kind. It can be the data itself, or it can be something about the network itself.
-Wireless sensor network is especially vulnerable to this kind of attack, because of its nature- being wireless. The signals transmitted are completely open to the public, thus it is easy for attacker to inject the device and extract the raw data from it.
-Eavesdropping itself tend not to be a big threat; for example, if the network is used to monitor where the animals are in the safari, there would be no problem even if somebody eavesdrops this kind of data.  The scary thing about this attack is that, the information stolen can enable the attacker to develop stronger attack to the network. For example, one can have control over a node based on the information gained from the eavesdropping, and from that it can develop blackhole attack. Therefore, it is important to protect the network from this attack</p>
-<div class="span12 pagination-centered">
-<img style="width: 60%;" src="images/attacks/blackHole.png">
+<div class="row-fluid">
+	<div class="span5">
+<p>This is an active insider attack. The attacker disguise his device to be part of the network, and receives the message from the nodes around them. Then it does not forward this message to any node, but just discard them. In other words, it, like black hole, “swallows” these messages. 
+ This can get quite a big issue, because by dropping the messages, it actually block whole traffic that passes through it.</p>
+<p>The effect of this attack highly depends on where this malicious “blackhole” node is located. If the “blackhole” node is located far away from the base station, then there will be fewer traffic that has to go through the blackhole node. This less effective blackhole is indicated as a gray spiky object in the figure. The only traffic that go through it is the one from the yellow node. On the contrary, if the “blackhole” node is located close to the base station, then the big part of the traffic might have to go through it. This blackhole is indicated as a black spiky object. You can see that the big part of the traffic is blocked by this; all the information from the pink nodes are lost due to this blackhole.</p>
+</div>
+<div class="span7 pagination-centered">
+<img style="width: 76%;" src="images/attacks/blackHole.png">
+</div>
+</div>
+
+<HR COLOR="#444444" SIZE="3">
+
+<h2>Sink Hole Attack</h2>
+<div class="row-fluid">
+
+<p>This is an attack that empowers other attacks. What it basically does is an advertisement of the node that belongs to the attacker. It appeals to the adjacent nodes that it can offer the better path than the other nodes, because it has bigger bandwidth, or higher quality route to the base station, etc. Then, the other nodes believe that this node can offer better paths and change the paths. As a result, more traffic would pass through this malicious node.
+Now, this malicious node have control over much more information. If this develops eavesdropping attack now, then more information will be in hand of the attacker. It can execute blackhole attack as well, and then more information will be lost.</p>
+<p>In order to use this technique, the attacker should know the routing protocol of the network. There are two popular routing protocols; one is MintRoute, and the other is MultiHopLQI. 
+In order to build up the optimum paths of the nodes to the base station of the network, the nodes must be able to calculate the cost of the possible paths between the nodes in some way.  In these protocols, the standard is called link quality. The smaller the cost is, the better the link quality is. In these protocols, different measurement is used to calculate this.</p>
+<br>
+<p>When attacker wishes to develop a Sinkhole attack to the network using the MintRoute protocols, there are two possible things it can do:</p>
+<ul>
+<li> One is to make the nodes believe that the node compromised by the attacker has better link quality than the others.</li>
+<li> The other is to make the nodes believe that the other nodes are worse than they actually are by impersonating these nodes, and sending fake packets to the node.</li>
+</ul>
+<p>To avoid the case where the current parent node has too much high the link quality, like the A node in the example explained before, the attacker tend to do both self-advertisement and dis-advertisement of other nodes. Usually, to assure the occurrence of the re-selection of the parent node, the attacker make the parent node to look like it has worse link quality than 25.
+After this procedure on every single neighbour node, all the traffic will go through the node that belongs to the attacker.</p>
+<br>
+<p>When an attacker wants to develop an attack on a network that uses MultiHopLQI, she can do three things:</p>
+<ul>
+<li> Advertise her device that it has low-cost link between its parent node.</li>
+<li> Choose the neighbour node with the lowest cost to the base station as its parent node.</li>
+<li> Make the neighbouring nodes look like they have higher path cost than the actual one.</li>
+</ul>
+</div>
+
+<br></br>
+
+<div class="row-fluid">
+	<div class="span6">
+		<br></br>
+		<p>Let us consider the network below and the possible move the attacker can make. The compromised node here is E.</p>
+	</div>
+	<div class="span6 pagination-centered">
+		<img style="width:70%;" src="images/attacks/sinkHoleBefore.png">
+	</div>
+</div>
+
+<br></br>
+
+<div class="row-fluid">
+	<div class="span6 pagination-centered">
+		<img style="width:80%;" src="images/attacks/caseA.png">
+	</div>
+
+	<div class="span6">
+		<br>
+		<p>In case A, the compromised node E advertises itself with the fake low path cost. Attracted by this low path cost, the neighbouring nodes change the parent node, believing that passing through E would lead to higher efficiency in communicating with the base station. The traffic is concentrated to the node E, and more information is in the hand of the attacker.</p>
+	</div>
+</div>
+
+<br></br>
+
+<div class="row-fluid">
+	<div class="span6">
+<br></br><br></br>
+		<p>In case B, the attacker uses impersonation technique in order to make the other node choose her device over it. </p>
+	</div>
+	<div class="span6 pagination-centered">
+		<img style="width:80%;" src="images/attacks/caseB.png">
+	</div>
+</div>
+
+<br></br>
+
+<div class="row-fluid">
+	<div class="span6 pagination-centered">
+		<br></br>
+		<img style="width:80%;" src="images/attacks/caseC.png">
+	</div>
+
+	<div class="span6">
+		<p>Case C shows another attacking technique, where the parent node to the one that has lower path cost. As shown in the figure, the compromised node E change its parent node from B to C, because it has better path cost 60 than B. Then, E can say that the cost of the link between C and E is super low, say, 15. (this is actually the cost calculated when the link quality is at maximum, 255.) Depending on the network, this might not be the easiest way to develop the sinkhole attack. However there is an advantage in this method. It is that all the attacker’s move are legal. It is easy for the network to detect the intrusion if one node suddenly has path cost 1000, or if the path cost of a child node is smaller than that of the parent as in the first and second methods. However, in the third method there would not be any contradiction, therefore harder to judge if the node is malicious or not. </p>
+	</div>
 </div>
