@@ -11,7 +11,7 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="bootstrap/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/color.css" rel="stylesheet">
+    <link href="css/colorCustom.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 
     <!--[if lt IE 9]>
@@ -24,12 +24,24 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+
+    <style type="text/css">
+    a {
+      text-decoration: none;
+      color: #444;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #c74825;
+    }
+    </style>
   </head>
 
-  <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+  <body onload="callFile('quiz.txt')">
+    <div class="navbar navbar-fixed-top"> <!--navbar-inverse-->
       <div class="navbar-inner">
-        <div class="container-fluid">
+        <div class="container-fluid ">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -39,7 +51,7 @@
 
             <ul class="nav">
               <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
-              <li class="active"><a href="#"><i class="icon-tasks"></i>Quiz</a></li>
+              <li class="active"><a href="quiz.html"><i class="icon-tasks"></i>Quiz</a></li>
               <li><a href="references.html"><i class="icon-book"></i>References</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -49,97 +61,135 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Introduction</li>
-                  <li><a onclick="callFile('wirelessSensorNetworks.txt')">Definition of WSNs</a></li>
+
+                <div class="span2">
+          <div class="well sidebar-nav sidebar-nav-fixed" style="background:none; border:none; box-shadow:none;">
+          <ul class="nav nav-list">
+          <div class="accordion" id="accordion2" style="background-color:#f5f5f5;">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                Introduction
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('wirelessSensorNetworks.txt')">Overview</a></li>
+                  <li><a onclick="callFile('applications.txt')">Various Applications</a></li>
                   <li><a onclick="callFile('networkArchitecture.txt')">Network Architecture</a></li>
                   <li><a onclick="callFile('nodeArchitecture.txt')">Node Architecure</a></li>
-                  <li><a onclick="callFile('dataCommunication.txt')">Data Communication</a></li>
-                  <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
-                  <li><a onclick="callFile('applicationsOfWSN.txt')">Applications</a></li>
                   <li><a onclick="callFile('limitationOfWSN.txt')">Limitations</a></li>
-              <li class="nav-header">Security</li>
-                  <li><a onclick="callFile('securityIssues.txt')">Issues</a></li>
-                  <li><a onclick="callFile('securityPrinciples.txt')">Principles</a></li>
-              <li class="nav-header">Key Management</li>
-                  <li><a onclick="callFile('keyManagement.txt')">General</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                Security
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <li><a onclick="callFile('securityIssues.txt')">Issues &amp; Challenges</a></li>
+                  <li><a onclick="callFile('securityPrinciples.txt')">Security Principles</a></li>
+              </div>
+            </div>
+          </div>
+           <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                Key Management
+              </a>
+            </div>
+            <div id="collapseThree" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('keyManagement.txt')">Definition</a></li>
                   <li><a onclick="callFile('keyManagementSchemes.txt')">Key Management Schemes</a></li>
-              <li class="nav-header">Attacks</li>
-                  <li><a onclick="callFile('attacks.txt')">Classification</a></li>
-              <li class="nav-header">Defense</li>
-                  <li><a onclick="callFile('intrusionDef.txt')"> Intrusion Detection</a></li>
-                  <li><a onclick="callFile('intrusionTheoryDet.txt')"> Detecting Techniques in Theory</a></li> 
-              <li class="nav-header">Layers</li>
+                  <li><a onclick="callFile('rekeyingMechanism.txt')">Rekeying Mechanisms</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseFour">Data Aggregation</a>
+            </div>
+            <div id="collapseFour" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('dataAggregation.txt')">Definition</a></li>
+                  <li><a onclick="callFile('dataAggregationArchitecture.txt')">Aggregation Protocols</a></li>
+                  <li><a onclick="callFile('interactionsWithSecurityPrinciples.txt')">Interaction with Security</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseFive">Attacks</a>
+            </div>
+            <div id="collapseFive" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('attackers.txt')">Types of Attackers</a></li>
+                  <li><a onclick="callFile('attacks.txt')">Physical Attacks</a></li>
+                  <li><a onclick="callFile('linkLayerAttacks.txt')">Link Layer Attacks</a></li>
+                  <li><a onclick="callFile('routingLayerAttacks.txt')">Routing Layer Attacks</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseSix">Defense</a>
+            </div>
+            <div id="collapseSix" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('intrusionDef.txt')"> Intrusion Detection (IDS)</a></li>
+                  <li><a onclick="callFile('intrusionTheoryDet.txt')"> Detecting Techniques</a></li>
+                  <li><a onclick="callFile('intrusionActualDet.txt')"> Implementations</a></li>
+                  <li><a onclick="callFile('intrusionDeplTech.txt')"> Deployment Strategies</a></li>
+                  <li><a onclick="callFile('intrusionAlert.txt')"> Alert and Response</a></li>
+                  <li><a onclick="callFile('intrusionIDEvaluation.txt')"> IDS Evaluation Methods</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseSeven">Layers</a>
+
+            </div>
+            <div id="collapseSeven" class="accordion-body collapse">
+              <div class="accordion-inner">
                   <li><a onclick="callFile('layers.txt')">Definition</a></li>
                   <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
                   <li><a onclick="callFile('physicalLayer.txt')">Physical Layer</a></li>
                   <li><a onclick="callFile('linkLayer.txt')">Link Layer</a></li>
                   <li><a onclick="callFile('routingLayer.txt')">Routing Layer</a></li>
                   <li><a onclick="callFile('applicationLayer.txt')">Application Layer</a></li>
-              <li class="nav-header">Data Aggregation</li>
-                  <li><a onclick="callFile('dataAggregation.txt')">Definition</a></li>
-                  <li><a onclick="callFile('dataAggregationArchitecture.txt')">Architecture</a></li>
-                  <li><a onclick="callFile('interactionsWithSecurityPrinciples.txt')">Security Issues</a></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
-          <div id="main" class="hero-unit">
-            <h1>Security in Wireless Sensor Networks.</h1>
-            <p>This is a simple presentation on Security in Wireless Sensor
-            Networks.</p>
-            <p><a href="wsn.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+              </div>
+            </div>
           </div>
-          <div id="lowerDivs" class="row-fluid">
-            <div class="span4">
-              <h2>WSN Outline</h2>
-              <p>Wireless Sensor Network, often abbreviated as “WSN”, is an
-              emerging and fast-growing technology. One network of this type
-              consists of a large number of sensor nodes, also called “motes”,
-              spatially distributed. </p>
-              <p><a class="btn" href="wsn.html">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Security Issues</h2>
-              <p>Wireless Sensor Networks are vulnerable to various attacks
-              like any other conventional network, but its limited resource
-              characteristics and unique application features requires some
-              extra security requirements including the typical network
-              requirements.</p>
-              <p><a class="btn" href="security.html">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Security principles</h2>
-              <p>The main goal of security is to provide protection services from all kinds of attacks. Achieving this is difficult, but the complex systems designed with this purpose must rely on a set of requirements that should be able to guarantee scalability, efficiency and reliability. There are are several properties that the foundation of a secure wireless sensor network should be built on.</p>
-              <p><a class="btn" href="principles.html">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div id="lowerDivs1" class="row-fluid">
-            <div class="span4">
-              <h2>Defense Strategies</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="defense_strategies.html">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Attacks</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="attacks.html">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Data Aggregation</h2>
-              <p>Sensor nodes present several limitations, mostly due to their constrained power capabilities1. Amongst the features of sensor nodes, data communication is notably the most power consuming. Hence, it is important to minimise the amount of data transiting through the Wireless Sensor Network and optimise the overall bandwidth utilisation by preventing overwhelming amounts to traffic. </p>
-              <p><a class="btn" href="dataaggreg.html">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
+          </div>
+        </ul>
+        <div class="pagination-centered">
+          <img src="css/image/group4.png" style="width:84%; max-width:100px; width:expression(this.width > 100px ? "100px" : true);">
+          <br></br>
+          <div class="span10 offset1 pagination-centered"> <p text-transformation="uppercase"> Kaho Sato, Alice Sibold, Theodor Gherzan, Adrian Draghici</p></div>
+        </div>
+
+    </div>
+  </div><!--/span2-->
+
+        <div class="span10">
+          <div id="main" class="hero-unit">
+          </div>
         </div><!--/span-->
       </div><!--/row-->
 
       <hr>
-
       <footer>
-        <p>&copy; Kaho Sato, Alice Sibold, Adrian Draghici, Theodor Gherzan</p>
+        <p>  &copy; Kaho Sato, Alice Sibold, Adrian Draghici, Theodor Gherzan
+          <p> Original design belongs to Group4</p>
       </footer>
 
     </div><!--/.fluid-container-->
@@ -160,6 +210,8 @@
     <script src="bootstrap/js/bootstrap-collapse.js"></script>
     <script src="bootstrap/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="js/quiz.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
       var n;
 
@@ -184,8 +236,7 @@
         if(n.readyState == 4) {
           var el = document.getElementById('main');
           el.innerHTML = n.responseText;
-          document.getElementById('lowerDivs').innerHTML = null;
-          document.getElementById('lowerDivs1').innerHTML = null;
+          document.getElementById('main').style.cssText='background-color:#f5f5f5; padding: 60px; margin-top:0px; margin-bottom: 30px; font-size: 18px; font-weight: 200; line-height: 30px; border-radius:5px; border: 1px solid #e5e5e5;'
         }
       }
     </script>
