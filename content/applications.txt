@@ -1,35 +1,38 @@
-<h1>Applications</h1>
-            <p>While being initially developed for military purpose, Wireless Sensor Networks are now widely used for tracking and monitoring purposes.</p>
+<h1>Applications</h1><br>
+            <p>While being initially developed for military purpose, Wireless Sensor Networks are now widely used for tracking and monitoring purposes. Nowadays Military uses WSNs for battlefield surveillance, through tracking the enemy position for instance.</p>
+            Amongst the numerous applictions of Wireless Sensors Networks, the following illustrate the fundamental role of this type of network:
 
-            <p><b>Environmental monitoring:</b>  Wireless Sensor Networks can monitor environmental variables such as temperature, humidity, atmospheric pressure, air pollution, etc...</p>
-            <ul>
-                  <li>
-                        <p>Air quality and pollution:
-                        </p>
-                  </li>
-                   <li>
-                        <p>Forest Fire detection:
-                        </p>
-                  </li>
-                   <li>
-                        <p>Landslide detection:
-                        </p>
-                  </li>
-                   <li>
-                        <p>Water quality:
-                        </p>
-                  </li>
-                   <li>
-                        <p>Natural disaster prevention:
-                        </p>
-                  </li>
-            </ul>
+            <p><b>Environmental monitoring:</b>  Wireless Sensor Networks can monitor environmental variables such as temperature, humidity, atmospheric pressure, air pollution, but also landslide detection or natural disaster prevention</p>
+<br>
+                   <div class="row-fluid">
+                    <div class="span6">
+                        <p><b>Forest Fire detection: </b>SISVIA Vigilancia y Seguimiento Ambiental jointly commercialize projects for the environmental protection, have developed and integrated a forest fires detection system using WSN.The covered area is about 210 hectares in the North Spain region, comprising the Communities of Asturias and Galicia.The WSN is responsible for measurement of various environmental variables such as temperature, carbon dioxide, oxygen, ammonia ..etc and delivering early warning[1].
+                        </p></div>
+                        <div class="span6 pagination-centered">
+                        <iframe width="420" height="315" src="http://www.youtube.com/embed/pHOJPWkOmGA?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
 
-            <p><b>Industrial monitoring:</b> WSNs are widely used to monitor temperature in buildings, but also to track factories products and transportations.</p>
-             <ul>
-            </ul>
-            <p><b> Agriculture monitoring</b></p>
+<br>
+                   <div class="row-fluid">
+                    <div class="span6">
+                        <p>
+                         <b> Industrial monitoring: </b>WSNs are widely used to monitor temperature in buildings, but also to track factories products and transportations[2].
+                        </p>
+                        <p>
+                          A firm called National Interest have launched the WSN that watch over the mechanical vibration, which significantly consumes the durability of the machine. The continuous monitoring of vibrations and other signals is critical to predicting mechanical behavior and efficiency and usually requires continuous data acquisition and online database analysis
+                        </p>
+                      </div>
+                        <div class="span6 pagination-centered">
+                       <img width="50%" src="http://sine.ni.com/cms/images/casestudies/veski.jpg?size">
+                        </div>
+                    </div>
+<br>
+                        <p>
+                          <b>Agriculture Monitoring: </b>WSNs re highly useful for watching over the disease in the field. The plant disease can dramatically affect the harvest very quickly. It is important to watch over the condition of the field constantly to prevent the disease from happening, and analyze the cause of it, which is impossible to do manually especially for a large size field. 
+                          At Iowa State University, there is a research aiming to develop a monitoring system that watch over a rice field throughout the growing season. The sensor nodes are located inside and outside of the greenhouse to measure the temperature, humidity and the growth level of the plant. In case of the plant disease, one can analyze the fluctuation of these environmental variable to spot the cause, or one can spot the possiiblilty of the disease[3].
+                        </p>
 
-            <p><b>Health care:</b>  Sensors can be implanted inside the human body to monitor their health through observing vital signs, electrocardiograms, glucose level, etc...</p>
-            <p><b>Military tracking:</b> Military uses WSNs for battlefield surveillance, through tracking the enemy position for instance.</p>
+
+            <p>On top of those applications, we can had Health care Monitoring; in this case sensors can be implanted inside the human body to monitor their health through observing vital signs, electrocardiograms, glucose level, etc...</p>
             <p>There are numerous applications and therefore various type of data treated, each of them having specific security requirements such as consistency, reliability, accuracy.</p>

@@ -1,4 +1,4 @@
-<h1>Physical Attacks</h1>
+<h1>Physical Attacks</h1><br>
 
 <h2>Node capturing</h2>
 <p>Since WSN are often deployed in an unattended environment, it is very easy for the adversary to physically gain or tamper with nodes. On the contrary it is hard for the network to detect that a node is captured. [ref1] With the node in her hand, attacker can extract sensitive information, such as cryptographic key. This enables the attacker to gain the plain-text from the information that she eavesdrops. Or the adversary may connect the node to his device and develop some insider attack using the information gained from the captured node. </p>

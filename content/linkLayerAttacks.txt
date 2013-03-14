@@ -1,4 +1,4 @@
-<h1>Link Layer Attacks</h1>
+<h1>Link Layer Attacks</h1><br>
 
 <h2>Continuous Channel attack</h2>
 It is a common DoS attack in the physical layer. This attack aims to exhaust the resource, typically battery or channel access, of nodes. This can be achieved by continuously requesting, or transmitting large amount of signal over the channel(see<Collision>). This act monopolise the channel access of the network, and other nodes do not manage to have any access. In other words, the other nodes experience the exhaustion of the channel access. Also, by continuously requesting to a certain node, the attacker can make the battery of the node drained out, and exhaust the power. 
