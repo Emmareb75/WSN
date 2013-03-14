@@ -1,45 +1,6 @@
 <h1>Attacks</h1><br>
-    <p>
-            
-            In order to secure the network, one has to understand the nature of the attack that the network can possibly suffer. Here we look at the various kind of attack and the classification.
-            
-            
-            -Attacker-
-            -purpose-
-            -Active attacker
-            One can summarise the purpose of the active attacker is modification; It can modify/destroy/fake the data, or structure of the network as whole and interrupt the communication. Therefore the attack of this nature would affect the integrity and the availability of the data, and causes unfairness# in the network which leads to the lower efficiency.
-            
-            -Passive attacker. 
-            The passive attacker would not modify anything in the network- their purpose is the information. Information can be the data itself, the cryptography key, key for authentification, etc. The attack of this nature would affect the secrecy of the data.
-            
-            -location-
-            One can classify the attacker in terms of the location; Insider refers to the attacker that attempts to intervene with the WSN within its range, and Outsider to the one outside of the range. In this context, “being in the range” does not have physical meaning; being in the range of the network means to have an authorised access to the network.
-            
-            -Insider 
-            The damage of the attack from the insider tends to be much more significant than the outsider. Implication of the insider attack is that an authorised node(s) is compromised# , or a malicious node(s) is inserted in the network.  This means that this attacker has the access to all the nodes within the range of the compromised/malicious node(s). This nature makes it difficult to identify the attacker, because it disguises itself to be in the part of the network. The purpose of this attacker would be
-            - Gain an access to cryptography keys, or other WSN codes.(effect the secrecy of the data)
-            - To corrupt the data. (effect the integrity of the data)
-            - To distrupt the communication with in the nodes.(effect the availability of the data)
-            
-            -Outsider
-            The outsider’s attack has relatively small impact, and it is easier to cope with. Since this kind of attacker does not have an authenticated access to the network, methods of attack are limited to the following;
-            - DoS attacks#
-            - Jamming#
-            - Resource exhaustion#
-            
-            -Attacking devices-
-            -Mote-class attack
-            Term Mote-class attack indicates the attack done by a device that is equivalent/similar to the common sensor node. Therefore by definition the attacker of this nature would be insider as well, which is hard to detect and cope with. Obviously it is possible for a laptop-class attack to occur within the WSN range by pretending to be a legal node. 
-            
-            - Laptop-class attack
-            In this context, laptop does not mean MacBook or ASUS ZENBOOK, it simply means the device that is more sophisticated and powerful than the node. Obviously it can carry out an attack in a wider range of the network, or a more powerful attack which is harder to handle. 
-             
-             
-             -Layer-
-             In order to optimise the security in the WSN, it is valid to classify the attacks in terms of the layer for which each attack is subjected. In this page, we introduce possible attacks on each layer. 
-             
-             -link layer-
-             Being wireless, the WSN is exteremely vulnerable against the attack on the link layer. Indeed, the Link Layer Security is considered to be one of the challenges concerning the security in the WSN. 
-             
-             -Exhaustion
-             This is a genaral term for the attack aiming to exhaust the resource, typically battery or channel access, of nodes. This can be achieved by continuously requesting, or transmitting large amount of signal over the channel. This act monopolise the channel access of the network, and other nodes do not manage to have any access. In other words, the other nodes experience the exhaustion of the channel access. Also, by continuously requesting to a certain node, the attacker can make the battery of the node drained out, and exhaust the power. </p>
+<h2>Physical</h2>
+
+<h2>Link layer</h2>
+
+<h2>Routing layer</h2>
