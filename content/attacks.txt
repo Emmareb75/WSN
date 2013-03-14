@@ -1,18 +1,15 @@
-<h1>Various Attacks</h1><br>
+<h1>Physical Attacks</h1>
 
-<h2>Physical Attacks</h2>
-
-<h3>Node capturing</h3>
+<h2>Node capturing</h2>
 <p>Since WSN are often deployed in an unattended environment, it is very easy for the adversary to physically gain or tamper with nodes. On the contrary it is hard for the network to detect that a node is captured. [ref1] With the node in her hand, attacker can extract sensitive information, such as cryptographic key. This enables the attacker to gain the plain-text from the information that she eavesdrops. Or the adversary may connect the node to his device and develop some insider attack using the information gained from the captured node. </p>
 
-<i><h4>Countermeasures</h4></i>
+<i><h3>Countermeasures</h3></i>
 <p>There are several different aspect we can look at make the network robust to this attack: safe deployment of the nodes and identification of the corrupted node.</p>
-[ref1]
+
 <ul>
 <li><p><b>Self distruction: </b>
 One may program the node in such way that when it detects some tampering, it deletes all the information on that node. In most of the wireless sensor network, the nodes are redundantly deployed; therefore it would not be a problem even if one node loses the information and the functionality.</p></li>
 
-[ref3]
 <li><b>Identification of the corrupted node: </b>
 A captured node can be identified according to the several following criterias: 
 <ol>
@@ -23,29 +20,52 @@ A captured node can be identified according to the several following criterias:
 <p>If it is detected that a node that satisfies that these criteria is being used for an attack, then self-detection would be commanded.</p></li>
 </ul>
 
-<h3>Jamming</h3>
+<HR COLOR="#444444" SIZE="3">
+
+<h2>Jamming</h2>
 <p>Jamming is an attack, by emitting a strong signal at the same frequency as the nodes emit the message, make the collision and disrupt the communication. 
 It is like shouting really loud in a room. The conversation between the people in the room would have some noise. If you shout loud enough, people in the room cannot hear each other at all. For a successful jamming, it is required that you shout louder than other people having conversation; in other words the signal from the jammer must be stronger than that from the nodes.</p>
 <p>There are many kinds of jamming.</p>
 <ul>
-<li>Spot Jamming</li>
-<p>One can emit the signal at one certain frequency at its full energy. It is a very strong attack, but it is very easy to avoid as well; the nodes can just communicate using other frequency. </p>
 
-<li>Sweep Jamming</li>
-<p>One can attack many frequency by changing the frequency he attacks. In WSN, the frequency at which the data is communicated is divided, so that they do not crush. Therefore, attacking various frequency should bring bigger damage to more data communicated.
-However, these attacks do not happen simultaneously. Therefore one can cope with this attack in a same manner as he cope with spot jamming.</p>
+<li><p><b>Spot Jamming :</b>
+One can emit the signal at one certain frequency at its full energy. It is a very strong attack, but it is very easy to avoid as well; the nodes can just communicate using other frequency. </p></li>
 
-<li>Barrage Jamming</li> 
-<p>One can emit the signal with multiple frequencies at the same time. In this way, the strategy of changing the frequency at which the node emit the signal would not work. However, it is obviously hard for the attacker to emit strong enough signal that can overcome the signal emitted by the node at all the frequencies they want to jam. </p>
+<li><p>
+<b>Sweep Jamming :</b>
+One can attack many frequency by changing the frequency he attacks. In WSN, the frequency at which the data is communicated is divided, so that they do not crush. Therefore, attacking various frequency should bring bigger damage to more data communicated.
+However, these attacks do not happen simultaneously. Therefore one can cope with this attack in a same manner as he cope with spot jamming.</p></li>
+
+
+<li><p><b>Barrage Jamming :</b>
+One can emit the signal with multiple frequencies at the same time. In this way, the strategy of changing the frequency at which the node emit the signal would not work. However, it is obviously hard for the attacker to emit strong enough signal that can overcome the signal emitted by the node at all the frequencies they want to jam. </p></li> 
  </ul>
-<i><h4>Countermeasures</h4></i>
-<p><b>Regulated Transmitted Power: </b>
-    in order to jam a network, the attacker obviously first needs to know where the signals from the node go around. If the signal emitted from the node is low, the location is hard to detect for the attacker. This is the advantage in using a weak signal. However the stronger the signal is, the more resistant it is against the jamming attack. There are good sides in both strength of signal. Therefore it is advantageous if the node can change the strength of the signal according to the scenario. If the attacker have already identified the location of the network and started jamming, then it can emit the signal stronger, otherwise it can keep it low so that the attacker would not find it. </p>
+<i><h3>Countermeasures</h3></i>
+<b>Regulated Transmitted Power</b>
+    <p>In order to jam a network, the attacker obviously first needs to know where the signals from the node go around. If the signal emitted from the node is low, the location is hard to detect for the attacker. This is the advantage in using a weak signal. However the stronger the signal is, the more resistant it is against the jamming attack. There are good sides in both strength of signal. Therefore it is advantageous if the node can change the strength of the signal according to the scenario. If the attacker have already identified the location of the network and started jamming, then it can emit the signal stronger, otherwise it can keep it low so that the attacker would not find it. </p>
 
-    ref1 : http://webcache.googleusercontent.com/search?q=cache:AywyiOAcNMIJ:www.bioinfo.in/uploadfiles/13111289031_1_2_IJN.pdf+&cd=1&hl=it&ct=clnk&lr=lang_ja%7Clang_en%7Clang_it
-ref2: https://docs.google.com/a/uwcad.it/file/d/1G0Af9cxOIIBlkc3VFwaFTU-PcjUsm5CorZuVI6gc73Vr2pUWgqMXfNzvH2v4/edit
-ref3: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6315737
 
-<h2>Link layer</h2>
+<b>Frequency-Hopping</b> 
+<p>Frequency-Hopping is repeated change in frequency at which the node emit the signal. If a certain frequency is being attacked by the jammer, then this technique is used and the signal would be emitted at less “busy” frequency. This would minimise the interference from the jammer. 
+In order to enable a node to hop around the frequency, does the user have to reserve a wider bandwidth(width of a range of frequency)? That is quite natural doubt.
+However, as one can see from the term “hopping”, a certain frequency is used for only a short time, therefore it does not occupy the whole bandwidth within the frequency moves. </p>
 
-<h2>Routing layer</h2>
+<b>Direct Sequence Spread Spectrum</b>
+<p>This technique is used to communicate the data with stronger power with larger bandwidth, so that it can overcome the noise injected by the jammer.
+First, you have the original signal, with narrowband and high amplitude. Then you spread it over a wider bandwidth. This causes the amplitude to be smaller. 
+Then you prepare the “noise” which is a pseudo-random sequence of -1 and 1 with narrowband and high amplitude, and multiply it with the original signal. What would be received would seem completely random noise with high amplitude with narrowband. However, once you get how the sequence in the noise was like, it is easy to recover the original information. You simply multiply it again. (Data x 1 x 1 = Data, Data x -1 x -1 = Data) In this way one can transmit the information safely, and at high power.</p>
+
+<b>Directional Transmission</b>
+<p>In general, the nodes in the WSN uses omni-directional antenna. This means that the nodes can transmit the signal to and receive the signal from any direction. Instead, one can use directional antenna, which can transmit the signal and receive the signal from one particular direction.
+With this kind of antenna, you can transmit the signal at higher power, since you can concentrate on one direction, and it is much harder to get jammed, because the jammer needs to emit the signal from one particular direction rather than anywhere in the range of omni-directional antenna. Of course there are some disadvantages. First, it would be hard to implement multipath routing. Second, the protocol for the link layer would be pretty complicated. Imagine if the node moves; to what direction should the antenna face to get the signal, or send the signal?  Third, it is three times more expensive than that of omni-direction. </p>
+
+<b>Sleeping</b>
+<p>What the network would like to avoid is the energy exhaustion. As soon as the jamming is detected, the node can go to sleep, to avoid letting the energy drownout. The attack would not last forever, so the node can wake up time to time to check if the attack is over or not.<p>
+
+<b>Routing</b>
+<p>So the jamming happens; if the network is dense enough, we can use routing as countermeasure. The nodes near the jammed region edge can tell the nodes that are outside of the jammed region that there is an attack going on. 
+Once the nodes get notified, they can cooperate each other to map the jammed region. Then, it can reroute around the mapped region. For example, if the information was passed to the node A, instead of contacting to B, it would contact to the node C. The nodes in the jammed region can be set to sleep. Since the traffic has to make a detour, it would decrease the efficiency of the network. However the network can assure the information to be passed from the beginning to the end of the network. We can also be less worry about the energy of the node in the jammed region being exhausted.</p>
+
+ 
+
+

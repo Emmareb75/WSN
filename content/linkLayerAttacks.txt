@@ -1,0 +1,26 @@
+<h1>Link Layer Attacks</h1>
+
+<h2>Continuous Channel attack</h2>
+It is a common DoS attack in the physical layer. This attack aims to exhaust the resource, typically battery or channel access, of nodes. This can be achieved by continuously requesting, or transmitting large amount of signal over the channel(see<Collision>). This act monopolise the channel access of the network, and other nodes do not manage to have any access. In other words, the other nodes experience the exhaustion of the channel access. Also, by continuously requesting to a certain node, the attacker can make the battery of the node drained out, and exhaust the power. 
+
+<i><h3>Countermeasures</h3></i>
+<p><b>Rate Limiting: </b>
+Countermeasure for this attack is pretty straight-forward; the network can ignore the excessive requests, and do not send the radio transmissions which may use much energy. One has to be careful about this “maximum limit” obviously. You cannot set this limit below the maximum data rate the network might be at, otherwise the network can drop the packet that are supposed to be in the traffic. It is easier to implement this countermeasure along side with the design of the link layer protocols, since this maximum data rate is specified in the protocol.</p>
+
+
+<HR COLOR="#444444" SIZE="3">
+
+
+<h2>Collision</h2>
+<p>Collision happens when two nodes transmits messages to one node at the same frequency simultaneously. An attacker can cause collision by pretending to be a node using some device. There are two kind of effects; one is Denial of Service. By transmitting a lot of messages on one node, it can drain the energy out from the node. Also this may monopolize the channel access, and cause unfairness., which decreases the efficiency of the network.
+The other is the modification of data. Requests do not have to last long; data disruption for a short period of time is enough to bring some noise/change in the packet of data. Thus it is a power efficient attack compared to Continuous Channel Access attack. Also, it is very difficult to detect the collision. One would not know if the noise caused in the data attributes to, for example, spoiled sensor of a node or intruder. </p>
+
+<i><h3>Countermeasures</h3></i>
+<b>Error Correcting Code</b>
+<p>In general, in order to prove and recover the consistency of some data, one can add some redundancy to it. This redundant part also tells about the information, and one can correspond the information and the redundant part to detect the corruption, and recover the missing information from it. Just to give an idea, let’s see basic technique.(This is not necessarily used in the wsn.) if a data is 1234, one can send 1234 1234 1234. If one receives a it as 1234 1232 1234, he can spot corruption, and still get the correct information which is 1234. Or one can generate checksum from the information using checksum function. For example, if a data is 1234, and the checksum function is the sum of the digit mod 10, the data to be sent is 12340. Data gets corrupted by collision attack or for some other reason, and it is received as 12330. Then the receiver would immediately know that there was some corruption; because if the original data was 1233, then the checksum must be 9, rather than 0. Usually the checksum code is complicated enough to be able to even recover the data. 
+There is a clear trade-off here; the computation of the check sum takes up energy, and the node must transmit extra information would cause bigger consumption of the energy. In addition, the redundancy would increase the risk of being overheard.
+Also, Error Correcting Code is not perfect. It can only deal up to certain level of corruption.</p>
+
+
+<h2>Eavesdropping</h2>
+<p></p>
