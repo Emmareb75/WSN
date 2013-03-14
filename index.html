@@ -164,7 +164,7 @@
 
         <div class="span10">
           <div id="main" class="hero-unit">
-            <div class="span12 pagination-centered"><img src="css/image/logo-V4-5.png"></div>
+            <div id="mainlogo" class="span12 pagination-centered">
           </div>
           <div class="row"><div class="span12"></div></div>
           <div id="lowerDivs" class="row-fluid">
@@ -238,8 +238,27 @@
     <script src="bootstrap/js/bootstrap-collapse.js"></script>
     <script src="bootstrap/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="js/raphael.js"></script>
     <script type="text/javascript">
       var n;
+
+      var p = $('#mainlogo').offset();
+
+      var paper = Raphael('mainlogo', 950, 410);
+
+      var image = paper.image("css/image/logo-V4-5.png", 0,
+                            -1, 900, 350);
+
+      function expandBlob() {
+         var bbox = image.getBBox();
+
+         image.animate({"transform": "s 1 1.2" + ",10 0"}, 2000, "backOut",
+                     function(){image.animate({"transform":"s 1 1"}, 1000, "elastic")});
+      };
+
+      expandBlob();
+
+      image.hover(expandBlob);
 
       if(navigator.appName.search('Microsoft') > -1) {
         n = new ActiveXObject('MSXML2.XMLHTTP');
@@ -262,8 +281,11 @@
         if(n.readyState == 4) {
           var el = document.getElementById('main');
           el.innerHTML = n.responseText;
-          document.getElementById('lowerDivs').innerHTML = null;
-          document.getElementById('lowerDivs1').innerHTML = null;
+          if($('#lowerDivs').innerHTML != null
+              && $('#lowerDivs1').innerHTML != null) {
+            $('#lowerDivs').innerHTML = null;
+            $('#lowerDivs1').innerHTML = null;
+          }
           document.getElementById('main').style.cssText='background-color:#f5f5f5; padding: 60px; margin-top:0px; margin-bottom: 30px; font-size: 18px; font-weight: 200; line-height: 30px; border-radius:5px; border: 1px solid #e5e5e5;'
         }
       }
