@@ -1,4 +1,4 @@
-<h1>Applications</h1><br>
+<h1>Various Applications</h1><br>
             <p>While being initially developed for military purposes, Wireless Sensor Networks are now widely used for tracking and monitoring. Military forces still uses WSNs for battlefield surveillance, through tracking the enemy position for instance.
             There are numerous applications and therefore various type of data treated, each of them having specific security requirements such as consistency, reliability, accuracy.
             Amongst all the application of Wireless Sensors Networks, the following examples aim to give a complete overview of their power and capabilies. </p>
@@ -12,7 +12,7 @@
                         </p>
                       </div>
                       <div class="span6 pagination-centered">
-                        <iframe width="420" height="315" src="http://www.youtube.com/embed/pHOJPWkOmGA?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="http://www.youtube.com/embed/pHOJPWkOmGA?rel=0" frameborder="0" allowfullscreen></iframe>
                       </div>
                   </div>
 
@@ -30,6 +30,18 @@
                         </p>
                       </div>
                     </div>
+<br>
+                   <div class="row-fluid">
+                    <div class="span6">
+                        <p><br>
+                          <b>Road &amp; traffic monitoring: </b>Wireless Sensor Networks are broadly use for traffic monitoring: the idea is to distribute many sensors along a road to detect traffic flows, speed and the continued roadway occupation. WSN can monitor and evaluate roads automatically and continuously, with little human effort. Moreoever, they allow the integration of video monitoring with magnetic or power sensor. In this way, it is possible to obtain complete and integrated information (video-images and traffic volumes information).<a href="references.html#applications">[5]</a>
+                        </p>
+                      </div>
+                      <div class="span6 pagination-centered">
+                       <iframe width="560" height="315" src="http://www.youtube.com/embed/JTQ27-2LlxA?rel=0" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                  </div>
+
 <br>
                         <p>
                           <b>Agriculture Monitoring: </b>WSNs re highly useful for watching over the disease in the field. The plant disease can dramatically affect the harvest very quickly. It is important to watch over the condition of the field constantly to prevent the disease from happening, and analyze the cause of it, which is impossible to do manually especially for a large size field. 

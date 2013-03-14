@@ -19,6 +19,7 @@
             <li><a href="http://sine.ni.com/cs/app/doc/p/id/cs-10016">Boris Meško, Ozren Orešković and Ozren Husnjak, NI LabVIEW and CompactRIO Keep Power Plants Online, 2012</a></li>
             <li><a href="https://docs.google.com/file/d/1m6ot2N-Z0oW5WkZOFlO_zwpFBDU5M4gkcDGD30xb7VANvuVlBfU9bpbiSyPh/edit">???</a></li>
             <li><a href="http://www.ursi.org/proceedings/procGA11/ursi/C05-5.pdf">P. K. Mishra, S. K. Shukla, S. Dutta, S. K. Chaulya and G. M. Prasad, Detection of Landslide Using Wireless Sensor Networks, 2011</a></li>
+             <li><a href="http://cdn.intechopen.com/pdfs/37868/InTech-Wireless_sensor_networks_to_improve_road_monitoring.pdf">M. Collotta, G. Pau, V.M. Salerno and G. Scata, Wireless Sensor Networks to Improve Road Monitoring, 2012</a></li>
         </ol>
 </div>
 

@@ -31,7 +31,7 @@ cluster nodes.
 </font>
 </div>
 <div class="span4">
-<ol>
+<ol><p>
 Another possible strategy would be to place the IDS modules on the<b> base
 station</b>
 . The <b>base station</b> can analyze all the traffic in the sensor network regardless
@@ -40,11 +40,11 @@ Nevertheless, altough a packet is not processed many times, this placement
 strategy might overwhelm the base station leading to a large number of packets
 not being analyzed.
 </div>
-</div>
+</div></p>
 </ol>
 <div class="row-fluid">
 <div class="span4">
-<ol>
+<ol><p>
 Our last approach will be to make the IDS monitor(watchdog) reponsible for it’s
 neighbour nodes, knowing the fact that a node can also oversee the transmission
 of neighboring nodes in the wireless world. We already know that a normal
@@ -70,26 +70,26 @@ to forward their packets thorugh the cluster node.
 </font>
 
 </div>
-</div>
+</div></p>
 </ol>
 <ul>
-<li>Y. Huang and W. LeeRef. in ref.[5] deploy IDS only on this <b>clusters
+<li><p>Y. Huang and W. LeeRef. in ref.[5] deploy IDS only on this <b>clusters
 heads</b> in order
 to save precious resources. But this method loses monitoring coverage this
 happens because the cluster head has no way of knowing details inside the
 network, which makes it particularly difficult to detect and/or respond to
 attacks, such as jamming attacks, impersonating attacks.
 </li>
-<li>
+<li><p>
 F. Anjum, D.
 Subhadrabandhu, S. Sarkar, and R. Shetty in ref.[6] tried to place
 the detection modules at an <b>optimal place</b>, thus on all the nodes that belong to
 the minimum <b>cut-set</b>. Here a <b>cut-set</b> is a set of sensor nodes such that all
 paths from all cluster heads to the base station traverse this set of node.
 This deployment is optimal if we assume that the intruder is to do harm, cause
-failure of the base station by delivering malicious packets.
+failure of the base station by delivering malicious packets.</p>
 </li>
-<li>
+<li><p>
 All the methods
 presented so far distribute the ID system among a few nodes and through
 cooperation makes the ID as efficient as central-based system. A. Agah, S.K.
@@ -98,7 +98,7 @@ use of a <b>central-based IDS</b> that we presented in Fig. 2, but specifies tha
 protect all sensor nodes in the same time due to resource limitations.
 Therefore, the ID system only chooses the most important node to protect
 continuously based on a <b>game approach</b>, which is formulated as two-player
-attack-defense problem.
+attack-defense problem.</p>
 </li>
 </ul>
 
