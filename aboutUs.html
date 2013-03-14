@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Security in Wireless Sensor Networks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/colorCustom.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+
+    <style type="text/css">
+    a {
+      text-decoration: none;
+      color: #444;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #c74825;
+    }
+    </style>
+  </head>
+
+  <body onload="callFile('aboutUs.txt')">
+    <div class="navbar navbar-fixed-top"> <!--navbar-inverse-->
+      <div class="navbar-inner">
+        <div class="container-fluid ">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+
+            <ul class="nav">
+              <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+              <li><a href="quiz.html"><i class="icon-tasks"></i>Quiz</a></li>
+              <li><a href="references.html"><i class="icon-book"></i>References</a></li>
+              <li class="active"><a href="aboutUs.html"><i class="icon-user"></i>About Us</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+
+                <div class="span2">
+          <div class="well sidebar-nav sidebar-nav-fixed" style="background:none; border:none; box-shadow:none;">
+          <ul class="nav nav-list">
+          <div class="accordion" id="accordion2" style="background-color:#f5f5f5;">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                Introduction
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('wirelessSensorNetworks.txt')">Overview</a></li>
+                  <li><a onclick="callFile('applications.txt')">Various Applications</a></li>
+                  <li><a onclick="callFile('networkArchitecture.txt')">Network Architecture</a></li>
+                  <li><a onclick="callFile('nodeArchitecture.txt')">Node Architecure</a></li>
+                  <li><a onclick="callFile('limitationOfWSN.txt')">Limitations</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                Security
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <li><a onclick="callFile('securityIssues.txt')">Issues &amp; Challenges</a></li>
+                  <li><a onclick="callFile('securityPrinciples.txt')">Security Principles</a></li>
+              </div>
+            </div>
+          </div>
+           <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                Key Management
+              </a>
+            </div>
+            <div id="collapseThree" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('keyManagement.txt')">Definition</a></li>
+                  <li><a onclick="callFile('keyManagementSchemes.txt')">Key Management Schemes</a></li>
+                  <li><a onclick="callFile('rekeyingMechanism.txt')">Rekeying Mechanisms</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseFour">Data Aggregation</a>
+            </div>
+            <div id="collapseFour" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('dataAggregation.txt')">Definition</a></li>
+                  <li><a onclick="callFile('dataAggregationArchitecture.txt')">Aggregation Protocols</a></li>
+                  <li><a onclick="callFile('interactionsWithSecurityPrinciples.txt')">Interaction with Security</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseFive">Attacks</a>
+            </div>
+            <div id="collapseFive" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('attackers.txt')">Types of Attackers</a></li>
+                  <li><a onclick="callFile('attacks.txt')">Physical Attacks</a></li>
+                  <li><a onclick="callFile('linkLayerAttacks.txt')">Link Layer Attacks</a></li>
+                  <li><a onclick="callFile('routingLayerAttacks.txt')">Routing Layer Attacks</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseSix">Defense</a>
+            </div>
+            <div id="collapseSix" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('intrusionDef.txt')"> Intrusion Detection (IDS)</a></li>
+                  <li><a onclick="callFile('intrusionTheoryDet.txt')"> Detecting Techniques</a></li>
+                  <li><a onclick="callFile('intrusionActualDet.txt')"> Implementations</a></li>
+                  <li><a onclick="callFile('intrusionDeplTech.txt')"> Deployment Strategies</a></li>
+                  <li><a onclick="callFile('intrusionAlert.txt')"> Alert and Response</a></li>
+                  <li><a onclick="callFile('intrusionIDEvaluation.txt')"> IDS Evaluation Methods</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseSeven">Layers</a>
+
+            </div>
+            <div id="collapseSeven" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('layers.txt')">Definition</a></li>
+                  <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
+                  <li><a onclick="callFile('physicalLayer.txt')">Physical Layer</a></li>
+                  <li><a onclick="callFile('linkLayer.txt')">Link Layer</a></li>
+                  <li><a onclick="callFile('routingLayer.txt')">Routing Layer</a></li>
+                  <li><a onclick="callFile('applicationLayer.txt')">Application Layer</a></li>
+              </div>
+            </div>
+          </div>
+          </div>
+        </ul>
+        <div class="pagination-centered">
+          <img src="css/image/group4.png" style="width:84%; max-width:100px; width:expression(this.width > 100px ? "100px" : true);">
+          <br></br>
+          <div class="span10 offset1 pagination-centered"> <p text-transformation="uppercase"> Kaho Sato, Alice Sibold, Theodor Gherzan, Adrian Draghici</p></div>
+        </div>
+
+    </div>
+  </div><!--/span2-->
+
+        <div class="span10">
+          <div id="main" class="hero-unit">
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript">
+      var n;
+
+      if(navigator.appName.search('Microsoft') > -1) {
+        n = new ActiveXObject('MSXML2.XMLHTTP');
+      } else {
+        n = new XMLHttpRequest();
+      }
+
+      $('li > a').click(function() {
+        $('li').removeClass('active');
+        $(this).parent().addClass('active');
+      });
+
+      function callFile(file) {
+        n.open('get', "content/" + file, true);
+        n.onreadystatechange=output;
+        n.send(null);
+      }
+
+      function output() {
+        if(n.readyState == 4) {
+          var el = document.getElementById('main');
+          el.innerHTML = n.responseText;
+          document.getElementById('main').style.cssText='background-color:#f5f5f5; padding: 60px; margin-top:0px; margin-bottom: 30px; font-size: 18px; font-weight: 200; line-height: 30px; border-radius:5px; border: 1px solid #e5e5e5;'
+        }
+      }
+    </script>
+
+  </body>
+</html>

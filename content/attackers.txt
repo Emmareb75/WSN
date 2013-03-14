@@ -2,7 +2,7 @@
 <p>In order to secure the network, one has to understand the nature of the attack that the network can possibly suffer. Here we look at the various kind of attack and the classification.</p>
 <h2>Purpose</h2>
 <h3>Active attacker</h3>
-<p>One can summarise the purpose of the active attacker as modification; It can modify/destroy/fake the data, or structure of the network as whole and interrupt the communication. Therefore the attack of this nature would affect the integrity and the availability of the data, and causes unfairness# in the network which leads to the lower efficiency.</p>
+<p>One can summarise the purpose of the active attacker as modification; It can modify/destroy/fake the data, or structure of the network as whole and interrupt the communication. Therefore the attack of this nature would affect the integrity and the availability of the data, and causes unfairness in the network which leads to the lower efficiency.</p>
 
 <h3>Passive attacker</h3> 
 <p>The passive attacker would not modify anything in the network- their purpose is the information. Information can be the data itself, the cryptographic key, key for authentication, etc. The attack of this nature would affect the secrecy of the data. </p>
@@ -35,11 +35,11 @@ As a authenticated node, it can request data, or send data to the “original”
 <h3>Outsider</h3>
 <p>The outsider attack is done with a device that does not belong the the network. Therefore the presence of this attacker is explicit. Therefore to cope with them, we do not have to wonder if it is a malicious attack or malfunction of a node inside. In other words, we do not have to worry about the intrusion detection. That makes a problem a lot easier to manage. Since this kind of attacker does not have an authenticated access to the network, methods of attack are limited to the following;</p>
 <ul>
-	<li><p>DoS attacks#</p>
+	<li><p>DoS attacks</p>
 	</li>
-	<li><p>Jamming#</p>
+	<li><p>Jamming</p>
 	</li>
-	<li><p>Resource exhaustion#</p>
+	<li><p>Resource exhaustion</p>
 	</li>
 </ul>
 
