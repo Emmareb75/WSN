@@ -116,19 +116,16 @@
 	<h1>Key Management</h1>
 		</br>
 		<ol>
-			<li>John Paul Walters, Zhengqiang Liang, Weisong Shi and Vipin Chaudhary, Wireless Sensor Network Security: A Survey, 2006.</li>
-			<li>Mohit Saxena, Security in Wireless Sensor Networks, A Layer-based Classification, 2007.</li>
-			<li>Adrian Perrig, John Stankovic and David Wagner, Security In Wireless Sensor Networks, 2004.</li>
-			<li>Pyrgelis Apostolos, Cryptography and Security in Wireless Sensor Networks, 2009.</li>
-			<li>Qinghua Wang and Tingting Zhang, Security in Wireless
-			Sensor Networks, 2008.</li>
-			<li>L. Eschenauer and V. D. Gligor, A key-management
-			scheme for distributed sensor networks, New York, USA, 2002.</li>
-			<li>W. Du, J. Deng, Y. S. Han, and P. K. Varshney, A key
-			predistribution scheme for sensor networks using deployment knowledge, 2006</li>
-			<li>Jinat Rehana. Security of Wireless Sensor Network, 2009.</li>
-			<li>Haowen Chan, Adrian Perrig , Dawn Song, Random Key Predistribution Schemes for Sensor Networks, 2003.</li>
-			<li>Subir Biswas, Md Mahbubul Haque, Saeed Rashwand, and Jelena Misic, Fast, Seamless Rekeying In Wireless Sensor Networks, 2009.</li>
+			<li><a href="http://cadi.buffalo.edu/book_Chapters/2007/2007_2.pdf">John Paul Walters, Zhengqiang Liang, Weisong Shi and Vipin Chaudhary, Wireless Sensor Network Security: A Survey, 2006.</a></li>
+			<li><a href="https://www.cerias.purdue.edu/assets/pdf/bibtex_archive/2007-04.pdf">Mohit Saxena, Security in Wireless Sensor Networks, A Layer-based Classification, 2007.</a></li>
+			<li><a href="http://pdf.aminer.org/001/188/957/security_in_wireless_sensor_networks.pdf">Adrian Perrig, John Stankovic and David Wagner, Security In Wireless Sensor Networks, 2004.</a></li>
+			<li><a href="http://www.perada.eu/documents/winter-school/wiselib-session-5.pdf">Pyrgelis Apostolos, Cryptography and Security in Wireless Sensor Networks, 2009.</a></li>
+			<li><a href="http://users.tkk.fi/wangq1/A%20survey%20on%20security%20in%20wireless%20sensor%20networks.pdf">Qinghua Wang and Tingting Zhang, A Survey on Security in Wireless Sensor Networks, 2008.</a></li>
+			<li><a href="http://delivery.acm.org/10.1145/590000/586117/p41-eschenauer.pdf?ip=146.169.24.69&acc=ACTIVE%20SERVICE&CFID=294171847&CFTOKEN=35990778&__acm__=1363282147_f46552c119718a9bee4d6fd4dee27d5a">L. Eschenauer and V. D. Gligor, A key-management	scheme for distributed sensor networks, New York, USA, 2002.</a></li>
+			<li><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1593587">W. Du, J. Deng, Y. S. Han, and P. K. Varshney, A key predistribution scheme for sensor networks using deployment knowledge, 2006</a></li>
+			<li><a href="http://cse.tkk.fi/en/publications/B/5/papers/Rehana_final.pdf">Jinat Rehana. Security of Wireless Sensor Network, 2009.</a></li>
+			<li><a href="http://repository.cmu.edu/cgi/viewcontent.cgi?article=1025&context=ece">Haowen Chan, Adrian Perrig , Dawn Song, Random Key Predistribution Schemes for Sensor Networks, 2003.</a></li>
+			<li><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=05158849">Subir Biswas, Md Mahbubul Haque, Saeed Rashwand, and Jelena Misic, Fast, Seamless Rekeying In Wireless Sensor Networks, 2009.</a></li>
 		</ol>
 </div>
 
