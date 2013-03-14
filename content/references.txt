@@ -93,7 +93,7 @@
             Comparative Study, 2011</a></li>
         </ol>
 </div>
-
+<HR COLOR="#444444" SIZE="3">
 <div id="attacks">
     <h1>Attacks</h1>
         </br>
