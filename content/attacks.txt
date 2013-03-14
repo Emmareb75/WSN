@@ -1,5 +1,50 @@
-<h1>Attacks</h1><br>
-<h2>Physical</h2>
+<h1>Various Attacks</h1><br>
+
+<h2>Physical Attacks</h2>
+
+<h3>Node capturing</h3>
+<p>Since WSN are often deployed in an unattended environment, it is very easy for the adversary to physically gain or tamper with nodes. On the contrary it is hard for the network to detect that a node is captured. [ref1] With the node in her hand, attacker can extract sensitive information, such as cryptographic key. This enables the attacker to gain the plain-text from the information that she eavesdrops. Or the adversary may connect the node to his device and develop some insider attack using the information gained from the captured node. </p>
+
+<i><h4>Countermeasures</h4></i>
+<p>There are several different aspect we can look at make the network robust to this attack: safe deployment of the nodes and identification of the corrupted node.</p>
+[ref1]
+<ul>
+<li><p><b>Self distruction: </b>
+One may program the node in such way that when it detects some tampering, it deletes all the information on that node. In most of the wireless sensor network, the nodes are redundantly deployed; therefore it would not be a problem even if one node loses the information and the functionality.</p></li>
+
+[ref3]
+<li><b>Identification of the corrupted node: </b>
+A captured node can be identified according to the several following criterias: 
+<ol>
+<li>Periodic updates sent by legitimate anchor nodes are not received.</li>
+<li>Anchor nodes do not respond to any sensor node query within a predeﬁned time limit.</li>
+<li>Three communication attempts by an unidentiﬁed node fail.</li>
+</ol>
+<p>If it is detected that a node that satisfies that these criteria is being used for an attack, then self-detection would be commanded.</p></li>
+</ul>
+
+<h3>Jamming</h3>
+<p>Jamming is an attack, by emitting a strong signal at the same frequency as the nodes emit the message, make the collision and disrupt the communication. 
+It is like shouting really loud in a room. The conversation between the people in the room would have some noise. If you shout loud enough, people in the room cannot hear each other at all. For a successful jamming, it is required that you shout louder than other people having conversation; in other words the signal from the jammer must be stronger than that from the nodes.</p>
+<p>There are many kinds of jamming.</p>
+
+<h4>Spot Jamming</h4>
+<p>One can emit the signal at one certain frequency at its full energy. It is a very strong attack, but it is very easy to avoid as well; the nodes can just communicate using other frequency. </p>
+
+<h4>Sweep Jamming</h4>
+<p>One can attack many frequency by changing the frequency he attacks. In WSN, the frequency at which the data is communicated is divided, so that they do not crush. Therefore, attacking various frequency should bring bigger damage to more data communicated.
+However, these attacks do not happen simultaneously. Therefore one can cope with this attack in a same manner as he cope with spot jamming.</p>
+
+<h4>Barrage Jamming<h4> 
+<p>One can emit the signal with multiple frequencies at the same time. In this way, the strategy of changing the frequency at which the node emit the signal would not work. However, it is obviously hard for the attacker to emit strong enough signal that can overcome the signal emitted by the node at all the frequencies they want to jam. </p>
+ 
+<i><h4>Countermeasures</h4></i>
+<p><b>Regulated Transmitted Power: </b>
+    in order to jam a network, the attacker obviously first needs to know where the signals from the node go around. If the signal emitted from the node is low, the location is hard to detect for the attacker. This is the advantage in using a weak signal. However the stronger the signal is, the more resistant it is against the jamming attack. There are good sides in both strength of signal. Therefore it is advantageous if the node can change the strength of the signal according to the scenario. If the attacker have already identified the location of the network and started jamming, then it can emit the signal stronger, otherwise it can keep it low so that the attacker would not find it. </p>
+
+    ref1 : http://webcache.googleusercontent.com/search?q=cache:AywyiOAcNMIJ:www.bioinfo.in/uploadfiles/13111289031_1_2_IJN.pdf+&cd=1&hl=it&ct=clnk&lr=lang_ja%7Clang_en%7Clang_it
+ref2: https://docs.google.com/a/uwcad.it/file/d/1G0Af9cxOIIBlkc3VFwaFTU-PcjUsm5CorZuVI6gc73Vr2pUWgqMXfNzvH2v4/edit
+ref3: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6315737
 
 <h2>Link layer</h2>
 

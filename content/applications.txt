@@ -1,4 +1,4 @@
-<h3>Applications</h3>
+<h1>Applications</h1>
             <p>While being initially developed for military purpose, Wireless Sensor Networks are now widely used for tracking and monitoring purposes.</p>
 
             <p><b>Environmental monitoring:</b>  Wireless Sensor Networks can monitor environmental variables such as temperature, humidity, atmospheric pressure, air pollution, etc...</p>

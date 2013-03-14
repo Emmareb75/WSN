@@ -10,6 +10,8 @@
 
 <p>It is difficult to argue which kind of attacker has bigger impact on the user of the network, since it highly depends on the situation. For example, if the network is there to collect the data about the forest to keep it sane; like the humidity, the temperature, or the intensity of the sunlight it gets, the user would not worry about the hazard of the passive attacker. It would have a no harm for the user if somebody else knows about how warm it is in the forest. It can be expensive for the user if somebody tamper the information. If the attacker modify the data about the temperature of the forest to 80 degrees, then the user might worry about the possibility of the fire, and they might have to deploy the fire track. That could be troublesome. For other kind of network, like the one that retrieves the data of the nuclear bomb experiment, you might be more worried about the information leak more.</p>
 
+<HR COLOR="#444444" SIZE="3">
+
 <h2>Location</h2>
 <p>One can classify the attacker in terms of the location; Insider refers to the attacker that attempts to intervene with the WSN within its range, and Outsider to the one outside of the range. In this context, “being in the range” does not have physical meaning; being in the range of the network means to have an authorised access to the network.</p>
 
@@ -40,6 +42,8 @@ As a authenticated node, it can request data, or send data to the “original”
 	</li>
 </ul>
 
+<HR COLOR="#444444" SIZE="3">
+	
 <h2>Attacking devices</h2>
 <h3>Laptop-class attack</h3>
 <p>In this context, laptop does not mean MacBook or ASUS ZENBOOK, it simply means the device that is more sophisticated and powerful than the node. This means that it has a better CPU performance,  stronger battery, stronger radio-transmitting power. </p>
