@@ -1,1 +1,16 @@
-<h1>About Us</h1>
+<div class="span12 pagination-centered">
+<h1 >About Us</h1>
+<br>
+<div class="span8 offset2 pagination-centered">
+<img src="images/portraits.png">
+</div>
+
+<div class="span12"></div>
+
+<div class="span8 offset2 pagination-centered">
+<p>&nbsp;&nbsp;&nbsp;&nbsp; During eigth weeks, our group worked on Security in Wireless Sensor Networks, supervised by <b><a href="http://www3.imperial.ac.uk/people/e.c.lupu">Dr. Emil Lupu</a></b>. At the beginning of the exercise, we were quite impressed by the broadness of the topic. Indeed, although we feel that we put a lot of efforts, we actually covered a small part of Security in Wireless Sensor Networks in this website.
+We have to be honest, the first step on the ladder wasn't easy to make! However, thanks to the help and support of our great supervisor, learning and researching about the subject became a pleasure. Our curiosity was teased at every new notion we discovered.</p>
+<p>This project allowed us to gain experience in learning by ourlseves, researching, and very importantly, working in group. Each of us focused on a specific sub-topic whilst our website is result from our common work. The original idea of the design belongs to Alice, Kaho, Theodor and Adrian, and has been implemented using BootStrap Twitter and CSS.</p>
+
+</div>
+</div>
