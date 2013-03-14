@@ -51,19 +51,19 @@
       <div class="row-fluid">
 
         <div class="span2">
-          <div class="well sidebar-nav sidebar-nav-fixed">
+          <div class="well sidebar-nav sidebar-nav-fixed" style="background:none; border:none;">
           <ul class="nav nav-list">
-          <div class="accordion" id="accordion2">
+          <div class="accordion" id="accordion2" style="background-color:#f5f5f5;">
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
                 Introduction
               </a>
             </div>
-            <div id="collapseOne" class="accordion-body collapse">
+            <div id="collapseOne" class="accordion-body collapse in">
               <div class="accordion-inner">
                   <li><a onclick="callFile('wirelessSensorNetworks.txt')">Overview</a></li>
-                  <li><a onclick="callFile('applications.txt')">Several Applications</a></li>
+                  <li><a onclick="callFile('applications.txt')">Various Applications</a></li>
                   <li><a onclick="callFile('networkArchitecture.txt')">Network Architecture</a></li>
                   <li><a onclick="callFile('nodeArchitecture.txt')">Node Architecure</a></li>
                   <li><a onclick="callFile('limitationOfWSN.txt')">Limitations</a></li>
@@ -116,7 +116,8 @@
             </div>
             <div id="collapseFour" class="accordion-body collapse">
               <div class="accordion-inner">
-                  <li><a onclick="callFile('attacks.txt')">Classification</a></li>
+                  <li><a onclick="callFile('attackers.txt')">Types of Attackers</a></li>
+                  <li><a onclick="callFile('attacks.txt')">Various Attacks</a></li>
               </div>
             </div>
           </div>
@@ -153,7 +154,9 @@
           </div>
         </ul>
         <div class="pagination-centered">
-          <img src="css/image/group4.png" width="30%"></p>
+          <img src="css/image/group4.png" style="width:84%; max-width:100px; width:expression(this.width > 100px ? "100px" : true);">
+          <br></br>
+          <div class="span10 offset1 pagination-centered"> <p text-transformation="uppercase"> Kaho Sato, Alice Sibold, Theodor Gherzan, Adrian Draghici</p></div>
         </div>
 
     </div>
@@ -161,17 +164,14 @@
 
         <div class="span10">
           <div id="main" class="hero-unit">
-            <div class="span12 pagination-centered"><img src="css/image/logo-V4-5.png" width="85%"></div>
+            <div class="span12 pagination-centered"><img src="css/image/logo-V4-5.png"></div>
           </div>
           <div class="row"><div class="span12"></div></div>
           <div id="lowerDivs" class="row-fluid">
             <div class="span4 pagination-centered">
               <i class="icon-search icon-2x"></i>
               <h2>Overview</h2>
-              <p>Wireless Sensor Network, often abbreviated as “WSN”, is an
-              emerging and fast-growing technology. One network of this type
-              consists of a large number of sensor nodes, also called “motes”,
-              spatially distributed. </p>
+              <p>Wireless Sensor Networks, is an emerging and fast-growing technology. Recent advances in Computing, Microelectronics and Communication, as well as the proliferation of “smart” energy-management applications, have caused increasing interest in Wireless Sensor Networks research.</p>
               <p><a class="btn" href="wsn.html">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="span4 pagination-centered">
@@ -187,7 +187,7 @@
             <div class="span4 pagination-centered">
               <i class="icon-align-justify icon-2x"></i>
               <h2>Layers</h2>
-              <p>The main goal of security is to provide protection services from all kinds of attacks. Achieving this is difficult, but the complex systems designed with this purpose must rely on a set of requirements that should be able to guarantee scalability, efficiency and reliability. There are are several properties that the foundation of a secure wireless sensor network should be built on.</p>
+              <p>In order to comprehend a communication system like in a wireless sensor network, it is useful to classify the communication specifications by its similarity in the function. Such a group of communication is called a layer.</p>
               <p><a class="btn" href="principles.html">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-->
