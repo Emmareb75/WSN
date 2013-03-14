@@ -1,25 +1,23 @@
             <h1>Limitation of WSNs</h1><br>
-            <p>Unlike conventional networks, often considered as limitless, Wireless Sensor Networks present both sensing, computation but also communication limited capabilities, majorly due to the small size of the sensor nodes.</p>
-            <p> WSN require special efforts regarding the sensor nodes hardware, as well as they need reliable and effective security mechanisms.</p>
+            <p>Unlike conventional networks, often considered as limitless, Wireless Sensor Networks present both sensing, computation but also communication limited capabilities, majorly due to the small size of the sensor nodes. WSN require special efforts regarding the sensor nodes hardware, as well as they need reliable and effective security mechanisms.</p>
 
 
-            <p>So why should we look at the security in WSN in particular, rather than applying the traditional network security strategy? It is because WSN has its limitation and feature that make it especially vulnerable and sensitive to the attack.
-			Each node in the WSN is very small, and in many applications many nodes must be used, it has to be cost effective. Therefore the hardware capacity of the node is pretty poor. There are three major limitations regarding the hardware, notably: small processor, low battery capacity, small memory.</p>
+            <p>Why shall we look at the security in WSN in particular, rather than applying the traditional network security strategy? It is because Wireless Sensor Networks have limitations and features that make them especially vulnerable and sensitive to the attack.
+			Each sensor node whitin a WSN is very small, and has to be cost effective. Therefore the hardware capacity of the node is pretty poor. There are three major limitations regarding the hardware, notably: small processor, low battery capacity, small memory.</p>
 			<p>
 			The low battery capacity attributes to the small size and the lack of connection with the power source. Since there can be thousands nodes in the network in a hostile environment, it is hard to change/charge the battery of node. Therefore the security protocols should not be power-expensive. For example, strong security schemes used to secure a traditional network, such as cryptography is very energy consuming. Therefore to secure the WSN one needs to consider the alternative solution.</p>
 			<p>
 			In traditional network, public key cryptographies based key distribution scheme such as Diffie-Hellman key exchange is commonly used for its robustness. However it may require each device to store a number of keys to establish the connection between the neighbouring nodes. In WSN, the nodes could be 1000, or even more. Typical size of the memory of a node is 128kb, and this cannot afford storing the key for communication with 1000 nodes. On the contrary, if there is only one cryptographic key that is shared by all the nodes in the network, compromising one node is sufficient for the attacker to gain the ability of decrypting all the message exchanged in the network. This is nothing what the user want. Therefore there is a demand for a key distribution strategy that provides strong security.</p>
 
 			<p>
-			[ref1] The wireless sensor network can be deployed in a hostile environment, such as a battlefield. In that kind of environment, one can be sure about the existence of the adversary that would try to compromise a node. However it is always the case that it is impossible to attend and watch over the nodes. Therefore the security protocol must make sure that the network works even if certain number of nodes is compromised, and the attacker cannot extract the sensitive information from the node such as encryption key.
-			This hostile environment make it difficult to set the nodes one by one, optimising the connection. You would not risk to stay in the enemy lines to set up the WSN. In general, these nodes are deployed by airplane from the sky. Therefore the topology of the network would be completely random and unpredictable. Therefore it is not possible to distribute the key to the group of the neighbour node. The key distribution algorithm for the WSN has to allow this flexibility. [ref1]</p>
+			The wireless sensor network can be deployed in a hostile environment, such as a battlefield. In that kind of environment, one can be sure about the existence of the adversary that would try to compromise a node. However it is always the case that it is impossible to attend and watch over the nodes. Therefore the security protocol must make sure that the network works even if certain number of nodes is compromised, and the attacker cannot extract the sensitive information from the node such as encryption key.
+			This hostile environment make it difficult to set the nodes one by one, optimising the connection. You would not risk to stay in the enemy lines to set up the WSN. In general, these nodes are deployed by airplane from the sky. Therefore the topology of the network would be completely random and unpredictable. Therefore it is not possible to distribute the key to the group of the neighbour node. The key distribution algorithm for the WSN has to allow this flexibility.<a href="references.html#limitations">[1]</a></p>
 			<p>
-			In order to provide the flexibility and the mobility of the network, the WSN is dynamically formed without any central entity that organize the nodes. The nodes interact with each other and build the path from a node to the base station. Therefore the protocols need to assure the following points:
+			In order to provide the flexibility and the mobility of the network, the WSN is dynamically formed without any central entity that organize the nodes. The nodes interact with each other and build the path from a node to the base station. Therefore the protocols need to assure the following points<a href="references.html#limitations">[2]</a>:
 			<ul>
 			<li> A node may join or leave the network arbitrary</li>
 			<li> Links may be broken</li>
 			<li> Nodes may be powered down as a result of a node failures or intentional user actions</li>
-			[ref2]
 			<p>
 			On the top of all these obstacles, the data communicated in the network may require high confidentiality; therefore the security must be as robust as possible.</p>
 

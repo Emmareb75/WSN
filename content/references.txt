@@ -1,3 +1,83 @@
+<div id="introduction">
+    <h1>Introduction to WSN</h1>
+        </br>
+        <ol>
+            <li><a href="http://webhosting.devshed.com/c/a/Web-Hosting-Articles/Wireless-Sensor-Networks-pt-1-Introduction/">Eliana Stavrou, Wireless Sensor Networks part 1: Introduction , 2005</a></li>
+            <li><a href="http://www.cs.uni-paderborn.de/index.php?id=1119&L=1">Holger Karla and Andreas Willig, Protocols and Architectures for Wireless Sensor Networks, 2005</a></li>
+            <li><a href="http://www.intechopen.com/books/wireless-sensor-networks-application-centric-design/wireless-sensor-networks-an-introduction">Qinghua Wang and Ilangko Balasingham, Wireless Sensor Networks - An Introduction, 2010</a></li>
+            <li><a href="http://www.ieee.li/pdf/viewgraphs/ni_introduction_wireless_sensor_networks.pdf">Robert Berger, Introduction to Wireless Sensor Networks, 2009</a></li>
+            <li><a href="http://en.wikipedia.org/wiki/Wireless_sensor_network">Unkown author, Wikipedia, Wireless Sensor Networks</a></li>
+            <li><a href="http://www.dees.unict.it/users/bando/files/wsn.pdf">Salvatore La Malfa, Wireless Sensor Networks, 2010</a></li>
+        </ol>
+</div>
+
+<div id="applications">
+    <h1>Applications of WSN</h1>
+        </br>
+        <ol>
+            <li><a href="http://www.libelium.com/wireless_sensor_networks_to_detec_forest_fires/">Javier Solobera, Detecting Forest Fires using Wireless Sensor Networks, Libelium.com, 2010</a></li>
+            <li><a href="http://sine.ni.com/cs/app/doc/p/id/cs-10016">Boris Meško, Ozren Orešković and Ozren Husnjak, NI LabVIEW and CompactRIO Keep Power Plants Online, 2012</a></li>
+            <li><a href="https://docs.google.com/file/d/1m6ot2N-Z0oW5WkZOFlO_zwpFBDU5M4gkcDGD30xb7VANvuVlBfU9bpbiSyPh/edit">???</a></li>
+            <li><a href="http://www.ursi.org/proceedings/procGA11/ursi/C05-5.pdf">P. K. Mishra, S. K. Shukla, S. Dutta, S. K. Chaulya and G. M. Prasad, Detection of Landslide Using Wireless Sensor Networks, 2011</a></li>
+        </ol>
+</div>
+
+<div id="limitations">
+    <h1>Limitations of WSN</h1>
+        </br>
+        <ol>
+            <li><a href="http://arxiv.org/pdf/0712.4169.pdf">Eliana Stavrou, Security in Wireless Sensor Networks: Issues and Challenges, 2006</a></li>
+            <li><a href="https://docs.google.com/file/d/1BCad47OCwNC_MV_Fx6jOBRTYkdZJnO8ZhlfIHNhavUVGW7lBuVM1Hs3B6YCP/edit">???</a></li>
+        </ol>
+</div>
+
+<div id="security">
+    <h1>Security</h1>
+        </br>
+        <ol>
+            <li><a href="http://webhosting.devshed.com/c/a/Web-Hosting-Articles/Wireless-Sensor-Networks-part-2-Limitations/">Al-Sakib Khan Pathan, Hyung-Woo Lee and Choong Seon Hong, Wireless Sensor Networks part 2: Limitations, 2005</a></li>
+            <li><a href="http://www.cs.odu.edu/~mukka/cs772f11/Lectures/day9/c-41.pdf">Zoran S. Bojkovic, Bojan M. Bakmaz, and Miodrag R. Bakmaz, Security Issues in Wireless Sensor Networks, 2008</a></li>
+            <li><a href="http://www.eecis.udel.edu/~fei/reading/070426.wsn.security.survey.pdf">John Paul Walters, Zhengqiang Liang, Weisong Shi, and Vipin Chaudhary, Wireless Sensor Network Security: A Survey, 2006</a></li>
+            <li><a href="http://www.ijcaonline.org/manets/number1/SPE44T.pdf">Kalpana Sharma and M K Ghose, Wireless Sensor Networks: An Overview on its Security Threats, 2010</a></li>
+            <li><a href="http://www.ist-ubisecsens.org/publications/SecuritySolutionsWSN.pdf">Dirk WESTHOFF, Joao GIRAO and Amardeo SARMA, Security Solutions for Wireless Sensor Networks, 2006</a></li>
+        </ol>
+</div>
+
+<div id="architecture">
+    <h1>Architecture and Hardware</h1>
+        </br>
+        <ol>
+            <li><a href="https://www.purelink.ca/en/technologies/related-technologies.php">Purelink Technology Canada, RELATED TECHNOLOGIES, 2012</a></li>
+            <li><a href="http://k5systems.com/TP0001_v1.pdf">Steven Kosmerchock, Wireless Sensor Network Topologies, ???</a></li>
+            <li><a href="http://www-old.itm.uni-luebeck.de/teaching/ws0708/wsn/Kapitel2/WSN-WS0708-Kap02-Node%20Architecture.pdf?lang=de">Dr. Horst Hellbruck, Drahtlose Sensornetze, 2007</a></li>
+            <li><a href="http://www.willow.co.uk/html/mpr5x0-_mica2dot_series.html">Willow Technologies Ltd., MICA2DOT Datasheet, ???</a></li>
+            <li><a href="http://www.enggjournals.com/ijcse/doc/IJCSE10-02-09-076.pdf">Ajay Jangra, Swati, Richa and Priyanka, Wireless Sensor Network (WSN): Architectural Design issues and Challenges, 2010</a></li>
+            <li><a href="http://docs.tinyos.net/tinywiki/index.php/Getting_Started_with_TinyOS#Installing_on_a_mica-family_mote_.28micaz.2C_mica2.2C_mica2dot.29">Unknown author, Getting Started with TinyOS</a></li>
+            <li><a href="http://en.wikipedia.org/wiki/ISM_band">Unknown author, ISM Band</a></li>
+            <li><a href="http://www.btnode.ethz.ch/Main/Features">Unknown author, BTnodes - A Distributed Environment for Prototyping Ad Hoc Networks, 2006</a></li>
+            <li><a href="https://www.eol.ucar.edu/rtf/facilities/isa/internal/CrossBow/DataSheets/mica2dot.pdf">Unknown author, MICA2DOT</a></li>
+            <li><a href="http://bullseye.xbow.com:81/Products/Product_pdf_files/Wireless_pdf/MICA2_Datasheet.pdf">Unknown author, MICA2</a></li>
+            <li><a href="http://en.wikipedia.org/wiki/List_of_wireless_sensor_nodes">Unknown author, List Of Wireless Sensor Nodes</a></li>
+            <li><a href="http://wiki.answers.com/Q/What_is_the_difference_between_flash_memory_and_EEPROM">Unknown author, What is the difference between flash memory and EEPROM?, 2011</a></li>
+            <li><a href="http://www.csie.nctu.edu.tw/~yctseng/papers.pub/mobile45-coverage-wsna.pdf">Chi-Fu Huang and Yu-Chee Tseng, The Coverage Problem in a Wireless Sensor Network</a></li>
+            <li><a href="http://www.nrcan.gc.ca/earth-sciences/geography-boundary/remote-sensing/fundamentals/1212">Natural Resources Canada, Passive vs. Active Sensing</a></li>
+            <li><a href="http://www.rn.inf.tu-dresden.de/lectures/WSN/Chapter3.pdf">Dr.-Ing. habil. Dargie, Network Architecture, 2012</a></li>
+            <li><a href="http://opencores.com/uploads/1255082727_ME%20Project%20Reference.pdf">Ali El Kateeb, Aiyappa Ramesh, and L. Azzawi, Wireless Sensor Nodes Processor Architecture and Design, 2008</a></li>
+        </ol>
+</div>
+
+<div id="aggregation">
+    <h1>Data Aggregation</h1>
+        </br>
+        <ol>
+            <li><a href="http://hondo.informatik.uni-freiburg.de/teaching/seminar/adhoc-w09/submissions/DataAggInWSN.pdf"> Claude Castellucia, Einar Mykletun, Gene Tsudnik Efficient Aggregation of encrypted data in Wireless Sensor Networks, 2009</a></li>
+            <li><a href="http://surface.syr.edu/cgi/viewcontent.cgi?article=1021&amp;context=eecs">Pramod K. Varshney and Ramesh Rajagopalan, Data aggregation techniques in sensor networks: A survey, 2006</a></li>
+            <li><a href="http://www.enggjournals.com/ijcse/doc/IJCSE11-03-03-080.pdf">Kiran Maraiya#, Kamal Kant*, Nitin Gupta#, Architectural Based Data Aggregation
+            Techniques in Wireless Sensor Network: A
+            Comparative Study, 2011</a></li>
+        </ol>
+</div>
+
 <div id="keyManagement">
 	<h1>Key Management</h1>
 		</br>
@@ -21,44 +101,44 @@
 	<h1>Intrusion Detection</h1>
 		</br>
 		<ol>
-     <li> C. Tseng, P. Balasubramanyam, C. Ko, R. Limprasittiporn, J. Rowe, and K.
-      Levitt, A specification-based
-    intrusion detection system for AODV, in Proc. 1st ACM Workshop on Security of
-    Ad Hoc and Sensor
-    Networks, 2003.</li>
-    <li> P. Yi, Y. Jiang, Y. Zhong, and S. Zhang, Distributed intrusion detection
-    for mobile ad hoc networks, in
-    Proc. The 2005 Symposium on Applications and the Internet Workshops
-    (SAINT-W’05), 2005.</li>
-    <li> A.P. da Silva, M. Martins, B. Rocha, A. Loureiro, L. Ruiz, and H. Wong,
-    Decentralized intrusion detection
-    in wireless sensor networks, in Proc. 1st ACM International Workshop on Quality
-    of Service & Security
-    in Wireless and Mobile Networks (Q2SWinet’05), ACM Press, October 2005, pp.
-    16–23.</li>
-    <li> Y. Huang, W. Fan, W. Lee, and P.S. Yu, Cross-feature analysis for detecting
-    ad-hoc routing anomalies, in
-    Proc. 23rd International Conference on Distributed Computing Systems,
-    2003.</li>
-    <li> Y. Huang and W. Lee, A cooperative intrusion detection system for ad hoc
-    networks, in Proc. 1st ACM
-    Workshop on Security of Ad Hoc and Sensor Networks, 2003, pp. 135–147.</li>
-    <li> F. Anjum, D. Subhadrabandhu, S. Sarkar, and R. Shetty, On optimal placement
-    of intrusion detection modules in sensor networks, in Proc. 1st International
-    Conference on Broadband Networks, 2004,
-    pp. 690–699.</li>
-    <li> A. Agah, S.K. Das, K. Basu, and M. Asadi, Intrusion detection in sensor
-    networks: a non-cooperative
-    game approach, in Proc. 3rd IEEE International Symposium on Network Computing
-    and Applications,
-    2004, pp. 343–346</li>
-    <li> Ioannis Krontiris, Thanassis Giannetsos, and Tassos Dimitriou. LIDeA: a
-    distributed lightweight
-    intrusion detection architecture for sensor networks. In SecureComm ’08:
-    Proceedings of the 4th
-    international conference on Security and privacy in communication netowrks,
-    pages 1–10, New
-    York, NY, USA, 2008. ACM.</li>
+             <li> C. Tseng, P. Balasubramanyam, C. Ko, R. Limprasittiporn, J. Rowe, and K.
+              Levitt, A specification-based
+            intrusion detection system for AODV, in Proc. 1st ACM Workshop on Security of
+            Ad Hoc and Sensor
+            Networks, 2003.</li>
+            <li> P. Yi, Y. Jiang, Y. Zhong, and S. Zhang, Distributed intrusion detection
+            for mobile ad hoc networks, in
+            Proc. The 2005 Symposium on Applications and the Internet Workshops
+            (SAINT-W’05), 2005.</li>
+            <li> A.P. da Silva, M. Martins, B. Rocha, A. Loureiro, L. Ruiz, and H. Wong,
+            Decentralized intrusion detection
+            in wireless sensor networks, in Proc. 1st ACM International Workshop on Quality
+            of Service & Security
+            in Wireless and Mobile Networks (Q2SWinet’05), ACM Press, October 2005, pp.
+            16–23.</li>
+            <li> Y. Huang, W. Fan, W. Lee, and P.S. Yu, Cross-feature analysis for detecting
+            ad-hoc routing anomalies, in
+            Proc. 23rd International Conference on Distributed Computing Systems,
+            2003.</li>
+            <li> Y. Huang and W. Lee, A cooperative intrusion detection system for ad hoc
+            networks, in Proc. 1st ACM
+            Workshop on Security of Ad Hoc and Sensor Networks, 2003, pp. 135–147.</li>
+            <li> F. Anjum, D. Subhadrabandhu, S. Sarkar, and R. Shetty, On optimal placement
+            of intrusion detection modules in sensor networks, in Proc. 1st International
+            Conference on Broadband Networks, 2004,
+            pp. 690–699.</li>
+            <li> A. Agah, S.K. Das, K. Basu, and M. Asadi, Intrusion detection in sensor
+            networks: a non-cooperative
+            game approach, in Proc. 3rd IEEE International Symposium on Network Computing
+            and Applications,
+            2004, pp. 343–346</li>
+            <li> Ioannis Krontiris, Thanassis Giannetsos, and Tassos Dimitriou. LIDeA: a
+            distributed lightweight
+            intrusion detection architecture for sensor networks. In SecureComm ’08:
+            Proceedings of the 4th
+            international conference on Security and privacy in communication netowrks,
+            pages 1–10, New
+            York, NY, USA, 2008. ACM.</li>
     </ol>
 </div>
 

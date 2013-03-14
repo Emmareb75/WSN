@@ -24,6 +24,18 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+
+    <style type="text/css">
+    a {
+      text-decoration: none;
+      color: #444;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #c74825;
+    }
+    </style>
   </head>
 
   <body onload="callFile('references.txt')">
@@ -50,22 +62,22 @@
     <div class="container-fluid">
       <div class="row-fluid">
 
-        <div class="span2">
-          <div class="well sidebar-nav sidebar-nav-fixed">
+                <div class="span2">
+          <div class="well sidebar-nav sidebar-nav-fixed" style="background:none; border:none; box-shadow:none;">
           <ul class="nav nav-list">
-          <div class="accordion" id="accordion2">
+          <div class="accordion" id="accordion2" style="background-color:#f5f5f5;">
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
                 Introduction
               </a>
             </div>
-            <div id="collapseOne" class="accordion-body collapse">
+            <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
               <div class="accordion-inner">
-                  <li><a onclick="callFile('wirelessSensorNetworks.txt')">What? Why? What for?</a></li>
+                  <li><a onclick="callFile('wirelessSensorNetworks.txt')">Overview</a></li>
+                  <li><a onclick="callFile('applications.txt')">Various Applications</a></li>
                   <li><a onclick="callFile('networkArchitecture.txt')">Network Architecture</a></li>
                   <li><a onclick="callFile('nodeArchitecture.txt')">Node Architecure</a></li>
-                  <li><a onclick="callFile('dataCommunication.txt')">Network Setup (?)</a></li>
                   <li><a onclick="callFile('limitationOfWSN.txt')">Limitations</a></li>
               </div>
             </div>
@@ -100,9 +112,9 @@
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse"
-                data-parent="#accordion2" href="#collapseSeven">Data Aggregation</a>
+                data-parent="#accordion2" href="#collapseFour">Data Aggregation</a>
             </div>
-            <div id="collapseSeven" class="accordion-body collapse">
+            <div id="collapseFour" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('dataAggregation.txt')">Definition</a></li>
                   <li><a onclick="callFile('dataAggregationArchitecture.txt')">Aggregation Protocols</a></li>
@@ -112,19 +124,24 @@
           </div>
           <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">Attacks</a>
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseFive">Attacks</a>
             </div>
-            <div id="collapseFour" class="accordion-body collapse">
+            <div id="collapseFive" class="accordion-body collapse">
               <div class="accordion-inner">
-                  <li><a onclick="callFile('attacks.txt')">Classification</a></li>
+                  <li><a onclick="callFile('attackers.txt')">Types of Attackers</a></li>
+                  <li><a onclick="callFile('attacks.txt')">Physical Attacks</a></li>
+                  <li><a onclick="callFile('linkLayerAttacks.txt')">Link Layer Attacks</a></li>
+                  <li><a onclick="callFile('routingLayerAttacks.txt')">Routing Layer Attacks</a></li>
               </div>
             </div>
           </div>
           <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">Defense</a>
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseSix">Defense</a>
             </div>
-            <div id="collapseFive" class="accordion-body collapse">
+            <div id="collapseSix" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('intrusionDef.txt')"> Intrusion Detection (IDS)</a></li>
                   <li><a onclick="callFile('intrusionTheoryDet.txt')"> Detecting Techniques</a></li>
@@ -137,9 +154,11 @@
           </div>
           <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">Layers</a>
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseSeven">Layers</a>
+
             </div>
-            <div id="collapseSix" class="accordion-body collapse">
+            <div id="collapseSeven" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('layers.txt')">Definition</a></li>
                   <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
@@ -153,11 +172,13 @@
           </div>
         </ul>
         <div class="pagination-centered">
-          <img src="css/image/group4.png" width="30%"></p>
+          <img src="css/image/group4.png" style="width:84%; max-width:100px; width:expression(this.width > 100px ? "100px" : true);">
+          <br></br>
+          <div class="span10 offset1 pagination-centered"> <p text-transformation="uppercase"> Kaho Sato, Alice Sibold, Theodor Gherzan, Adrian Draghici</p></div>
         </div>
 
     </div>
-  </div><!--/span-->
+  </div><!--/span2-->
 
         <div class="span10">
           <div id="main" class="hero-unit">
