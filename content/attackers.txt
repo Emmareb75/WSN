@@ -1,8 +1,10 @@
-<h1> Types of Attackers</h1>
+<h1> Types of Attackers</h1><br>
 <p>In order to secure the network, one has to understand the nature of the attack that the network can possibly suffer. Here we look at the various kind of attack and the classification.</p>
 <h2>Purpose</h2>
 <h3>Active attacker</h3>
 <p>One can summarise the purpose of the active attacker as modification; It can modify/destroy/fake the data, or structure of the network as whole and interrupt the communication. Therefore the attack of this nature would affect the integrity and the availability of the data, and causes unfairness# in the network which leads to the lower efficiency.</p>
+
+<HR COLOR="#444444" SIZE="3">
 
 <h3>Passive attacker</h3> 
 <p>The passive attacker would not modify anything in the network- their purpose is the information. Information can be the data itself, the cryptographic key, key for authentication, etc. The attack of this nature would affect the secrecy of the data. </p>
