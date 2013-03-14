@@ -8,7 +8,7 @@
                    <div class="row-fluid">
                     <div class="span6">
                         <p>
-                          <b>Forest Fire detection: </b>The spanish company, SISVIA Vigilancia y Seguimiento Ambiental, commercializing projects for the environmental protection, has developed a forest fires detection system using Wireless Sensor Networks. The system coverage area is about 210 hectares, and installed in the North Spain region, comprising the Communities of Asturias and Galicia. The Wireless Sensor Network integrated in the detection system handles the collection and analyse of various environmental variables such as temperature, carbon dioxide, oxygen, ammonia - potential forest fire indicators - and deliver warnings when detection abnormal measurements.<a href="references.html#applications">[1]</a>
+                          <b>Forest Fire detection: </b>The spanish company, SISVIA Vigilancia y Seguimiento Ambiental, commercializing projects for the environmental protection, has developed a forest fires detection system using Wireless Sensor Networks. The system coverage area is about 210 hectares, and installed in the North Spain region, comprising the Communities of Asturias and Galicia. The Wireless Sensor Network integrated in the detection system handles the collection and analyse of various environmental variables such as temperature, carbon dioxide, oxygen, ammonia - potential forest fire indicators - and deliver warnings when detection abnormal measurements.<a href="references.html">[1]</a>
                         </p>
                       </div>
                       <div class="span6 pagination-centered">
@@ -23,7 +23,7 @@
                         </div>
                     <div class="span7">
                         <p>
-                         <b> Industrial monitoring: </b>WSNs are widely used to monitor temperature in buildings, but also to track factories products and transportations.<a href="references.html#applications">[2]</a>
+                         <b> Industrial monitoring: </b>WSNs are widely used to monitor temperature in buildings, but also to track factories products and transportations.<a href="references.html">[2]</a>
                         </p>
                         <p>
                           A firm called National Interest have launched the WSN that watch over the mechanical vibration, which significantly consumes the durability of the machine. The continuous monitoring of vibrations and other signals is critical to predicting mechanical behavior and efficiency and usually requires continuous data acquisition and online database analysis
@@ -34,7 +34,7 @@
                    <div class="row-fluid">
                     <div class="span6">
                         <p><br>
-                          <b>Road &amp; traffic monitoring: </b>Wireless Sensor Networks are broadly use for traffic monitoring: the idea is to distribute many sensors along a road to detect traffic flows, speed and the continued roadway occupation. WSN can monitor and evaluate roads automatically and continuously, with little human effort. Moreoever, they allow the integration of video monitoring with magnetic or power sensor. In this way, it is possible to obtain complete and integrated information (video-images and traffic volumes information).<a href="references.html#applications">[5]</a>
+                          <b>Road &amp; traffic monitoring: </b>Wireless Sensor Networks are broadly use for traffic monitoring: the idea is to distribute many sensors along a road to detect traffic flows, speed and the continued roadway occupation. WSN can monitor and evaluate roads automatically and continuously, with little human effort. Moreoever, they allow the integration of video monitoring with magnetic or power sensor. In this way, it is possible to obtain complete and integrated information (video-images and traffic volumes information).<a href="references.html">[5]</a>
                         </p>
                       </div>
                       <div class="span6 pagination-centered">
