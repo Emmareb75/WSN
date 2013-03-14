@@ -4,11 +4,11 @@
     <div id="table-div">
         <table id="answers-table">
             <tr><td> <p class="btn" id="button-start" onclick="start()">Start Quiz</p> </td> </tr>
-            <tr><td> <p class="btn" id="answer1" onclick="checkAnswer1()"></p> </td></tr>
-            <tr><td> <p class="btn" id="answer2" onclick="checkAnswer2()"></p> </td></tr>
-            <tr><td> <p class="btn" id="answer3" onclick="checkAnswer3()"></p> </td></tr>
+            <tr><td> <p class="btn" id="answer1" style="display: none;" onclick="checkAnswer1()"></p> </td></tr>
+            <tr><td> <p class="btn" id="answer2" style="display: none;" onclick="checkAnswer2()"></p> </td></tr>
+            <tr><td> <p class="btn" id="answer3" style="display: none;" onclick="checkAnswer3()"></p> </td></tr>
         </table>
-            <p class="btn" id="next" onclick="next()" >Next</p>
+            <p class="btn" id="next" style="display: none;" onclick="next()" >Next</p>
     </div>
-    <div id="stats"> <h4>Your Score: 0/0 0%</h4> </div>
+    <div id="stats" style="display: none;"> <h4>Your Score: 0/0 0%</h4> </div>
 </div>
