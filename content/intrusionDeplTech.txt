@@ -4,7 +4,7 @@
 . In general there are three main deployment strategies.
 </p>
 <div class="row-fluid">
-<div class="span4">
+<div class="span6">
 <p>
 A simple approach is to install an IDS on <b>every single node</b> (<b>a node
 based IDS</b>), so the IDS is only responsible for the security of the host.
@@ -16,28 +16,28 @@ we can intuitively see that this approach is very hard to implement efficiently
 on a large scale network.
 </p>
 </div>
-<div class="span8 pagination-right">
-<div class="span12 pagination-centered">
-<img src="images/intrusion/net1.png" width="40%">
-</div>
+<div class="span6 pagination-centered">
+<img src="images/intrusion/net1.png" width="60%"><br>
 <font size="2"><i>Fig 1. presents a network where the IDS is installed on every
 single node.
 </i>
 </font>
 </div>
 </div>
+
+<br>
+
 <div class="row-fluid">
-<div class="span8 pagination-right">
-<div class="span12 pagination-centered">
-<img src="images/intrusion/net2.png" width="40%">
-</div>
+<div class="span6 pagination-centered">
+<img src="images/intrusion/net2.png" width="55%"><br>
 <font size="2"><i>Fig 1. presents a network where the IDS is installed oonly in
 cluster nodes.
 </i>
 </font>
 </div>
-<div class="span4">
+<div class="span6">
 <ol><p>
+	<br>
 Another possible strategy would be to place the IDS modules on the<b> base
 station</b>
 . The <b>base station</b> can analyze all the traffic in the sensor network regardless
@@ -48,8 +48,10 @@ not being analyzed.
 </div>
 </div></p>
 </ol>
+
+<br>
 <div class="row-fluid">
-<div class="span4">
+<div class="span6">
 <ol><p>
 Our last approach will be to make the IDS monitor(watchdog) reponsible for it’s
 neighbour nodes, knowing the fact that a node can also oversee the transmission
@@ -69,18 +71,18 @@ head</b>. The drawback of this approach is the high quantity of overhead
 communication since the nodes do not select the shortes path, but instead have
 to forward their packets thorugh the cluster node.
 </div>
-<div class="span8 pagination-right">
-<div class="span12 pagination-centered">
-<img src="images/intrusion/net3.png" width="40%">
-</div>
+<div class="span6 pagination-centered">
+	<br><br>
+<img src="images/intrusion/net3.png" width="100%">
+<br>
 <font size="2"><i>Fig 1. presents a network where the IDS is installed oonly in
 <b>cluster nodes</b>.
 </i>
 </font>
-
 </div>
 </div></p>
 </ol>
+
 <ul>
 <li><p>Y. Huang and W. LeeRef. in ref.[5] deploy IDS only on this <b>clusters
 heads</b> in order
