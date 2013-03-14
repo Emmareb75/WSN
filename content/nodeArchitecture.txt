@@ -9,13 +9,11 @@
 
                 <br></br>
 
-                <h2>Microcontroller</h2>
-                <p>The microcontroller performs tasks such as data communication, processes the collected information, and, importantly, controls the performance and the functionality of all the other components of the sensor node. It comprises the memory of the sensor node, as well as the processor, but also a clock generator, one or more Analogue-to-Digital Convertor (ADC) and input/output interface.
-
-                <h3>Processor</h3> 
-                Due to the wireless nature of the system, the processor must be adapted to embedded applications and consume very little energy.
-                Amongst various processors the Atmel ATMega is often used on sensor nodes: by balancing power-consumption and processing-speed, it presents all the qualities required.
-                <b>// TO DEVELOP</b>
+                <h2>Processing unit</h2>
+                <p>The processing unit performs tasks such as data communication, processes the collected information, and, importantly, controls the performance and the functionality of all the other components of the sensor node. It comprises the memory of the sensor node, as well as the processor, but also a clock generator, one or more Analogue-to-Digital Convertor (ADC) and an input/output interface.
+                </p>
+                <p>
+                Due to the wireless nature of the system, the processor must be adapted to embedded applications and consume very little energy. Several types of processor meet those requirements: Microcontroller, Digital Signal Processor (DSP), Field Programmable Gate Array (FPGA) - although they are rarely used because power-consuming - and Application-Specific Integrated Circuit (ASIC). Among all these alternatives, the Microcontroller is the most used embedded processor in Wireless Sensor Networks because of its flexibility to connect to other devices and its cheap price.
                 </p>
 
                 <h3>Memory</h3>
@@ -40,7 +38,7 @@
 <HR COLOR="#444444" SIZE="3">
 
             <h2>Sensing Unit</h2>
-            <h3>From Analogue to Digital</h3>
+            <h3>From analogue to digital</h3>
                 <p>A node features one or several sensors. Each sensor monitors environment variables and their variations, and produces a continuous analogue signal with the sensed data. However, sensor nodes processor works only on digital signal. Thus the sensor must be coupled with an Analogue-to-Digital Converter (ADC) to convert the data so the processor can further process it.</p> 
 
             <h3> Different types of sensors</h3>
@@ -69,7 +67,7 @@
                     </div>
                 </p>
 
-                <h3> Area of Coverage</h3>
+                <h3> Area of coverage</h3>
                 <p> Sensors within a same Wireless Sensor Network are also distinguishable on a specific characteristic that may vary from one sensor to another: their area of coverage.
                 The area of coverage determines the area in which the sensor can sense and feel its environment and its modifications. The sensor won’t detect events happening outside of the area of coverage and therefore no data about those events will be collected.</p>
                 <br>
