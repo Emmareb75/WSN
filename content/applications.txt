@@ -1,0 +1,35 @@
+<h3>Applications</h3>
+            <p>While being initially developed for military purpose, Wireless Sensor Networks are now widely used for tracking and monitoring purposes.</p>
+
+            <p><b>Environmental monitoring:</b>  Wireless Sensor Networks can monitor environmental variables such as temperature, humidity, atmospheric pressure, air pollution, etc...</p>
+            <ul>
+                  <li>
+                        <p>Air quality and pollution:
+                        </p>
+                  </li>
+                   <li>
+                        <p>Forest Fire detection:
+                        </p>
+                  </li>
+                   <li>
+                        <p>Landslide detection:
+                        </p>
+                  </li>
+                   <li>
+                        <p>Water quality:
+                        </p>
+                  </li>
+                   <li>
+                        <p>Natural disaster prevention:
+                        </p>
+                  </li>
+            </ul>
+
+            <p><b>Industrial monitoring:</b> WSNs are widely used to monitor temperature in buildings, but also to track factories products and transportations.</p>
+             <ul>
+            </ul>
+            <p><b> Agriculture monitoring</b></p>
+
+            <p><b>Health care:</b>  Sensors can be implanted inside the human body to monitor their health through observing vital signs, electrocardiograms, glucose level, etc...</p>
+            <p><b>Military tracking:</b> Military uses WSNs for battlefield surveillance, through tracking the enemy position for instance.</p>
+            <p>There are numerous applications and therefore various type of data treated, each of them having specific security requirements such as consistency, reliability, accuracy.</p>

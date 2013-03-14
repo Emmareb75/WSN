@@ -12,6 +12,8 @@
                 <h2>Processing unit</h2>
                 <p>The processing unit performs tasks such as data communication, processes the collected information, and, importantly, controls the performance and the functionality of all the other components of the sensor node. It comprises the memory of the sensor node, as well as the processor, but also a clock generator, one or more Analogue-to-Digital Convertor (ADC) and an input/output interface.
                 </p>
+                
+                <h3>Processor</h3>
                 <p>
                 Due to the wireless nature of the system, the processor must be adapted to embedded applications and consume very little energy. Several types of processor meet those requirements: Microcontroller, Digital Signal Processor (DSP), Field Programmable Gate Array (FPGA) - although they are rarely used because power-consuming - and Application-Specific Integrated Circuit (ASIC). Among all these alternatives, the Microcontroller is the most used embedded processor in Wireless Sensor Networks because of its flexibility to connect to other devices and its cheap price.
                 </p>
