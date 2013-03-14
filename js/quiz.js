@@ -32,6 +32,7 @@ $(document).ready(function() {
 });
 
 function start() {
+	$('#welcome').css('display','none');
 	$('#question').css('display','block');
 	$('#button-start').css('display','none');
     $('#answer1').css('display','block');

@@ -21,12 +21,11 @@
         "question": "What are path-keys?",
         "answers": [
             "They are keys used in intermediate nodes to connect sensors that did not share any keys directly in the discovery phase.",
-            "They are keys used in recent research that implements public key criptography in wireless sensor networks."
-            "They are pairs of keys distributed to the nodes that are still not connected after the shared-key discovery phase.",
+            "They are keys used in recent research that implements public key criptography in wireless sensor networks.",
+            "They are pairs of keys distributed to the nodes that are still not connected after the shared-key discovery phase."
         ],
         "correct": "They are keys used in intermediate nodes to connect sensors that did not share any keys directly in the discovery phase."
     },
-
     {
         "question": "Which layer is responsible for routing from the node to the base station?",
         "answers": [
