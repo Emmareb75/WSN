@@ -1,0 +1,95 @@
+            <h1>Physical Layer</h1><br>
+            <p>This is the lowest layer therefore all the layers above are based and dependant on this layer.
+The job of the physical layer is to establish a short range communication between two nodes. It provides an interface for establishing, maintaining a physical connection between the nodes so that they can communicate. This bit stream gets converted to a physical signal that can be transmit using a physicial medium. In the case of the wireless sensor network, the type of the physical signal would be radio-wave.</p>
+
+
+<div class="row-fluid">
+
+<div class="span6">
+<p>
+The process of a short range communication goes like this:</p>
+<ol>
+<li><p>Sensor collects environmental data such as sound, light...</p></li>
+<li><p>Source encoder encodes the analog data to digital signal.</p></li>
+<li><p>Channel encoder gets rid of the redundancy in the digital signal.</p></li>
+<li><p>Modulator changes the baseband (low frequency) signal to bandpass (high frequency) signal.</p></li>
+<li><p>This signal is then amplified and transmitted.</p></li>
+</ol>
+</div>
+<div class="span6"">
+<p>When a node receives the signal from another node, those events happen:
+<ol>
+<li><p>The signal goes through series of amplification and filtering processes.</p></li>
+<li><p>Demodulator transform it back to the baseband signal.</p></li>
+<li><p>channel decoder and source decoder decode the signal and extract the original analog signal.</p></li>
+</ol>
+Therefore the Physical layer needs to provide the specifications on Signal propagation, Modulation and Encoding.
+</p>
+</div>
+</div>
+
+
+
+<HR COLOR="#444444" SIZE="3">
+
+
+            <h1>Link Layer</h1><br>
+            <p>The physical layer is responsible for the connection between two nodes. The Link layer, which is one “floor” higher is responsible for the connection amongst the nodes on the same LAN. LAN is abbreviation for Local Area Network. It means network that covers devices that are physically close to each other.</p>
+
+			<p>Link layer has to offer the protocols that makes the network efficient. For example it has to make sure that the two nodes do not send message to the same node at the same time. Also, it is link layers responsibility to arrange the network, so that it is flexible, scalable and strong against the attack.</p>
+
+			<p>The security of this layer has to make sure that the attacker would not gain the information that is exchanged with in the local network. Or at least it has to make sure that the thief of the information would not understand what the message that he stole actually means, using encryption. It also needs to assure that the information was actually sent by the node that belongs to the network, not by the attacker. This has much to do with authentication and is discussed in the <i>Key Managment</i> section.</p>
+
+
+<HR COLOR="#444444" SIZE="3">
+
+            <h1>Routing Layer</h1><br>
+            <p>By the Physical layer, the connection between the two nodes was established. Then by the Link layer, the connection amongst the nodes that share the LAN was established. Now we can make the path from a node to the base station.
+
+This layer is responsible for routing. As explained in the <introduction>, there are many constraints in the WSN. Amongst them, the protocols concerning the routing must take into account the limited battery and memory and the self-organizing nature.
+The route must satisfy criteria like: short, less energy consuming and easy to go - smaller loss of the information, smaller delay to forward the information.</p>
+
+
+<p>
+In order to build up the optimum paths of the nodes to the base station of the network, the nodes must be able to calculate the cost of the possible paths between the nodes in some way.  In these protocols, the standard is called link quality. The smaller the cost is, the better the link quality is. In these protocols, different measurement is used to calculate this. 
+
+There are two routing protocols that are popular; have a look at them to have better understanding of how the routing works.There are two popular routing protocols; one is MintRoute, and the other is MultiHopLQI. </p>
+
+<h2>MintRoute</h2>
+
+<div class="row-fluid">
+<div class="span6 pagination-centered">
+<img src="images/layers/mintRoute1.png" width="70%">
+</div>
+<div class="span6 pagination-centered">
+<br><br>
+<img src="images/layers/mintRoute2.png" width="70%">
+</div>
+</div>
+
+<p>This is one of the popular routing protocols for WSN along with MultiHopLQI.
+
+In MintRoute, the standard used to calculate the link quality is called error rate. This is measured by sending a packet to the neighbour, and measuring the quality the packet sent to the node. If the packet sent is in a more complete form, that means that the paths has high link quality. The best figure for the link quality is 255.
+
+This measurement happens periodically, and the nodes update its Neighbour Table, where they keep the link quality between all the neighbour nodes. Then, the node chooses the node that has the best link quality as its parent node. The node can possibly change its parent node after every update of the table.</p>
+
+<p>The network tend to prefer not to change the parent node, fearing the possibility of malicious attack(like <Sinkhole>, <Blackhole>). In this protocol, the node would not change the route unless it find the node that is 75% better than the node that it is currently connected to. So let’s say look at the node A in the figure. The current parent node B has 150 as the link quality. After the update of the Neighbour Table, it turns out that a node C gives perfect link quality, 255. However B would not be the parent node, because 150 * 1.75 = 262.5 > 255. Also in the event where the link quality of the current parent node falls below 25, there will be a selection for the new parent node.</p>
+
+<h2>MultiHopLQI</h2>
+
+<p>In the MultiHopLQI, how the parents node is decided is different from the MintRoute. In this protocol, each node emits beacon message that tells its LQI(Link Quality Indicator) that is coded in the hardware, and the cost of the path to the base station from itself. LQI is a value that is computed from the strength of the signal received from the neighbouring nodes and the numbers of error received. This path cost is calculated by adding all the cost of the links between the nodes in the path.
+Let us consider this node A and B. The node A sends the beacon message to the node B. Then B calculates the cost of the link between A and B. From the beacon message, B would know  the path cost of the node A, ie. the cost of the path from A to the base station. Then B can calculate its path cost by adding the cost of the link between A and B, and the path cost of A. The node B will choose the node that gives the minimum path cost from itself to the base station.</p>
+
+
+<HR COLOR="#444444" SIZE="3">
+
+<h1> Application Layer</h1><br>
+<p>This layer is there to “personalise” the network according to the use of the WSN. provide software for different applications that translate the data in an understandable form or send queries to obtain certain information.
+</p>
+
+<HR COLOR="#444444" SIZE="3">
+
+<h1>Modulation Layer</h1><br>
+<p>
+In WSN, in order to transport the information, the output signal would be in the form of Carrier form; it is a waveform whose property, such as amplitude or frequency  was modulated (it means modified) by mixing a wave with a different property. In general, the new waveform that is output has much higher frequency than that of the input wave. This is per a technique called Frequency Division Multiplexing. When you use a normal radio, you select the program you want to listen by setting the radio to the particular wave frequency. When the frequency is properly set, then you would not hear anything that is on a radio wave with different frequency.
+</p>

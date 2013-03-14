@@ -14,8 +14,8 @@ Levitt ref. [1]'s approach we find a specification-based IDS to detect attacks o
 AODV routing. In this approach they use finite state
 machines to specify correct AODV behavior and use distribute network monitors
 to detect runtime violation of the AODV specification.
-<ol>
-The <b>Ad hoc On-demand Distance Vector</b>(AODV) routing
+</p>
+<p>The <b>Ad hoc On-demand Distance Vector</b>(AODV) routing
 protocol is a reactive and stateless protocol that establishes routes
 only as desired by a source node using route request (RREQ) and
 route reply (RREP) messages. When a node wants to find a route
@@ -25,16 +25,12 @@ a node receives a RREQ message, it updates the sequence number
 of source node and sets up reverse routes to the source node in the
 routing tables. If the node is the destination or the node has a
 route to the destination that meet the freshness requirements, it
-unicasts a route reply (RREP) back to the source node.
-</ol>
-<ol>
-In AODV, sequence number (SN) plays a role to indicate the
-freshness of the routing information and guarantee loop-free
-routes.
-</ol>
-</p>
+unicasts a route reply (RREP) back to the source node.</p>
 </div>
 <div class="span8 pagination-right">
+<div class="span12 pagination-centered">
+<img src="images/intrusion/pic1.png" width="80%">
+</div>
 <font size="2"><i>Fig 1. (presented in ref[1]), illustrates the flow of the
 RREQ and RREP messages in
 a scenario wherein a node A wants to find a route to a node D.
@@ -45,8 +41,19 @@ broadcasts the message (c1), which arrives at the destination node
 D. Last, D unicasts back the RREP message to A. We call these
 RREQ and RREP packets a request-reply flow. The values of the
 fields in the routing messages are denoted in Table 1.</i></font>
+<div class="span12 pagination-centered">
+<img src="images/intrusion/pic1.png" width="80%">
 </div>
 </div>
+</div>
+<br>
+
+<ol><p>
+In AODV, sequence number (SN) plays a role to indicate the
+freshness of the routing information and guarantee loop-free
+routes.</p>
+</ol>
+</p>
 <p>
 In applying the specification based IDS to monitor AODV, the authors first
 focus on the routing messages that are exchanged in the discovery of routes. In

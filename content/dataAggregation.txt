@@ -1,14 +1,14 @@
            <h1>Data Aggregation</h1><br>
-            <p>This fundamental technique is widely use in WSNs. Indeed, sensor nodes present several limitations, mostly due to their <a onclick="callFile('limitationOfWSN.txt')"> constrained power capabilities</a>.
+            <p>This fundamental technique is widely use in WSNs. Indeed, sensor nodes present several limitations, mostly due to their constrained power capabilities.
               Amongst the nodes features, data communication is undoubtedly the most power consuming.
               Hence, it is important to minimise the amount of data transiting through the Wireless Sensor Network and optimise the overall bandwidth utilisation by preventing overwhelming amounts to traffic.
              Moreover, Data Aggregation enhances the accuracy of information of the entire network: in Wireless Sensor Networks, the data collection and communication often leads to creating redundancy, thus the process of aggregation allows to reduce the redundant data.</p>
 
             <p>Data Aggregation consists of gathering and summarising sensor data, thus eliminating redundancy, in order to reduce power consumption - therefore, improve nodes lifetime - and approach an optimal data transmission.
-              However, due to the numerous and specific <a onclick="callFile('attacks.txt')">security threats</a> Wireless Sensor Networks can suffer from, Data Aggregation protocol must be designed with particular attention to security.</p>
+              However, due to the numerous and specific secuirty threats Wireless Sensor Networks can suffer from, Data Aggregation protocol must be designed with particular attention to security.</p>
 
-              <p>The general idea is the following one: when a data-query is sent to the network, instead of sending each node’s data,
-               an intermediate node, a data aggregator, collects data from its neighbours - a group of nodes lying in a defined perimeter.
+              <p>The general idea is the following one: the process starts either when a data-query is sent to the network, this means that the sink node - or an eventual base station - pulls the data of the network; or when the network pushes periodic report of the data.
+              Instead of sending each node’s data, an intermediate node, a data aggregator, collects data from its neighbours - a group of nodes lying in a defined perimeter.
               Then the data aggregator extracts meaningful information from this accumulated data by merging them in a single data point through aggregation functions.</p>
-            <p>The benefit of using Data Aggregation increases if relay-nodes perform the aggregation incrementally whilst the data is being sent to a gateway, also known as <a onclick="callFile('networkArchitecture.txt')">sink node</a>.</p>
+            <p>The benefit of using Data Aggregation increases if relay-nodes perform the aggregation incrementally whilst the data is being sent to a gateway, also known as sink node.</p>
 

@@ -39,7 +39,7 @@
 
             <ul class="nav">
               <li class="active"><a href="index.html"><i class="icon-home"></i>Home</a></li>
-              <li><a href="#"><i class="icon-tasks"></i>Quiz</a></li>
+              <li><a href="quiz.html"><i class="icon-tasks"></i>Quiz</a></li>
               <li><a href="references.html"><i class="icon-book"></i>References</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -100,19 +100,6 @@
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse"
-                data-parent="#accordion2" href="#collapseFour">Data Aggregation</a>
-            </div>
-            <div id="collapseFour" class="accordion-body collapse">
-              <div class="accordion-inner">
-                  <li><a onclick="callFile('dataAggregation.txt')">Definition</a></li>
-                  <li><a onclick="callFile('dataAggregationArchitecture.txt')">Aggregation Protocols</a></li>
-                  <li><a onclick="callFile('interactionsWithSecurityPrinciples.txt')">Interaction with Security</a></li>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse"
                 data-parent="#accordion2" href="#collapseFive">Attacks</a>
             </div>
             <div id="collapseFive" class="accordion-body collapse">
@@ -149,11 +136,20 @@
             <div id="collapseSeven" class="accordion-body collapse">
               <div class="accordion-inner">
                   <li><a onclick="callFile('layers.txt')">Definition</a></li>
-                  <li><a onclick="callFile('motivation.txt')">Motivation</a></li>
-                  <li><a onclick="callFile('physicalLayer.txt')">Physical Layer</a></li>
-                  <li><a onclick="callFile('linkLayer.txt')">Link Layer</a></li>
-                  <li><a onclick="callFile('routingLayer.txt')">Routing Layer</a></li>
-                  <li><a onclick="callFile('applicationLayer.txt')">Application Layer</a></li>
+                  <li><a onclick="callFile('listLayers.txt')">Various Layers</a></li>
+              </div>
+            </div>
+          </div>
+                    <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                data-parent="#accordion2" href="#collapseFour">Data Aggregation</a>
+            </div>
+            <div id="collapseFour" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <li><a onclick="callFile('dataAggregation.txt')">Definition</a></li>
+                  <li><a onclick="callFile('dataAggregationArchitecture.txt')">Aggregation Protocols</a></li>
+                  <li><a onclick="callFile('interactionsWithSecurityPrinciples.txt')">Interaction with Security</a></li>
               </div>
             </div>
           </div>
@@ -162,7 +158,7 @@
         <div class="pagination-centered">
           <img src="css/image/group4.png" style="width:84%; max-width:100px; width:expression(this.width > 100px ? "100px" : true);">
           <br></br>
-          <div class="span10 offset1 pagination-centered"> <p> Kaho Sato, Alice Sibold, Theodor Gherzan, Adrian Draghici</p></div>
+          <div class="span10 offset1 pagination-centered"><p style="font-size:13px"> Kaho Sato &amp; Alice Sibold, Theodor Gherzan, Adrian Draghici</p></div>
         </div>
 
     </div>
@@ -172,56 +168,34 @@
           <div id="main" class="hero-unit">
             <div id="mainlogo" class="span12 pagination-centered">
           </div>
-          <div class="row"><div class="span12"></div></div>
           <div id="lowerDivs" class="row-fluid">
-            <div class="span4 pagination-centered">
+            <div class="span3 pagination-centered">
               <i class="icon-search icon-2x"></i>
-              <h2>Overview</h2>
-              <p>Wireless Sensor Networks, is an emerging and fast-growing technology. Recent advances in Computing, Microelectronics and Communication, as well as the proliferation of “smart” energy-management applications, have caused increasing interest in Wireless Sensor Networks research.</p>
-              <p><a class="btn" onclick="callFile('wirelessSensorNetworks.txt')">View details &raquo;</a></p>
+              <h2><a onclick="callFile('wirelessSensorNetworks.txt')">Overview</h2></a>
+              <p style="font-size:15px;">Wireless Sensor Networks, is an emerging and fast-growing technology. Recent advances in Computing, Microelectronics and Communication, as well as the proliferation of “smart” energy-management applications, have caused increasing interest in Wireless Sensor Networks research.</p>
             </div><!--/span-->
-            <div class="span4 pagination-centered">
+            <div class="span3 pagination-centered">
               <i class="icon-lock icon-2x"></i>
-              <h2>Security Issues</h2>
-              <p>Wireless Sensor Networks are vulnerable to various attacks
+              <h2><a onclick="callFile('securityIssues.txt')">Security Issues</h2></a>
+              <p style="font-size:15px;">Wireless Sensor Networks are vulnerable to various attacks
               like any other conventional network, but its limited resource
               characteristics and unique application features requires some
               extra security requirements including the typical network
               requirements.</p>
-              <p><a class="btn" onclick="callFile('securityIssues.txt')">View details &raquo;</a></p>
             </div><!--/span-->
-            <div class="span4 pagination-centered">
+            <div class="span3 pagination-centered">
               <i class="icon-align-justify icon-2x"></i>
-              <h2>Layers</h2>
-              <p>In order to comprehend a communication system like in a wireless sensor network, it is useful to classify the communication specifications by its similarity in the function. Such a group of communication is called a layer.</p>
-              <p><a class="btn" onclick="callFile('layers.txt')">View details &raquo;</a></p>
+              <h2><a onclick="callFile('intrusionDef.txt')">Defense</h2></a>
+              <p style="font-size:15px;">Security such as authentication and cryptography enhance the security of sensor networks, however these methods cannot deter all possible attacks. Attacks may still come from inside the network, therefore we see the need for yet another form of defense.</p>
             </div><!--/span-->
-          </div><!--/row-->
-          <div id="lowerDivs1" class="row-fluid">
-            <div class="span4 pagination-centered">
-              <i class="icon-plus icon-2x"></i>
-              <h2>Data Aggregation</h2>
-              <p>Sensor nodes present several limitations, mostly due to their constrained power capabilities1. Amongst the features of sensor nodes, data communication is notably the most power consuming. Hence, it is important to minimise the amount of data transiting through the Wireless Sensor Network and optimise the overall bandwidth utilisation by preventing overwhelming amounts to traffic. </p>
-              <p><a class="btn" onclick="callFile('dataAggregation.txt')">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4 pagination-centered">
-              <i class="icon-minus-sign icon-2x"></i>
-              <h2>Defense Strategies</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" onclick="callFile('defenseStrategies.txt')">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4 pagination-centered">
-              <i class="icon-bolt icon-2x"></i>
-              <h2>Attacks</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" onclick="callFile('attacks.txt')">View details &raquo;</a></p>
+            <div class="span3 pagination-centered">
+              <i class="icon-align-justify icon-2x"></i>
+              <h2><a onclick="callFile('layers.txt')">Layers</h2></a>
+              <p style="font-size:15px;">One can divide a communication system into units called layers. Building a network is like constructing a building in a sense that without the lower layer being established, the above layer cannot be “constructed”.</p>
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
-
-      <hr>
-
     </div><!--/.fluid-container-->
 
     <!-- Le javascript

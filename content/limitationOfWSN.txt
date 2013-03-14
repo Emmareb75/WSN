@@ -18,6 +18,7 @@
 			<li> A node may join or leave the network arbitrary</li>
 			<li> Links may be broken</li>
 			<li> Nodes may be powered down as a result of a node failures or intentional user actions</li>
+			</ul>
 			<p>
 			On the top of all these obstacles, the data communicated in the network may require high confidentiality; therefore the security must be as robust as possible.</p>
 

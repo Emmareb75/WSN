@@ -1,6 +1,6 @@
 <h1>Definition and different classifications</h1><br>
 <p>Security such as authentication and cryptography enhance the security of sensor
-networks, however this methods cannot deter all possible attacks. Attacks may
+networks, however these methods cannot deter all possible attacks. Attacks may
 still come from inside the network, we say <i>“inside”</i> in the matter that an
 attacker already possesses acceses to the network, therefore we see the need
 for yet another form of defense.

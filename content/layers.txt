@@ -1,7 +1,15 @@
             <h1>Layers</h1><br>
-            <p>In order to comprehend a communication system like in a wireless sensor network, it is useful to classify the communication specifications by its similarity in the function. Such a group of communication is called a layer. You can imagine it like a building. Each layer serves the layer above it, is served by the layer below it. Note that it is mere an abstraction when we talk about WSN; in practice, the majority of the sensor networks are based on the TinyOS# platform- where there is no formal differentiation of layers. Therefore there are many possible ways to split it.
-Common grouping in the network stack in TinyOS(1) is four major layers.</p>
-            <p><ul><li><a href="layers_physical.html">Physical Layer</a></li>
-                   <li><a href="layers_link.html">Link Layer</a></li>
-                   <li><a href="layers_routing.html">Routing Layer</a></li>
-                   <li><a href="layers_application.html">Application Layer</a></li></ul></p>
+            <div class="row-fluid">
+            	<div class="span6">
+            <p>One can divide a communication system into units called layers. Building a network is like constructing a building in a sense that without the lower layer being established, the above layer cannot be “constructed”. Each layer is responsible to provide the functionality for the higher layer to be build, using the functionality that the lower layer provides.  Note that it is mere an abstraction when we talk about WSN; in practice, the majority of the sensor networks are based on the TinyOS platform- where there is no formal differentiation of layers. Therefore there are many possible ways to split it.
+	Common grouping in the network stack in TinyOS has four major layers:<b> Physical layer, Link layer, Routing layer, Application layer</b>.</p>
+	</div>
+	<div class="span6 pagination-centered">
+	<img src="images/layers/cube.jpg" width="50%">
+	</div>
+	</div>
+<p> TinyOS It is an operating  system for wireless sensor network nodes. Operation system is responsible for managing the hardware resources and providing the software with it. It is much less complex than general-purpose operating systems. Use of less complex OS on a wireless sensor network nodes should make a lot of sense; Normally,nodes are not expected to do anything general or flexible. The user would limit its use to some specific purpose. Therefore you would not need an OS like UNIX or MacOS. The limited resource and the processor capability would not allow it to have these kinds of OS anyways!</p>
+
+<p>Why do we have to know about layers?
+There is a good motivation to understand layers to create a better security protocol design. An intuitive approach to address security in WSN would be per-attack basis; for each kind of attack, you establish a countermeasure to it. An alternative, and potentially much more efficient approach would be to break down the problem per-layer basis. In this way, on designing the security protocols in a particular layer, one can make them cooperate with security protocol in other layer to create a complete and more efficient defence for the nodes and the network.</p>
+[ref LinkLayer_Sec_bookch.pdf]
