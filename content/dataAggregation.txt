@@ -7,8 +7,8 @@
             <p>Data Aggregation consists of gathering and summarising sensor data, thus eliminating redundancy, in order to reduce power consumption - therefore, improve nodes lifetime - and approach an optimal data transmission.
               However, due to the numerous and specific secuirty threats Wireless Sensor Networks can suffer from, Data Aggregation protocol must be designed with particular attention to security.</p>
 
-              <p>The general idea is the following one: when a data-query is sent to the network, instead of sending each node’s data,
-               an intermediate node, a data aggregator, collects data from its neighbours - a group of nodes lying in a defined perimeter.
+              <p>The general idea is the following one: the process starts either when a data-query is sent to the network, this means that the sink node - or an eventual base station - pulls the data of the network; or when the network pushes periodic report of the data.
+              Instead of sending each node’s data, an intermediate node, a data aggregator, collects data from its neighbours - a group of nodes lying in a defined perimeter.
               Then the data aggregator extracts meaningful information from this accumulated data by merging them in a single data point through aggregation functions.</p>
             <p>The benefit of using Data Aggregation increases if relay-nodes perform the aggregation incrementally whilst the data is being sent to a gateway, also known as sink node.</p>
 
